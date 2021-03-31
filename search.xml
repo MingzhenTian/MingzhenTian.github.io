@@ -35,12 +35,12 @@
   <entry>
     <title>【Science】新神经保护剂！NMDAR/TRPM4相互作用机制及抑制剂</title>
     <url>/2021/03/31/%E3%80%90%E6%96%87%E7%8C%AE%E5%88%86%E4%BA%AB1%E3%80%91/</url>
-    <content><![CDATA[ <span id="more"></span> 
+    <content><![CDATA[<p> <img src="/.io//abstract.png" alt="abstract"></p>
+<span id="more"></span> 
 
 <p><strong>Scientific Commentary on a Paper about NMDAR/TRPM4 interaction</strong></p>
 <p>By <em>Mingzhen Tian</em></p>
 <p>This article recommended by Professor is about a novel mechanism of toxic NMDAR signaling. In this paper, the authors found that excitotoxicity is caused by the physical coupling of NMDAR to TRPM4 extrasynaptically, and application of reciprocal interface inhibitors can disrupt the binding of both, thereby alleviating toxicity and maintaining normal physiological function of NMDAR. These findings offer the opportunity to alleviate the symptoms of currently incurable human neurodegenerative diseases. Below I will present the background and specific findings of the study and my reflections.</p>
-<p><img src="/.io//abstract.png" alt="abstract"></p>
 <p>Recent studies have found that NMRADs (N-methyl-D-aspartate receptors) underlie the physiology and pathology of the human central nervous system. On the one hand, NMDARs regulate synaptic plasticity and initiate essential transcriptional responses in the nervous system. However, on the other hand, NMDARs can shut down transcriptional channels, leading to mitochondrial dysfunction and even causing cell death, exhibiting a harmful side to neurons. How NMDARs exhibit both sides, especially the molecular mechanisms of cytotoxic signaling, remains unclear. The authors conjecture that the toxicity of NMDARs arises from physical interactions with other proteins and that these proteins are located extrasynaptically. Based on this, they have launched a related exploration.</p>
 <p>The authors first narrowed down the interacting proteins to TRP (transient receptor potential), especially TRPM (melastatin), associated with neurodegenerative diseases. Among them, TRPM4 has been suggested to be a key factor in the NMDAR death complex. The authors used shRNAs to knock down TRPM4 in hippocampal neurons and found that NMDA-mediated cytotoxicity was reduced. Then the authors did coimmunoprecipitation and found that TRPM4 cross-linked with NMDAR subunits GluN2A and GluN2B.</p>
 <p>Based on the authors’ previous conjecture, they suggested that destroying the crosslink between NMDAR and TRPM4 could eliminate cytotoxicity. After in-depth screening, they found that TwinF, a component of TRPM4, can remove excitotoxic cell death. The authors also validated the neuroprotective effect of TwinF in two neurodegenerative diseases, OGD and MCAO, with remarkable effects. Then the authors found that TwinF did not affect the excitatory postsynaptic currents of NMDARs by studying potentiation, suggesting that the protective effect of TwinF was not achieved by cutting off NMDARs.</p>
