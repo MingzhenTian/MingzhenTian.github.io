@@ -37,4 +37,32 @@
         <tag>Neurobiology</tag>
       </tags>
   </entry>
+  <entry>
+    <title>【Science】前扣带回皮层到隔核的投射调控疼痛和镇痛的共情</title>
+    <url>/2021/04/06/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB2/</url>
+    <content><![CDATA[<p><strong>Scientific Commentary on a Paper about Empathy</strong></p>
+<p>By <em>Mingzhen Tian</em></p>
+<span id="more"></span> 
+
+<p>原文链接：<a href="https://doi.org/10.1126/science.abe3040">Anterior cingulate inputs to nucleus accumbens control the social transfer of pain and analgesia</a></p>
+<p>This article recommended by Professor Nanjie Xu is about the neural circuits in the anterior cingulate cortex (ACC) during empathy in mice. Researchers have observed for the first time that the ACC transmits signals to the nucleus accumbens (NAc) when mice observe their companions experiencing pain and analgesia. However, ACC signals to basolateral amygdala when mice observe their companions experiencing fear. Below I will present the background knowledge of empathy and the specific findings of this article.</p>
+<p>Empathy is an important part of human cognition and plays a very large role in human society, making interpersonal communication efficient. Research in recent years has revealed that predecessor behaviors similar to human empathic behavior exist in many animals, especially rodents. The ACC is thought to be an important component of the neural circuitry of empathy and has connections to many brain regions associated with emotion regulation. However, the specific mechanisms underlying these empathy-related associations remain unclear. In this study, they discovered ACC-related neural circuits using optogenetic methods.</p>
+<p>The authors first investigated whether pain could be rapidly transferred to bystander (BY) mice. They placed mice experiencing pain in a cage with bystander mice and tested for relevant indicators after one hour of social contact. Pain sensation was obtained from the administration of CFA to mice. The authors found that both BY mice and CFA mice showed mechanical hypersensitivity, whereas controls did not. Moreover, CFA mice show hyperalgesia in only one hind paw, whereas BY mice show it in both hind paws, suggesting that there may be higher brain regions involved in this process. The tail immersion experiment, thermal place test also demonstrated this phenomenon. These results illustrate the rapid transfer of pain empathy.</p>
+<p><img src="/2021/04/06/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB2/1.jpg"></p>
+<p>Researchers then explored the specific mechanisms of pain empathy. To determine which brain regions play a role in pain empathy, they used the TRAP technique to detect which neurons were activated. They found that in both ACC and NAc, BY mice activated more neurons than CFA mice, so they conjectured that there was a neural circuit between ACC and NAc. Then they used AAV technology and optogenetics to discover that ACC has projections on NAc. They then used the monosynaptic rabies virus tracing method to detect ACC signaling through the synapse to NAc. These results demonstrate that the ACC-NAc pathway is activated during pain empathy.</p>
+<p><img src="/2021/04/06/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB2/2.jpg"></p>
+<p>The researchers then looked more closely at the role of the ACC-NAc circuit in pain empathy. They inhibited ACC function by injecting NpHR into ACC and activated NpHR expression during empathy, and found that empathy was diminished when ACC was inhibited. Using the same approach to inhibit ACC-NAc projections, it was also found that empathy was attenuated. They then activated ACC-NAc projections by injecting ChR2 and found that empathy time was prolonged in BY mice. These results surface that ACC-NAc projections are essential for pain empathy.</p>
+<p><img src="/2021/04/06/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB2/3.jpg"></p>
+<p>The researchers then explored the role of ACC-NAc projections for other emotional empathy such as fear. They first let BY mice experience the shock to generate memories, and then watched other mice shock to generate empathy. The degree of fear empathy in mice is detected by freezing behavior. Experimental results showed that BY mice developed fear empathy. They then inhibited ACC-NAc projections and found that fear empathy was not attenuated, but inhibition of ACC-BLA (basolateral amygdala) projections attenuated the fear empathy effect. These results suggest that ACC modulates empathy for different emotions by projecting to different brain regions.</p>
+<p><img src="/2021/04/06/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB2/4.jpg"></p>
+<p>Since strong emotions such as pain and fear have been shown to produce empathy in mice, can good emotions such as analgesia produce empathy? The authors then explored the empathic behavior of analgesia in mice. The authors injected all mice with CFA, followed by morphine, and mice that were not injected with morphine were used as BY mice (CFA-Analg-BY). The authors found that CFA-Analg-BY mice did have the production of analgesia empathy compared to controls by the Von Frey assay and thermal place test. The authors go on to explore the need for ACC-NAc in analgesic empathy. The authors found that analgesic empathy was diminished in mice when ACC or ACC-NAc projections were inhibited, suggesting that ACC-NAc projections were functional.</p>
+<p><img src="/2021/04/06/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB2/5.jpg"></p>
+<p>Overall, the study identified empathic behaviors in mice, either good or bad emotions, including pain, fear, and analgesia. The present study also found that ACC projections to different brain regions can control empathic responses. Specifically, ACC-NAc regulates pain and analgesic empathy, and ACC-BLA regulates fear empathy. Their work could contribute to our deeper understanding of the more complex mechanisms of empathy in the human brain, and could be of great help in the treatment of neurological disorders with empathy deficits.</p>
+<p>The study of this article has introduced me to new areas of research in neuroscience. I learned a lot of novel experimental techniques and ideas, such as TRAP, monosynaptic neuronal tracing, which benefited me a lot.</p>
+]]></content>
+      <tags>
+        <tag>文献导读</tag>
+        <tag>Neurobiology</tag>
+      </tags>
+  </entry>
 </search>
