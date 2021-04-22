@@ -125,10 +125,70 @@
 <p>考虑到人类基因组中潜在的大量合成致命相互作用，很明显，发现额外的合成致命对符合药物发现需要功能性基因组方法。 为此，一个CRISPR库可以用来识别在细胞系panel中的合成致死“hits”，这些细胞系panel共享一个特定的肿瘤抑制基因的丢失，而这个基因与保留相关基因的野生型功能的细胞系最接近。 </p>
 <h4 id="MTAP-deletion-and-PRMT5-inhibition-synthetic-lethality-beyond-PARP-inhibitors"><a href="#MTAP-deletion-and-PRMT5-inhibition-synthetic-lethality-beyond-PARP-inhibitors" class="headerlink" title="MTAP deletion and PRMT5 inhibition: synthetic lethality beyond PARP inhibitors"></a><em>MTAP deletion and PRMT5 inhibition: synthetic lethality beyond PARP inhibitors</em></h4><p>Achilles项目和 DRIVE项目发现的一个最强和最普遍的合成致命相互作用是<strong>MTAP缺失细胞中的PRMT5依赖</strong>。这种依赖性代表了合成致死的一个子类： collateral lethality 旁系致死。当与肿瘤抑制基因相邻的“passenger”基因和“driver”基因丢失时，就会发生这种情况。MTAP是passenger基因，经常与驱动细胞周期蛋白依赖性激酶抑制剂 CDKN2A 共同删除。几个研究小组发现，MTAP缺失的癌细胞明显依赖于PRMT5(一种必需的甲基转移酶)，使这些细胞比没有MTAP缺失的细胞更容易受到PRMT5敲除的影响。这种依赖性的产生是因为MTAP缺失的细胞积累了高水平的PRMT5抑制辅因子MTA。因此，在MTAP缺失的细胞中，PRMT5在基线时被部分抑制，并且它们对进一步降低PRMT5活性非常敏感。这种依赖性为MTAP缺失的肿瘤患者提供了一个大的PRMT5抑制剂治疗窗口，考虑到正常细胞(没有MTAP缺失)很大程度上可以幸免，所以毒性还可以受到限制。</p>
 <p><img src="/2021/04/07/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB3/4.png"></p>
+<p>大约15%的人类癌症中MTAP被删除，包括50%以上的胶质母细胞瘤和25%的胰腺癌;因此，开发一种有效的治疗MTAP缺失肿瘤的方法可能对患者有很高的影响。然而，现有的PRMT5抑制剂并没有重现PRMT5敲除的作用。这说明功能基因组学可能不是一个很好的药物靶标发现工具，当它实际上是由于现有抑制剂的作用机制。<strong>PRMT5有两个辅因子:激活辅因子S -腺苷蛋氨酸(SAM)和抑制辅因子MTA。</strong>所有已知的PRMT5抑制剂要么是SAM -合作抑制剂，要么是MTA -竞争抑制剂。 由于MTA在MTAP缺失的癌细胞中积累的水平远高于正常细胞，因此需要一种MTA协同和SAM竞争的PRMT5抑制剂来重现PRMT5敲低的效果。 这种抑制剂会增加与MTA结合的非活性PRMT5相对于与SAM结合的活性PRMT5的数量，这将导致MTAP缺陷细胞的死亡，但不会导致野生型细胞的死亡。 现有的PRMT5抑制剂并不通过这种机制发挥作用，因此，在类似的暴露条件下，可以杀死MTAP缺失的细胞和野生型细胞，导致毒性和活性有限。 相反，利用这种合成致命对的第一个努力是利用<strong>MAT2A抑制剂</strong>，这是代谢途径的另一种成分，通过降低SAM水平发挥作用。 第一个MAT2A抑制剂目前正处于临床试验阶段，但已经公布了有限的疗效数据。</p>
 ]]></content>
       <tags>
         <tag>文献导读</tag>
         <tag>Oncology</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【Nature】迄今为止最为全面的肿瘤转录组变异图谱</title>
+    <url>/2021/04/15/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB5/</url>
+    <content><![CDATA[<p>By <em>Mingzhen Tian</em></p>
+<span id="more"></span> 
+
+<p>作者：张泽民</p>
+<p>期刊：Nature</p>
+<p>发表时间：2020.02</p>
+<p>原文链接：<a href="https://doi.org/10.1038/s41586-020-1970-0">Genomic basis for RNA alterations in cancer</a> </p>
+<h3 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h3><p>转录的改变通常是由癌症基因组的体细胞改变引起的。癌症中有各种形式的RNA alterations，包括overexpression过表达、altered splicing剪切改变和gene fusions基因融合。然而，由于患者和肿瘤类型的异质性，以及通过转录组和全基因组测序对样本进行分析的患者群体相对较少，很难将这些归因于潜在的基因组变化。 </p>
+<p>在此，我们介绍了迄今为止最全面的癌症相关基因改变目录，该目录是通过对国际癌症基因组联盟(ICGC)的泛癌症全基因组分析联盟(PCAWG)和癌症基因组图谱(TCGA)的1188个捐赠者的肿瘤转录组进行表征获得的。</p>
+<p>利用匹配的全基因组测序数据，我们将几类RNA改变与种系和体细胞DNA改变联系起来，并确定了可能的遗传机制。 体细胞拷贝数的改变是总基因和等位基因特异性表达变异的主要驱动因素。我们鉴定出649个体细胞<strong>单核苷酸变异体</strong>与顺式基因表达的关联，其中68.4%涉及与基因侧翼非编码区的关联。 我们发现了1900个与体细胞突变相关的<strong>剪接改变</strong>，包括靠近Alu元素的内含子内的外显子的形成。 此外，82%的<strong>基因融合</strong>与结构变异有关，包括75种新类型的“ bridged ”融合，即第三个基因组位置连接两个基因。我们观察到不同癌症类型的转录组改变特征，并与DNA突变特征的变化有联系。</p>
+<p>在基因组背景下的RNA改变纲要提供了一个丰富的资源，以识别在功能上涉及癌症的基因和机制。</p>
+<h3 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h3><p>为了对癌症基因组改变进行更广泛的研究，特别是在非编码区域，<strong>PCAWG项目</strong>的成立是为了分析对ICGC和TCGA项目有贡献的大量全基因组样本。PCAWG项目有好多小组，分工不同。 在这里，我们报告了PCAWG转录组工作组对来自27种肿瘤类型的1188个样本的可用匹配转录组和基因组图谱的联合分析。据我们所知，这是迄今为止最大的癌症RNA表型及其潜在基因变化的资源。我们论证了转录组学数据在理解特定DNA改变的不同维度如何促进癌变方面的重要性，并绘制出癌症相关RNA改变的图景。</p>
+<h3 id="Cancer-specific-germline-cis-eQTLs"><a href="#Cancer-specific-germline-cis-eQTLs" class="headerlink" title="Cancer-specific germline cis-eQTLs"></a>Cancer-specific germline cis-eQTLs</h3><p>为了研究不同类型RNA改变的潜在机制，我们首先关注了基因表达水平的变化。 我们首先考虑了常见的接近单个基因的种系变异(小等位基因频率≥1%)(±100 kb)，并在cohort中绘制了表达定量性状位点(eQTL)。该泛癌分析鉴定出3532个具有eQTL的基因，富集于转录起始位点(TSSs)的近端区域。</p>
+<p>为了识别癌症特异性调控变异，我们将我们的eQTLs与基因型组织表达(GTEx)项目中的eQTLs进行了比较。我们鉴定出422个不对应GTEx组织的eQTLs，这表明肿瘤特异性调控。 相应的eQTL导联变体在异染色质区域富集**(Fig.1a)**。 总的来说，这一分析揭示了基因表达调控的生殖系框架在癌症组织中很大程度上是保守的。</p>
+<h3 id="Somatic-cis-eQTLs-in-non-coding-regions"><a href="#Somatic-cis-eQTLs-in-non-coding-regions" class="headerlink" title="Somatic cis-eQTLs in non-coding regions"></a>Somatic cis-eQTLs in non-coding regions</h3><p>先前的研究已经描述了癌症中的非编码突变图景，特别是启动子区域的突变，以及它们对基因表达的调控作用。 在这里，我们观察了整个基因组中可能的体细胞DNA变化，这些变化是基因表达改变的基础。我们通过在邻近基因、外显子和内含子的2 kb间隔内聚合单核苷酸变异(SNVs)来估计局部突变负担。 接下来，我们分解了单个基因的表达变化，考虑了cis中常见的突变负担，以及cis种系变异体和体细胞拷贝数的改变 (SCNAs) 。 该研究发现，SCNAs是基因表达变异的主要驱动因素(17%)，其次是基因侧翼区的体细胞SNVs(1.8%)和种系变异(1.3%)。**(Fig.1b)** </p>
+<p>我们还研究了体细胞e基因（有eQTLs的泛癌基因）的功能特征，并观察到在癌症睾丸基因的二价启动子(P = 0.04, Fisher精确检验)，如TEKT5中，体细胞eQTLs的富集。总的来说，体细胞eQTL分析发现，大部分非编码区域与局部基因表达变化相关，并且与癌症特异性种系eQTL类似，显示了富集的转录活性区域，如异染色质。</p>
+<h3 id="Expression-and-mutational-signatures"><a href="#Expression-and-mutational-signatures" class="headerlink" title="Expression and mutational signatures"></a>Expression and mutational signatures</h3><p>突变模式的全局变化可以用突变特征来量化，突变特征标记了特定于起源组织和环境暴露的突变过程。然而，提取突变特征是一个本质统计过程，需要后验功能注释。我们进行了全基因组突变特征和基因表达水平之间的泛癌症关联分析，以破译伴随突变特征存在的分子过程。</p>
+<p>我们考虑了28个突变特征，利用上下文特定的突变频率的非负矩阵分解得到。 我们测试了供体中特征流行率和总基因表达之间的关系，包括总突变负担、癌症类型和其他技术和生物学混杂因素。  这项研究发现了1176个与至少一种特征相关的基因。</p>
+<p>我们考虑了带有20个或更多相关基因的18个特征进行进一步注释，并使用GO分类和 Reactome 通路评估富集情况。我们发现11个特征在至少一个类别(FDR≤10%)中得到了丰富，揭示了与已知和未知病因相一致的关联。 <strong>(Fig. 1d)</strong>  例如，特征38与典型的紫外线特征7 相关，与黑色素过程相关。 黑素的合成引起黑素细胞的氧化应激，我们发现特征38与氧化应激促进基因TYR相关。特征38基因的hallmark是C&gt;A突变，是典型的氧化应激产物。 这表明特征38可能捕获直接阳光照射后由紫外线诱导的氧化损伤间接引起的DNA损伤，而TYR可能是这种效应的中介。</p>
+<h3 id="Genomic-basis-of-allelic-expression"><a href="#Genomic-basis-of-allelic-expression" class="headerlink" title="Genomic basis of allelic expression"></a>Genomic basis of allelic expression</h3><p>为了分析个体单倍型水平的表达，我们测试了等位基因表达失衡(AEI)。  我们观察到，在不同类型的癌症中，AEI基因的比例存在显著差异。 在癌症和相应的健康组织之间，在DNA和RNA水平的等位基因失衡之间观察到高度的一致性。</p>
+<p>我们使用逻辑回归模型识别AEI的决定因素，将已知的印迹状态、种系eQTL基因型、SCNAs和近体细胞snv的加权突变负担分为功能类别。 总的来说，SCNAs占所有可解释变异的84.3%，这证实了我们体细胞eQTL分析的结果。</p>
+]]></content>
+      <tags>
+        <tag>文献导读</tag>
+        <tag>Oncology</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【Nature &amp; Cell】对比阅读：病原菌致病机制及宿主天然免疫反应</title>
+    <url>/2021/04/22/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB6/</url>
+    <content><![CDATA[<p><strong>Scientific Commentary on Papers about Pathogen</strong></p>
+<p>By <em>Mingzhen Tian</em></p>
+<span id="more"></span> 
+
+<p>原文链接：[1] <a href="https://www.nature.com/articles/nature12436">Pathogen blocks host death receptor signalling by arginine GlcNAcylation of death domains</a></p>
+<p>[2] <a href="https://doi.org/10.1016/j.cell.2019.06.007">A Bacterial Effector Reveals the V-ATPase-ATG16L1 Axis that Initiates Xenophagy</a>  </p>
+<p>Professor Yao Yufeng recommended several articles on pathogenic bacteria pathogenesis and the natural immune response of the host, two of which by Professor Shao Feng are of great interest to me as intensive reading. The first was published in 2013 in the journal <em>Nature</em>, identifying for the first time a new mechanism by which bacteria resist host immunity. The second article, published in 2019 in <em>Cell</em>, identifies a new mechanism by which cells recognize bacteria and trigger xenophagy. These two articles demonstrate the struggle between pathogenic bacteria and the host’s natural immune response from two perspectives. In the following I will present these two innovative studies separately.</p>
+<p><strong>How bacteria produce virulence?</strong></p>
+<p>The first earlier publication was on the virulence effector protein NleB of pathogenic bacteria. The authors found that NleB can inhibit death receptor-mediated inflammatory and death signaling pathways by modifying a conserved arginine in the host death domain through N-acetylglucosamine modification, promoting the survival and propagation of pathogenic bacteria in the host.</p>
+<p>The authors first discovered that NleB could interact with the TRADD death domain to block the TNF signaling pathway. NleB can effectively cut off TNF-α-induced apoptosis in 293T cells and necroptosis in RIP3-expressing HeLa cells, suggesting that NleB could block NF-kB pathway and TNF pathway. Yeast culture and co-immunoprecipitation reveal that NleB interacts with TRADD death domain. NleB was subsequently found to abrogate NF-kB activation and apoptosis induced by TRADD overexpression.</p>
+<p>The authors then investigated how NleB affects the structure of TRADD. TRADD death domain acts by oligomerizing with itself and other factors such as TNFR1. SDS-PAGE bands show that NleB can decompose large oligomer of TRADD into small molecules. In addition, NleB can prevent TRADD from recruiting other small molecules. Mass spectrometry showed an increase in mass of TRADD by 203Da after NleB interaction, indicating a GlcNAc modification. In addition, NleB can transfer radiolabeled GlcNAc to TRADD, and TRADD modified by NleB can no longer be labeled by GlcNAc, indicating that NleB has a role in GlcNAcylating the death domain of TRADD.</p>
+<p>Subsequently, the researchers used ETD tandem mass spectrometry to identify specific NleB-modified TRADD sites, that is, Arg 235. In addition, extra experiments were performed by constructing Arg235Ala and Arg235Lys mutants, which confirmed this conclusion. In these mutants, activation of the NF-κB pathway is missing, indicating that the Arg235 locus is crucial for TRADD.</p>
+<p>Given that Arg 235 is conserved in many proteins containing death domains, the authors then investigated whether NleB could modify these proteins. The experimental results showed that NleB can GlcNAcylates FADD, Fas, TRAIL and other proteins and can block apoptosis induced by these proteins. They later also verified that the role of NleB in blocking the host apoptotic pathway is necessary for bacterial colonization. These studies have revealed the mechanism by which bacteria produce virulence through the virulence factor NleB.</p>
+<p><strong>How hosts fight off bacteria?</strong></p>
+<p>The second article uses <em>Salmonella</em> effector proteins to reveal the mechanism of xenophagy. They used a bacterial transposon screen to find a xenophagy suppressor molecule, SopF. And, they identified the V-ATPase-ATG16L1 axis causing xenophagy using CRISPR screen in ΔsopF bacteria. Finally, they found that SopF can ADP-ribosylates Gln124 in ATP6V0C to prevent bacterial autophagy and disrupt the V-ATPase-ATG16L1 axis to promote proliferation.</p>
+<p>First, they found that SopF could block autophagy in <em>S.Typhimurium</em> through transposon screening. After screening they identified a mutant 366-C7 that increased autophagy efficiency by 80%, after which SopF was expressed in this mutant and autophagy was blocked. In addition, knockout of SopF can also improve autophagy efficiency. They also found that SopF did not affect trafficking of <em>Salmonella</em> in the host and could be localized to the cytoplasm.</p>
+<p>In addition, the investigators found that exogenous expression of SopF in eukaryotic cells inhibited the autophagic process triggered by different species of bacteria, but not for the classical autophagic pathway. This indicates that SopF is a broad-spectrum specific inhibitor of xenophagy.</p>
+<p>Next, the authors used FACS technology and CRISPR/Cas9 screening methods to identify xenophagy-requiring V-ATPase. After a large-scale screening, the authors found that almost all the ATGs genes and the five genes encoding V-ATPase in top hits. Subsequent functional experiments confirmed that V-ATPase has an important role in bacterial autophagy. Next, the researchers detected that the V-ATPase complex recruited the autophagy protein ATG16L1 to the membrane vesicle structure wrapped around the bacteria and initiated heterophagy.</p>
+<p>The authors then found that SopF could inhibit the V-ATPase-ATG16L1 pathway and investigated its structure. They found that the WD40 domain of ATG16L1 can bind V-ATPase, while SopF can block their binding and thus allow the bacteria to exert virulence. Specifically, SopF catalyzes the ADP-ribosylation modification of Gln124 of the ATP6V0C subunit in the V-ATPase complex. Collectively, these findings identified the V-ATPase-ATG16L1 axis, a novel mechanism of xenophagy.</p>
+<p>These two articles reveal the process of struggle between bacteria and their hosts from opposite sides. They identified the NleB pathway for bacterial virulence production and the V-ATPase-ATG16L1 axis for host defense against bacteria, respectively. They further refined the relationship between bacteria and hosts, which is of great importance.</p>
+]]></content>
+      <tags>
+        <tag>文献导读</tag>
+        <tag>Microbiology</tag>
       </tags>
   </entry>
 </search>
