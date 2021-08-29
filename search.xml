@@ -3,7 +3,10 @@
   <entry>
     <title>Rapid Detection of Pathogenic Bacteria Based on Whole Genome Sequence</title>
     <url>/2021/06/24/12/</url>
-    <content><![CDATA[<object data="test.pdf" type="application/pdf" width="100%" height="877px">
+    <content><![CDATA[<span id="more"></span> 
+
+<object data="test.pdf" type="application/pdf" width="100%" height="877px">
+
 
 
 </object>]]></content>
@@ -391,13 +394,79 @@
   <entry>
     <title>Machine Learning-Based Lung Adenocarcinoma Aided Diagnosis and Mortality Prediction</title>
     <url>/2021/06/24/13/</url>
-    <content><![CDATA[<object data="13.pdf" type="application/pdf" width="100%" height="877px">
+    <content><![CDATA[<span id="more"></span> 
+
+<object data="13.pdf" type="application/pdf" width="100%" height="877px">
+
 
 </object>]]></content>
   </entry>
   <entry>
     <title>Curriculum Vitae</title>
     <url>/2021/06/30/cv/</url>
-    <content><![CDATA[<object data="cv.pdf" type="application/pdf" width="100%" height="877px"></object>]]></content>
+    <content><![CDATA[<span id="more"></span> 
+
+<object data="cv.pdf" type="application/pdf" width="100%" height="877px">
+
+</object>]]></content>
+  </entry>
+  <entry>
+    <title>【cs231n】Lecture 1 - Overview</title>
+    <url>/2021/08/29/cs231-1/</url>
+    <content><![CDATA[<span id="more"></span> 
+
+<h1 id="斯坦福李飞飞cs231n计算机视觉课程"><a href="#斯坦福李飞飞cs231n计算机视觉课程" class="headerlink" title="斯坦福李飞飞cs231n计算机视觉课程"></a>斯坦福李飞飞cs231n计算机视觉课程</h1><p>笔记 by <em>田明振</em></p>
+<h2 id="Lecture-1-Overview"><a href="#Lecture-1-Overview" class="headerlink" title="Lecture 1 - Overview"></a>Lecture 1 - Overview</h2><p>Today’s agenda</p>
+<ol>
+<li>A brief history of computer vision  </li>
+<li>CS231n overview  </li>
+</ol>
+<h3 id="Part-1-A-brief-history-of-computer-vision-计算机视觉的历史"><a href="#Part-1-A-brief-history-of-computer-vision-计算机视觉的历史" class="headerlink" title="Part 1: A brief history of computer vision 计算机视觉的历史"></a>Part 1: A brief history of computer vision 计算机视觉的历史</h3><p>计算机视觉可用于各个学科，如物理、生物、心理学、计算机科学、工程学、数学等。</p>
+<p><img src="/2021/08/29/cs231-1/1.png"></p>
+<p>具体可用于  </p>
+<p>• Object detection 目标检测<br>• Object classification 目标分类<br>• Scene understanding 场景理解<br>• Semantic scene segmentation 语义分割<br>• 3D reconstruction 3D重建<br>• Object tracking 目标追踪<br>• Human pose estimation 人体姿态分析<br>• Activity recognition 行为识别<br>• VQA 视觉问答  等场景</p>
+<p>公元前5.3-5.4亿年，  Cambrian Explosion  寒武纪生命大爆发，生物第一次产生了视觉。</p>
+<p><img src="/2021/08/29/cs231-1/2.png"></p>
+<p>人类最早让机器出现视觉，即照相机的诞生。人类最早出现的相机可追溯到文艺复兴时期的camera obscura（暗箱）</p>
+<p><img src="/2021/08/29/cs231-1/3.png"></p>
+<h4 id="计算机视觉的发展之-The-known-story-–-Neuroscience-inspired-AI"><a href="#计算机视觉的发展之-The-known-story-–-Neuroscience-inspired-AI" class="headerlink" title="计算机视觉的发展之  The known story – Neuroscience inspired AI"></a>计算机视觉的发展之  The known story – Neuroscience inspired AI</h4><p>Hubel and Wiesel  关于电生理学的研究最先揭示了哺乳动物的视觉处理机制，发现视觉处理是始于视觉世界的简单结构。</p>
+<p><img src="/2021/08/29/cs231-1/4.png"></p>
+<p>通过不同层级的细胞，将low-level的视觉信息组合成high-level的patterns，即  Cortical Column  皮质柱，神经网络也是这一思想。</p>
+<p><img src="/2021/08/29/cs231-1/5.png"></p>
+<blockquote>
+<p>问题的形成往往比解决问题更重要，解决问题需要创造性的想象力，这标志着科学的真正进步。 ——爱因斯坦</p>
+</blockquote>
+<h4 id="计算机视觉的发展之-The-not-so-known-story-–-the-search-for-computer-vision’s-“North-Star”"><a href="#计算机视觉的发展之-The-not-so-known-story-–-the-search-for-computer-vision’s-“North-Star”" class="headerlink" title="计算机视觉的发展之  The not-so-known story – the search for computer vision’s “North Star”"></a>计算机视觉的发展之  The not-so-known story – the search for computer vision’s “North Star”</h4>]]></content>
+      <tags>
+        <tag>cs231n</tag>
+        <tag>编程学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【Nature Cell Biology】消除碱基编辑诱导的全基因组和转录组脱靶突变</title>
+    <url>/2021/06/30/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB12/</url>
+    <content><![CDATA[<h1 id="Eliminating-base-editor-induced-genome-wide-and-transcriptome-wide-off-target-mutations"><a href="#Eliminating-base-editor-induced-genome-wide-and-transcriptome-wide-off-target-mutations" class="headerlink" title="Eliminating base-editor-induced genome-wide and transcriptome-wide off-target mutations"></a>Eliminating base-editor-induced genome-wide and transcriptome-wide off-target mutations</h1><span id="more"></span> 
+
+<p>作者： 杨力  期刊：Nature Cell Biology  时间：2021.5</p>
+<p><a href="https://www.nature.com/articles/s41556-021-00671-4#Abs1">原文链接</a></p>
+<h2 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h2><p>CRISPR-Cas9与胞苷脱氨酶（  cytidine  deaminases ）的融合导致了能够进行可编程C-to-T编辑的碱基编辑器( base  editors，BEs)，该编辑器具有临床应用潜力，但存在脱靶(off-target ，OT)突变。这里，作者使用一个可剪切的脱氧胞苷脱氨酶抑制剂(dCDI)结构域构建了一个 变形式BE (tBE)系统，该系统仅在全基因组和转录组范围的OT突变的背景水平上就能诱导高效的编辑。 产生后，tBE在OT位点与可裂解dCDI融合保持不活跃状态，因此消除了意外突变。 当结合在目标位点时，tBE被转化以切断dCDI结构域，并催化靶向脱氨基以进行精确的碱基编辑 。 通过双腺相关病毒(AAV)系统导入小鼠后，tBE系统在Pcsk9中创建了一个提前终止密码子，显著降低了血清中Pcsk9，导致总胆固醇下降~ 30-40%。  tBE的开发建立了一种高度特异性的碱基编辑系统，其体内疗效具有治疗应用的潜力。 </p>
+<h2 id="Fig-1-identification-of-dCDi-domains"><a href="#Fig-1-identification-of-dCDi-domains" class="headerlink" title="Fig. 1 | identification of dCDi domains."></a>Fig. 1 | identification of dCDi domains.</h2><p><img src="/2021/06/30/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB12/1.png"></p>
+<p>a.APOBEC  家族有两类，一类只有一个CDA 位点，另一类有两个CDA位点，其中一个位点具有催化活性，另一个位点没有催化活性但有调节功能。作者构建了10个BEs，分别包含和不包含inactive  but  regulatory  domain。</p>
+<p>b c.包含inactive的CDA位点的APOBEC编辑效率显著降低。</p>
+<p>def.为了验证一般性，作者将mA3,  hA3F  和 hA3B的inactive CDA位点连接到了mA3CDA1–BE3上，发现都有编辑效率降低。CDA2  of  mA3的抑制效果最强。</p>
+<p>综上所述，这些调控域作为dCDIs对脱氧胞苷脱氨酶活性具有普遍的抑制作用。 </p>
+<h2 id="Fig-2-Comparison-of-tBE-with-other-BEs"><a href="#Fig-2-Comparison-of-tBE-with-other-BEs" class="headerlink" title="Fig. 2 | Comparison of tBE with other BEs."></a>Fig. 2 | Comparison of tBE with other BEs.</h2><p><img src="/2021/06/30/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB12/2.png"></p>
+<p>作者试图利用dCDI域开发一个BE系统来避免sgRNA不依赖的突变。理想情况下，由于dCDI的连接，这种BE不会引起可观察到的OT突变，但当与靶点结合时，可以通过切断dCDI而转化为活性;因此被称为tBE。 </p>
+<p>作者构建了   tBE-V5–mA3 这一BE，并将其与其他的BE进行对比，发现 tBE-V5–mA3 上靶效果很好，包括 DNA甲基化水平高的位点和含GpC二核苷酸 的位点。并且在OTss sites 和 OT sites，只有背景水平的突变。</p>
+<h2 id="Fig-3-optimization-of-hsgRNA-in-the-tBE-system"><a href="#Fig-3-optimization-of-hsgRNA-in-the-tBE-system" class="headerlink" title="Fig. 3 | optimization of hsgRNA in the tBE system."></a>Fig. 3 | optimization of hsgRNA in the tBE system.</h2><p><img src="/2021/06/30/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB12/3.png"></p>
+<p>在比较编辑效率时，作者注意到sgRNA和hsgRNA之间的距离影响了tBE对目标的编辑效率。因此，作者测定了sgRNA与hsgRNA之间距离的影响(图3a、b)，发现当hsgRNA位于sgRNA的−91 bp至−34 bp(上游)区域时，tBE的编辑效率达到最佳（图3c）</p>
+<p>由于hsgRNA在其结合位点也形成R-loop区域(图3d)，一些hsgRNA的靶位点偶尔会发生意外的C-to-T编辑 (图3e left)。 之前的研究表明使用带有截断间隔的guide RNA并不影响Cas9的结合 。 因此，作者研究了hsgRNA靶位点的非预期编辑是否也可以通过截断的hsgRNAs来抑制。 使用截断的hsgRNA时，hsgRNA靶区的非预期编辑减少  (Fig.  3e,f).  有10bp间隔的hsgRNA消除了意外的编辑 ，而目标编辑不受影响 。</p>
+<h2 id="Fig-4-the-effect-of-split-TEV-protease-concentration-on-editing-efficiency-and-sgRNA-independent-OT-mutation"><a href="#Fig-4-the-effect-of-split-TEV-protease-concentration-on-editing-efficiency-and-sgRNA-independent-OT-mutation" class="headerlink" title="Fig. 4 | the effect of split-TEV protease concentration on editing efficiency and sgRNA-independent OT mutation."></a>Fig. 4 | the effect of split-TEV protease concentration on editing efficiency and sgRNA-independent OT mutation.</h2><p><img src="/2021/06/30/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB12/4.png"></p>
+<p>作者还用不同数量的表达载体表达了分裂- tev系统(图4a)，发现在分裂- tev组分检测的蛋白水平上，目标编辑效率(图4b)和sgrna独立OTss位点的突变频率(图4c)均未受影响(图4d)。 </p>
+]]></content>
+      <tags>
+        <tag>文献导读</tag>
+        <tag>Bioinformatics</tag>
+      </tags>
   </entry>
 </search>

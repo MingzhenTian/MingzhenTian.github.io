@@ -62,6 +62,162 @@
     <h1 class="page-type-title"></h1>
     
     
+    <article id="post-cs231-1" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+      
+
+<h2 itemprop="name">
+  <a class="article-title" href="/2021/08/29/cs231-1/">【cs231n】Lecture 1 - Overview</a>
+</h2>
+
+
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2021/08/29/cs231-1/" class="article-date">
+  <time datetime="2021-08-29T07:56:02.000Z" itemprop="datePublished">2021-08-29</time>
+</a>
+      
+    </div>
+    
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+      
+<div class="article-gallery">
+  <div class="article-gallery-photos">
+    
+    
+    <a class="article-gallery-img" href="/2021/08/29/cs231-1/" rel="gallery_cksx0ce5s0000y4f91l5t0bdm">
+      <img src="http://r.photo.store.qq.com/psc?/V527QlUo3JAHXP0IEYYf1X0CX84e2wnt/45NBuzDIW489QBoVep5mcaFThNF1xyCfq*GOinTlxKQcuswqahkcumzs*4svqM7IGuzKApRZE1XSaN3j8w.ujbGIn5GXA47DmtsUBahAgbU!/r" itemprop="image">
+    </a>
+    
+    
+  </div>
+</div>
+
+      
+      <span id="more"></span> 
+
+<h1 id="斯坦福李飞飞cs231n计算机视觉课程"><a href="#斯坦福李飞飞cs231n计算机视觉课程" class="headerlink" title="斯坦福李飞飞cs231n计算机视觉课程"></a>斯坦福李飞飞cs231n计算机视觉课程</h1><p>笔记 by <em>田明振</em></p>
+<h2 id="Lecture-1-Overview"><a href="#Lecture-1-Overview" class="headerlink" title="Lecture 1 - Overview"></a>Lecture 1 - Overview</h2><p>Today’s agenda</p>
+<ol>
+<li>A brief history of computer vision  </li>
+<li>CS231n overview  </li>
+</ol>
+<h3 id="Part-1-A-brief-history-of-computer-vision-计算机视觉的历史"><a href="#Part-1-A-brief-history-of-computer-vision-计算机视觉的历史" class="headerlink" title="Part 1: A brief history of computer vision 计算机视觉的历史"></a>Part 1: A brief history of computer vision 计算机视觉的历史</h3><p>计算机视觉可用于各个学科，如物理、生物、心理学、计算机科学、工程学、数学等。</p>
+<p><img src="/2021/08/29/cs231-1/1.png"></p>
+<p>具体可用于  </p>
+<p>• Object detection 目标检测<br>• Object classification 目标分类<br>• Scene understanding 场景理解<br>• Semantic scene segmentation 语义分割<br>• 3D reconstruction 3D重建<br>• Object tracking 目标追踪<br>• Human pose estimation 人体姿态分析<br>• Activity recognition 行为识别<br>• VQA 视觉问答  等场景</p>
+<p>公元前5.3-5.4亿年，  Cambrian Explosion  寒武纪生命大爆发，生物第一次产生了视觉。</p>
+<p><img src="/2021/08/29/cs231-1/2.png"></p>
+<p>人类最早让机器出现视觉，即照相机的诞生。人类最早出现的相机可追溯到文艺复兴时期的camera obscura（暗箱）</p>
+<p><img src="/2021/08/29/cs231-1/3.png"></p>
+<h4 id="计算机视觉的发展之-The-known-story-–-Neuroscience-inspired-AI"><a href="#计算机视觉的发展之-The-known-story-–-Neuroscience-inspired-AI" class="headerlink" title="计算机视觉的发展之  The known story – Neuroscience inspired AI"></a>计算机视觉的发展之  The known story – Neuroscience inspired AI</h4><p>Hubel and Wiesel  关于电生理学的研究最先揭示了哺乳动物的视觉处理机制，发现视觉处理是始于视觉世界的简单结构。</p>
+<p><img src="/2021/08/29/cs231-1/4.png"></p>
+<p>通过不同层级的细胞，将low-level的视觉信息组合成high-level的patterns，即  Cortical Column  皮质柱，神经网络也是这一思想。</p>
+<p><img src="/2021/08/29/cs231-1/5.png"></p>
+<blockquote>
+<p>问题的形成往往比解决问题更重要，解决问题需要创造性的想象力，这标志着科学的真正进步。 ——爱因斯坦</p>
+</blockquote>
+<h4 id="计算机视觉的发展之-The-not-so-known-story-–-the-search-for-computer-vision’s-“North-Star”"><a href="#计算机视觉的发展之-The-not-so-known-story-–-the-search-for-computer-vision’s-“North-Star”" class="headerlink" title="计算机视觉的发展之  The not-so-known story – the search for computer vision’s “North Star”"></a>计算机视觉的发展之  The not-so-known story – the search for computer vision’s “North Star”</h4>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://mingzhentian.github.io/2021/08/29/cs231-1/" data-id="cksx0ce5s0000y4f91l5t0bdm" class="article-share-link">
+        分享
+      </a>
+      
+<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/cs231n/" rel="tag">cs231n</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/" rel="tag">编程学习</a></li></ul>
+
+    </footer>
+
+  </div>
+
+  
+
+  
+
+</article>
+    
+    <article id="post-文献导读12" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+      
+
+<h2 itemprop="name">
+  <a class="article-title" href="/2021/06/30/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB12/">【Nature Cell Biology】消除碱基编辑诱导的全基因组和转录组脱靶突变</a>
+</h2>
+
+
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2021/06/30/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB12/" class="article-date">
+  <time datetime="2021-06-30T08:50:13.000Z" itemprop="datePublished">2021-06-30</time>
+</a>
+      
+    </div>
+    
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+      
+<div class="article-gallery">
+  <div class="article-gallery-photos">
+    
+    
+    <a class="article-gallery-img" href="/2021/06/30/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB12/" rel="gallery_cksx0ce640005y4f9hd97c52p">
+      <img src="http://r.photo.store.qq.com/psc?/V527QlUo3JAHXP0IEYYf1X0CX84e2wnt/45NBuzDIW489QBoVep5mcYXSmGXfzGfhyYdfTSDZgN97u976b3gC*C01.c*SPYD0eIKN1zqDeFCFE.msBoFuwoihyIUb0F7nKHjXIBs6dLQ!/r" itemprop="image">
+    </a>
+    
+    
+  </div>
+</div>
+
+      
+      <h1 id="Eliminating-base-editor-induced-genome-wide-and-transcriptome-wide-off-target-mutations"><a href="#Eliminating-base-editor-induced-genome-wide-and-transcriptome-wide-off-target-mutations" class="headerlink" title="Eliminating base-editor-induced genome-wide and transcriptome-wide off-target mutations"></a>Eliminating base-editor-induced genome-wide and transcriptome-wide off-target mutations</h1>
+      
+      <a class="article-more-link" href="/2021/06/30/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB12/">
+        Read More...
+      </a>
+      
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://mingzhentian.github.io/2021/06/30/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB12/" data-id="cksx0ce640005y4f9hd97c52p" class="article-share-link">
+        分享
+      </a>
+      
+<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Bioinformatics/" rel="tag">Bioinformatics</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB/" rel="tag">文献导读</a></li></ul>
+
+    </footer>
+
+  </div>
+
+  
+
+  
+
+</article>
+    
     <article id="post-cv" class="article article-type-post" itemscope
   itemprop="blogPost" data-scroll-reveal>
 
@@ -94,7 +250,11 @@
       
       
       
-      <object data="cv.pdf" type="application/pdf" width="100%" height="877px"></object>
+      <span id="more"></span> 
+
+<object data="cv.pdf" type="application/pdf" width="100%" height="877px">
+
+</object>
       
     </div>
     <footer class="article-footer">
@@ -144,7 +304,10 @@
       
       
       
-      <object data="13.pdf" type="application/pdf" width="100%" height="877px">
+      <span id="more"></span> 
+
+<object data="13.pdf" type="application/pdf" width="100%" height="877px">
+
 
 </object>
       
@@ -196,7 +359,10 @@
       
       
       
-      <object data="test.pdf" type="application/pdf" width="100%" height="877px">
+      <span id="more"></span> 
+
+<object data="test.pdf" type="application/pdf" width="100%" height="877px">
+
 
 
 </object>
@@ -543,133 +709,6 @@
       </a>
       
 <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Cell-biology/" rel="tag">Cell biology</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB/" rel="tag">文献导读</a></li></ul>
-
-    </footer>
-
-  </div>
-
-  
-
-  
-
-</article>
-    
-    <article id="post-文献导读6" class="article article-type-post" itemscope
-  itemprop="blogPost" data-scroll-reveal>
-
-  <div class="article-inner">
-    
-    <header class="article-header">
-      
-
-<h2 itemprop="name">
-  <a class="article-title" href="/2021/04/22/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB6/">【Nature &amp; Cell】对比阅读：病原菌致病机制及宿主天然免疫反应</a>
-</h2>
-
-
-
-    </header>
-    
-
-    
-    <div class="article-meta">
-      <a href="/2021/04/22/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB6/" class="article-date">
-  <time datetime="2021-04-22T07:35:07.000Z" itemprop="datePublished">2021-04-22</time>
-</a>
-      
-    </div>
-    
-
-    
-
-    <div class="article-entry" itemprop="articleBody">
-      
-      
-<div class="article-gallery">
-  <div class="article-gallery-photos">
-    
-    
-    <a class="article-gallery-img" href="/2021/04/22/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB6/" rel="gallery_ckqaw2742000tj4f93e65db5i">
-      <img src="http://m.qpic.cn/psc?/V527QlUo3JAHXP0IEYYf1X0CX84e2wnt/45NBuzDIW489QBoVep5mcToAPGt4NBbkNgkKlQ1gpvXm*kZ8flcQ67vnx0GetcG6yflt2xs98YyCcmjfs044fzebfgqUcCKCm5PX5jCrRHg!/b&bo=3AHcAQAAAAADJwI!&rf=viewer_4" itemprop="image">
-    </a>
-    
-    
-  </div>
-</div>
-
-      
-      <p><strong>Scientific Commentary on Papers about Pathogen</strong></p>
-<p>By <em>Mingzhen Tian</em></p>
-      
-      <a class="article-more-link" href="/2021/04/22/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB6/">
-        Read More...
-      </a>
-      
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://mingzhentian.github.io/2021/04/22/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB6/" data-id="ckqaw2742000tj4f93e65db5i" class="article-share-link">
-        分享
-      </a>
-      
-<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Microbiology/" rel="tag">Microbiology</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB/" rel="tag">文献导读</a></li></ul>
-
-    </footer>
-
-  </div>
-
-  
-
-  
-
-</article>
-    
-    <article id="post-文献导读5" class="article article-type-post" itemscope
-  itemprop="blogPost" data-scroll-reveal>
-
-  <div class="article-inner">
-    
-    <header class="article-header">
-      
-
-<h2 itemprop="name">
-  <a class="article-title" href="/2021/04/15/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB5/">【Nature】迄今为止最为全面的肿瘤转录组变异图谱</a>
-</h2>
-
-
-
-    </header>
-    
-
-    
-    <div class="article-meta">
-      <a href="/2021/04/15/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB5/" class="article-date">
-  <time datetime="2021-04-15T07:29:04.000Z" itemprop="datePublished">2021-04-15</time>
-</a>
-      
-    </div>
-    
-
-    
-
-    <div class="article-entry" itemprop="articleBody">
-      
-      
-      
-      <p>By <em>Mingzhen Tian</em></p>
-      
-      <a class="article-more-link" href="/2021/04/15/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB5/">
-        Read More...
-      </a>
-      
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://mingzhentian.github.io/2021/04/15/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB5/" data-id="ckqaw273z000qj4f9gqt70swh" class="article-share-link">
-        分享
-      </a>
-      
-<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Oncology/" rel="tag">Oncology</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB/" rel="tag">文献导读</a></li></ul>
 
     </footer>
 
