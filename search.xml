@@ -416,6 +416,13 @@
     <content><![CDATA[<h1 id="斯坦福李飞飞cs231n计算机视觉课程笔记"><a href="#斯坦福李飞飞cs231n计算机视觉课程笔记" class="headerlink" title="斯坦福李飞飞cs231n计算机视觉课程笔记"></a>斯坦福李飞飞cs231n计算机视觉课程笔记</h1><span id="more"></span> 
 
 <p>笔记 by <em>田明振</em></p>
+<p>注：</p>
+<ol>
+<li>此笔记整合了<strong>2017年的视频</strong>和<strong>2021年的最新课件</strong></li>
+<li>视频链接： <a href="https://www.bilibili.com/video/BV1nJ411z7fe?p=2">https://www.bilibili.com/video/BV1nJ411z7fe?p=2</a>  or  <a href="https://youtu.be/vT1JzLTH4G4">https://youtu.be/vT1JzLTH4G4</a></li>
+<li>课程官网： <a href="http://cs231n.stanford.edu/index.html">http://cs231n.stanford.edu/index.html</a> </li>
+<li>课件下载链接： <a href="http://cs231n.stanford.edu/slides/">http://cs231n.stanford.edu/slides/</a> </li>
+</ol>
 <h2 id="Lecture-1-Overview"><a href="#Lecture-1-Overview" class="headerlink" title="Lecture 1 - Overview"></a>Lecture 1 - Overview</h2><p>Today’s agenda</p>
 <ol>
 <li>A brief history of computer vision  </li>
