@@ -457,6 +457,8 @@
 <p>ImageNet团队还创立了全球性的比赛，该比赛的成绩在2012年突飞猛进。</p>
 <p><img src="/2021/08/29/cs231-1/13.png"></p>
 <p>这一年，第一次将卷积神经网络应用于计算机视觉，实现了显著的效果。这也是这门课将重点介绍的内容。</p>
+<p><img src="/2021/08/29/cs231-1/14.png"></p>
+<p>但神经网络早在1998年就被提出，但由于计算能力的限制，一直没有用于计算机视觉领域。</p>
 <h3 id="Part-1-A-brief-history-of-computer-vision-计算机视觉的历史-by-Justin-Johnson"><a href="#Part-1-A-brief-history-of-computer-vision-计算机视觉的历史-by-Justin-Johnson" class="headerlink" title="Part 1: A brief history of computer vision 计算机视觉的历史 by   Justin Johnson"></a>Part 1: A brief history of computer vision 计算机视觉的历史 by   <em>Justin Johnson</em></h3>]]></content>
       <tags>
         <tag>cs231n</tag>
