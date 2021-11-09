@@ -466,7 +466,8 @@
 <p>这一年，第一次将卷积神经网络应用于计算机视觉，实现了显著的效果。这也是这门课将重点介绍的内容。</p>
 <p><img src="/2021/08/29/cs231-1/14.png"></p>
 <p>但神经网络早在1998年就被提出，但由于计算能力的限制，一直没有用于计算机视觉领域。</p>
-<h3 id="Part-1-A-brief-history-of-computer-vision-计算机视觉的历史-by-Justin-Johnson"><a href="#Part-1-A-brief-history-of-computer-vision-计算机视觉的历史-by-Justin-Johnson" class="headerlink" title="Part 1: A brief history of computer vision 计算机视觉的历史 by   Justin Johnson"></a>Part 1: A brief history of computer vision 计算机视觉的历史 by   <em>Justin Johnson</em></h3>]]></content>
+<h3 id="Part-2-Convolutional-Neural-Networks"><a href="#Part-2-Convolutional-Neural-Networks" class="headerlink" title="Part 2: Convolutional Neural Networks"></a>Part 2: Convolutional Neural Networks</h3><p>for Visual Recognition   卷积神经网络用于视觉识别 by   <em>Justin Johnson</em></p>
+]]></content>
       <tags>
         <tag>cs231n</tag>
         <tag>编程学习</tag>
@@ -497,6 +498,44 @@
       <tags>
         <tag>文献导读</tag>
         <tag>Bioinformatics</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【Advanced Materials】等离子体合金揭示早期胃癌独特的代谢表型</title>
+    <url>/2021/10/14/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB13/</url>
+    <content><![CDATA[<h1 id="Plasmonic-Alloys-Reveal-a-Distinct-Metabolic-Phenotype-of-Early-Gastric-Cancer"><a href="#Plasmonic-Alloys-Reveal-a-Distinct-Metabolic-Phenotype-of-Early-Gastric-Cancer" class="headerlink" title="Plasmonic Alloys Reveal a Distinct Metabolic Phenotype of Early Gastric Cancer"></a>Plasmonic Alloys Reveal a Distinct Metabolic Phenotype of Early Gastric Cancer</h1><span id="more"></span> 
+
+<p>通讯作者：钱昆  期刊：Advanced Materials  时间：20 March 2021 </p>
+<p><a href="https://www.nature.com/articles/s41556-021-00671-4#Abs1">原文链接</a></p>
+<h2 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h2><p>胃癌(Gastric cancer, GC)是一个多因素的过程，伴随着代谢途径的改变。无创代谢谱有助于早期GC诊断，从而改善预后结果。在这里，介孔PdPtAu合金(mesoporous PdPtAu alloys)被设计来表征人类血液中的代谢谱。采用非均匀表面等离子体共振优化元素组成，为光诱导解吸/电离提供首选电荷转移，为热驱动解吸提供增强光热转换。 PdPtAu的表面结构通过受控的介孔进一步调整，只容纳代谢物，而不是大的干扰化合物。因此，优化后的PdPtAu合金通过激光解吸/电离质谱在数秒内产生直接代谢指纹，消耗500 nL天然血浆。早期GC通过稀疏学习显示出独特的代谢表型，从而精确诊断GC，AUC为0.942。可以预见，等离子体合金将开辟一个微创血液分析的新时代，以改善临床环境中癌症患者的监测。 </p>
+<h2 id="Fig-1-Characterization-of-PdPt-and-PdPtAu-alloys"><a href="#Fig-1-Characterization-of-PdPt-and-PdPtAu-alloys" class="headerlink" title="Fig. 1. Characterization of PdPt and PdPtAu alloys"></a>Fig. 1. Characterization of PdPt and PdPtAu alloys</h2><p>使用一种改良的  surfactant-directing strategy 合成  mesoporous PdPtAu 。 简单地说，通过化学计量学方法在PdPt胶束上种子生长Au，然后去除Pluronic F127表面活性剂，获得了三金属合金。 <strong>图1a</strong>为 去除表面活性剂后，形成均匀的介孔PdPt微球。 金  precursor 还原后，PdPtAu微球的粒径增大到≈150 nm，孔径减小到≈15 nm(<strong>图1b</strong>)。 通过元素映射分析(<strong>图1c</strong>)和线扫描剖面(<strong>图1d</strong>)，得到的三金属合金显示出Pd、Pt和Au的分布。区域电子衍射图(<strong>图1e</strong>)和高分辨率TEM(<strong>图1e</strong>的插图)显示了明显的三金属合金多晶环。通过广角x射线粉末衍射分析(<strong>图1f</strong>)对晶体结构和周期间距进行了验证，得出了两组不同的衍射峰，它们都指向了PdPt 和Au的fcc晶体结构。 </p>
+<h2 id="Figure-2-Optimization-of-PdPtAu-alloys-for-metabolites-detection"><a href="#Figure-2-Optimization-of-PdPtAu-alloys-for-metabolites-detection" class="headerlink" title="Figure 2. Optimization of PdPtAu alloys for metabolites detection"></a>Figure 2. Optimization of PdPtAu alloys for metabolites detection</h2><p>纳米材料的LDI增强依赖于其元素组成和表面结构。  随后，我们通过改变金precursor的浓度，合成了性能可控的PdPtAu纳米球(20/30/40 × 10-3 m of HAuCl4 aqueous solution, denoted as PdPtAu-2/3/4, <strong>Figure 2a–c</strong>) 。</p>
+<p>为了证明LDI质谱对小分子的高灵敏度和选择性可以通过当前的策略实现，以葡萄糖、苯丙氨酸和赖氨酸为指示分子对合成合金进行了全面的质谱评价。在灵敏度方面，PdPtAu-3在标准样品(<strong>图2d</strong>)的点状图中对小代谢物的信号强度最高，优于PdPtAu-1/2/4合金。</p>
+]]></content>
+      <tags>
+        <tag>文献导读</tag>
+        <tag>Bioinformatics</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>外泌体文献调研</title>
+    <url>/2021/11/09/%E5%A4%96%E6%B3%8C%E4%BD%93%E6%96%87%E7%8C%AE%E8%B0%83%E7%A0%94/</url>
+    <content><![CDATA[<h1 id="外泌体综述调研"><a href="#外泌体综述调研" class="headerlink" title="外泌体综述调研"></a>外泌体综述调研</h1><span id="more"></span> 
+
+<p><img src="/2021/11/09/%E5%A4%96%E6%B3%8C%E4%BD%93%E6%96%87%E7%8C%AE%E8%B0%83%E7%A0%94/%E5%A4%96%E6%B3%8C%E4%BD%93%E7%BB%BC%E8%BF%B0-01.png"></p>
+<p><img src="/2021/11/09/%E5%A4%96%E6%B3%8C%E4%BD%93%E6%96%87%E7%8C%AE%E8%B0%83%E7%A0%94/%E5%A4%96%E6%B3%8C%E4%BD%93%E7%BB%BC%E8%BF%B0-02.png"></p>
+<p><img src="/2021/11/09/%E5%A4%96%E6%B3%8C%E4%BD%93%E6%96%87%E7%8C%AE%E8%B0%83%E7%A0%94/%E5%A4%96%E6%B3%8C%E4%BD%93%E7%BB%BC%E8%BF%B0-03.png"></p>
+<p><img src="/2021/11/09/%E5%A4%96%E6%B3%8C%E4%BD%93%E6%96%87%E7%8C%AE%E8%B0%83%E7%A0%94/%E5%A4%96%E6%B3%8C%E4%BD%93%E7%BB%BC%E8%BF%B0-04.png"></p>
+<p><img src="/2021/11/09/%E5%A4%96%E6%B3%8C%E4%BD%93%E6%96%87%E7%8C%AE%E8%B0%83%E7%A0%94/%E5%A4%96%E6%B3%8C%E4%BD%93%E7%BB%BC%E8%BF%B0-05.png"></p>
+<p><img src="/2021/11/09/%E5%A4%96%E6%B3%8C%E4%BD%93%E6%96%87%E7%8C%AE%E8%B0%83%E7%A0%94/%E5%A4%96%E6%B3%8C%E4%BD%93%E7%BB%BC%E8%BF%B0-06.png"></p>
+<p><img src="/2021/11/09/%E5%A4%96%E6%B3%8C%E4%BD%93%E6%96%87%E7%8C%AE%E8%B0%83%E7%A0%94/%E5%A4%96%E6%B3%8C%E4%BD%93%E7%BB%BC%E8%BF%B0-07.png"></p>
+<p><img src="/2021/11/09/%E5%A4%96%E6%B3%8C%E4%BD%93%E6%96%87%E7%8C%AE%E8%B0%83%E7%A0%94/%E5%A4%96%E6%B3%8C%E4%BD%93%E7%BB%BC%E8%BF%B0-08.png"></p>
+<p><img src="/2021/11/09/%E5%A4%96%E6%B3%8C%E4%BD%93%E6%96%87%E7%8C%AE%E8%B0%83%E7%A0%94/%E5%A4%96%E6%B3%8C%E4%BD%93%E7%BB%BC%E8%BF%B0-09.png"></p>
+<p><img src="/2021/11/09/%E5%A4%96%E6%B3%8C%E4%BD%93%E6%96%87%E7%8C%AE%E8%B0%83%E7%A0%94/%E5%A4%96%E6%B3%8C%E4%BD%93%E7%BB%BC%E8%BF%B0-10.png"></p>
+<p><img src="/2021/11/09/%E5%A4%96%E6%B3%8C%E4%BD%93%E6%96%87%E7%8C%AE%E8%B0%83%E7%A0%94/%E5%A4%96%E6%B3%8C%E4%BD%93%E7%BB%BC%E8%BF%B0-11.png"></p>
+]]></content>
+      <tags>
+        <tag>exosomes</tag>
       </tags>
   </entry>
 </search>
