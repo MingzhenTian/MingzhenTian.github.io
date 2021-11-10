@@ -5,7 +5,6 @@
     <url>/2021/06/24/12/</url>
     <content><![CDATA[<p> “上海交通大学大学生创新实践计划” 项目研究论文 </p>
 <span id="more"></span> 
-
 <object data="test.pdf" type="application/pdf" width="100%" height="877px">
 
 
@@ -17,7 +16,6 @@
     <url>/2021/06/24/13/</url>
     <content><![CDATA[<p>课程论文</p>
 <span id="more"></span> 
-
 <object data="13.pdf" type="application/pdf" width="100%" height="877px">
 
 
@@ -27,7 +25,6 @@
     <title>【cs231n】Lecture 1 - Overview 笔记</title>
     <url>/2021/08/29/cs231-1/</url>
     <content><![CDATA[<h1 id="斯坦福李飞飞cs231n计算机视觉课程笔记"><a href="#斯坦福李飞飞cs231n计算机视觉课程笔记" class="headerlink" title="斯坦福李飞飞cs231n计算机视觉课程笔记"></a>斯坦福李飞飞cs231n计算机视觉课程笔记</h1><span id="more"></span> 
-
 <p>笔记 by <em>田明振</em></p>
 <p>注：</p>
 <ol>
@@ -36,62 +33,77 @@
 <li>课程官网： <a href="http://cs231n.stanford.edu/index.html">http://cs231n.stanford.edu/index.html</a> </li>
 <li>课件下载链接： <a href="http://cs231n.stanford.edu/slides/">http://cs231n.stanford.edu/slides/</a> </li>
 </ol>
-<h2 id="Lecture-1-Overview"><a href="#Lecture-1-Overview" class="headerlink" title="Lecture 1 - Overview"></a>Lecture 1 - Overview</h2><p>Today’s agenda</p>
+<h1 id="Lecture-1-Overview"><a href="#Lecture-1-Overview" class="headerlink" title="Lecture 1 - Overview"></a>Lecture 1 - Overview</h1><p>Today’s agenda</p>
 <ol>
 <li>A brief history of computer vision  </li>
 <li>CS231n overview  </li>
 </ol>
-<h3 id="Part-1-A-brief-history-of-computer-vision-by-李飞飞"><a href="#Part-1-A-brief-history-of-computer-vision-by-李飞飞" class="headerlink" title="Part 1: A brief history of computer vision by 李飞飞"></a>Part 1: A brief history of computer vision by <em>李飞飞</em></h3><p>计算机视觉可用于各个学科，如物理、生物、心理学、计算机科学、工程学、数学等。</p>
-<p><img src="/2021/08/29/cs231-1/1.png"></p>
+<h2 id="Part-1-A-brief-history-of-computer-vision-by-李飞飞"><a href="#Part-1-A-brief-history-of-computer-vision-by-李飞飞" class="headerlink" title="Part 1: A brief history of computer vision by 李飞飞"></a>Part 1: A brief history of computer vision by <em>李飞飞</em></h2><p>计算机视觉可用于各个学科，如物理、生物、心理学、计算机科学、工程学、数学等。</p>
+<p><img src="/2021/08/29/cs231-1/1.png" alt></p>
 <p>具体可用于  </p>
 <p>• Object detection 目标检测<br>• Object classification 目标分类<br>• Scene understanding 场景理解<br>• Semantic scene segmentation 语义分割<br>• 3D reconstruction 3D重建<br>• Object tracking 目标追踪<br>• Human pose estimation 人体姿态分析<br>• Activity recognition 行为识别<br>• VQA 视觉问答  等场景</p>
 <p>公元前5.3-5.4亿年，  Cambrian Explosion  寒武纪生命大爆发，生物第一次产生了视觉。</p>
-<p><img src="/2021/08/29/cs231-1/2.png"></p>
+<p><img src="/2021/08/29/cs231-1/2.png" alt></p>
 <p>人类最早让机器出现视觉，即照相机的诞生。人类最早出现的相机可追溯到文艺复兴时期的camera obscura（暗箱）</p>
-<p><img src="/2021/08/29/cs231-1/3.png"></p>
+<p><img src="/2021/08/29/cs231-1/3.png" alt></p>
 <h4 id="计算机视觉的发展之-The-known-story-–-Neuroscience-inspired-AI"><a href="#计算机视觉的发展之-The-known-story-–-Neuroscience-inspired-AI" class="headerlink" title="计算机视觉的发展之  The known story – Neuroscience inspired AI"></a>计算机视觉的发展之  The known story – Neuroscience inspired AI</h4><p>60年代，Hubel and Wiesel  关于电生理学的研究最先揭示了哺乳动物的视觉处理机制，发现视觉处理是始于视觉世界的简单结构。</p>
-<p><img src="/2021/08/29/cs231-1/4.png"></p>
+<p><img src="/2021/08/29/cs231-1/4.png" alt></p>
 <p>通过不同层级的细胞，将low-level的视觉信息组合成high-level的patterns，即  Cortical Column  皮质柱，神经网络也是这一思想。</p>
-<p><img src="/2021/08/29/cs231-1/5.png"></p>
+<p><img src="/2021/08/29/cs231-1/5.png" alt></p>
 <blockquote>
 <p>问题的形成往往比解决问题更重要，解决问题需要创造性的想象力，这标志着科学的真正进步。 ——爱因斯坦</p>
 </blockquote>
 <h4 id="计算机视觉的发展之-The-not-so-known-story-–-the-search-for-computer-vision’s-“North-Star”"><a href="#计算机视觉的发展之-The-not-so-known-story-–-the-search-for-computer-vision’s-“North-Star”" class="headerlink" title="计算机视觉的发展之  The not-so-known story – the search for computer vision’s “North Star”"></a>计算机视觉的发展之  The not-so-known story – the search for computer vision’s “North Star”</h4><p>计算机视觉的发展也从60年代初开始，  Larry Roerts  的博士论文被认为是第一篇关于计算机视觉的论文，提出了block world的概念，将视觉世界简化为几何形状。</p>
-<p><img src="/2021/08/29/cs231-1/6.png"></p>
+<p><img src="/2021/08/29/cs231-1/6.png" alt></p>
 <p>70年代，  David Marr  撰写了《vision》，提出了如何使计算机识别视觉世界的算法。呈现物体的三维结构，需经历以下几个步骤：</p>
-<p><img src="/2021/08/29/cs231-1/7.png"></p>
+<p><img src="/2021/08/29/cs231-1/7.png" alt></p>
 <p>70年代另一项开创性的工作，解决了如何从识别块状世界转向现实世界对象的问题。两组科学家分别提出了generalized cylinder（广义圆柱体）和pictorial structure（图形结构）的概念。</p>
-<p><img src="/2021/08/29/cs231-1/8.png"></p>
+<p><img src="/2021/08/29/cs231-1/8.png" alt></p>
 <p>1997年  Shi &amp; Malik  利用normalized cut实现了图像分割。该算法将图像中的像素点归为有意义的类别，实现分割。</p>
-<p><img src="/2021/08/29/cs231-1/9.png"></p>
+<p><img src="/2021/08/29/cs231-1/9.png" alt></p>
 <p>2001年，  Viola &amp; Jones  利用AdaBoost机器学习算法，实现了人脸识别。</p>
-<p><img src="/2021/08/29/cs231-1/10.png"></p>
+<p><img src="/2021/08/29/cs231-1/10.png" alt></p>
 <p>2006年，提出了空间金字塔匹配算法，提取出图片的整体特征，进行匹配识别。</p>
-<p><img src="/2021/08/29/cs231-1/11.png"></p>
+<p><img src="/2021/08/29/cs231-1/11.png" alt></p>
 <blockquote>
 <p>计算机视觉的圣杯——  Object Recognition  目标识别</p>
 </blockquote>
 <p>直到21世纪才出现了图片标注数据集，最出名的是PASCAL</p>
 <p>另一个数据集是ImageNet，由本节课主讲李飞飞创立。</p>
-<p><img src="/2021/08/29/cs231-1/12.png"></p>
+<p><img src="/2021/08/29/cs231-1/12.png" alt></p>
 <p>ImageNet团队还创立了全球性的比赛，该比赛的成绩在2012年突飞猛进。</p>
-<p><img src="/2021/08/29/cs231-1/13.png"></p>
+<p><img src="/2021/08/29/cs231-1/13.png" alt></p>
 <p>这一年，第一次将卷积神经网络应用于计算机视觉，实现了显著的效果。这也是这门课将重点介绍的内容。</p>
-<p><img src="/2021/08/29/cs231-1/14.png"></p>
+<p><img src="/2021/08/29/cs231-1/14.png" alt></p>
 <p>但神经网络早在1998年就被提出，但由于计算能力的限制，一直没有用于计算机视觉领域。</p>
-<h3 id="Part-2-Convolutional-Neural-Networks-for-Visual-Recognition-by-Justin-Johnson"><a href="#Part-2-Convolutional-Neural-Networks-for-Visual-Recognition-by-Justin-Johnson" class="headerlink" title="Part 2: Convolutional Neural Networks for Visual Recognition by   Justin Johnson"></a>Part 2: Convolutional Neural Networks for Visual Recognition by   <em>Justin Johnson</em></h3><p><strong>Image Classification: A core task in Computer Vision</strong> </p>
-<p>There are many visual recognition problems that are related to image classification, such as <strong>object detection目标检测</strong>, <strong>image captioning自动图像描述</strong>, semantic segmentation, visual question answering, visual instruction navigation, <strong>scene graph generation场景图预测</strong>. 举个例子：</p>
-<p><img src="/2021/08/29/cs231-1/15.png"></p>
-<p><strong>Convolutional Neural Networks (CNN) have become an important tool for object recognition</strong>  </p>
-<p>2012年首先在imagenet比赛上使用了CNN，从此之后变得越来越深。2015年，微软亚洲研究院发布了残差网络，有152层。</p>
-<p><img src="/2021/08/29/cs231-1/16.png"></p>
-<p><strong>Convolutional Neural Networks (CNN)  were not invented overnight</strong>  </p>
-<p>CNN最早在1998年由贝尔实验室提出，用于支票的识别。由于计算能力的大幅度提升，尤其是GPU的出现，CNN在最近几年变得流行。大量带有标签的数据的出现也是CNN流行起来的原因之一。</p>
-<p><img src="/2021/08/29/cs231-1/17.png"></p>
-<p><strong>The quest for visual intelligence  goes far beyond object recognition</strong>  </p>
-<p>例如动作的识别、图像的具体描述。</p>
+<h2 id="Part-2-Convolutional-Neural-Networks-for-Visual-Recognition-by-Justin-Johnson"><a href="#Part-2-Convolutional-Neural-Networks-for-Visual-Recognition-by-Justin-Johnson" class="headerlink" title="Part 2: Convolutional Neural Networks for Visual Recognition by   Justin Johnson"></a>Part 2: Convolutional Neural Networks for Visual Recognition by   <em>Justin Johnson</em></h2><h4 id="Image-Classification-A-core-task-in-Computer-Vision"><a href="#Image-Classification-A-core-task-in-Computer-Vision" class="headerlink" title="Image Classification: A core task in Computer Vision"></a><strong>Image Classification: A core task in Computer Vision</strong></h4><p>There are many visual recognition problems that are related to image classification, such as <strong>object detection目标检测</strong>, <strong>image captioning自动图像描述</strong>, semantic segmentation, visual question answering, visual instruction navigation, <strong>scene graph generation场景图预测</strong>. 举个例子：</p>
+<p><img src="/2021/08/29/cs231-1/15.png" alt></p>
+<h4 id="Convolutional-Neural-Networks-CNN-have-become-an-important-tool-for-object-recognition"><a href="#Convolutional-Neural-Networks-CNN-have-become-an-important-tool-for-object-recognition" class="headerlink" title="Convolutional Neural Networks (CNN) have become an important tool for object recognition"></a><strong>Convolutional Neural Networks (CNN) have become an important tool for object recognition</strong></h4><p>2012年首先在imagenet比赛上使用了CNN，从此之后变得越来越深。2015年，微软亚洲研究院发布了残差网络，有152层。</p>
+<p><img src="/2021/08/29/cs231-1/16.png" alt></p>
+<h4 id="Convolutional-Neural-Networks-CNN-were-not-invented-overnight"><a href="#Convolutional-Neural-Networks-CNN-were-not-invented-overnight" class="headerlink" title="Convolutional Neural Networks (CNN)  were not invented overnight"></a><strong>Convolutional Neural Networks (CNN)  were not invented overnight</strong></h4><p>CNN最早在1998年由贝尔实验室提出，用于支票的识别。由于计算能力的大幅度提升，尤其是GPU的出现，CNN在最近几年变得流行。大量带有标签的数据的出现也是CNN流行起来的原因之一。</p>
+<p><img src="/2021/08/29/cs231-1/17.png" alt></p>
+<h4 id="The-quest-for-visual-intelligence-goes-far-beyond-object-recognition"><a href="#The-quest-for-visual-intelligence-goes-far-beyond-object-recognition" class="headerlink" title="The quest for visual intelligence  goes far beyond object recognition"></a><strong>The quest for visual intelligence  goes far beyond object recognition</strong></h4><p>例如动作的识别、图像的具体描述。</p>
 <p>比如如何让计算机深刻的理解下图，是一个挑战。</p>
-<p><img src="/2021/08/29/cs231-1/18.png"></p>
+<p><img src="/2021/08/29/cs231-1/18.png" alt></p>
+]]></content>
+      <tags>
+        <tag>cs231n</tag>
+        <tag>编程学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【cs231n】Lecture 2 - Image classification pipeline 笔记</title>
+    <url>/2021/11/10/cs231-2/</url>
+    <content><![CDATA[<h1 id="斯坦福李飞飞cs231n计算机视觉课程笔记"><a href="#斯坦福李飞飞cs231n计算机视觉课程笔记" class="headerlink" title="斯坦福李飞飞cs231n计算机视觉课程笔记"></a>斯坦福李飞飞cs231n计算机视觉课程笔记</h1><span id="more"></span> 
+<p>笔记 by <em>田明振</em></p>
+<p>注：</p>
+<ol>
+<li>此笔记整合了<strong>2017年的视频</strong>和<strong>2021年的最新课件</strong></li>
+<li>视频链接： <a href="https://www.bilibili.com/video/BV1nJ411z7fe?p=2">https://www.bilibili.com/video/BV1nJ411z7fe?p=2</a>  or  <a href="https://youtu.be/vT1JzLTH4G4">https://youtu.be/vT1JzLTH4G4</a></li>
+<li>课程官网： <a href="http://cs231n.stanford.edu/index.html">http://cs231n.stanford.edu/index.html</a> </li>
+<li>课件下载链接： <a href="http://cs231n.stanford.edu/slides/">http://cs231n.stanford.edu/slides/</a> </li>
+</ol>
+<h1 id="Lecture-2-Image-classification-pipeline"><a href="#Lecture-2-Image-classification-pipeline" class="headerlink" title="Lecture 2 - Image classification pipeline"></a>Lecture 2 - Image classification pipeline</h1><p>$2+2_2$</p>
 ]]></content>
       <tags>
         <tag>cs231n</tag>
@@ -102,7 +114,6 @@
     <title>Curriculum Vitae</title>
     <url>/2021/06/30/cv/</url>
     <content><![CDATA[<span id="more"></span> 
-
 <object data="cv.pdf" type="application/pdf" width="100%" height="877px">
 
 </object>]]></content>
@@ -112,18 +123,17 @@
     <url>/2021/11/09/%E5%A4%96%E6%B3%8C%E4%BD%93%E6%96%87%E7%8C%AE%E8%B0%83%E7%A0%94/</url>
     <content><![CDATA[<p>外泌体文献调研</p>
 <span id="more"></span> 
-
-<p><img src="/2021/11/09/%E5%A4%96%E6%B3%8C%E4%BD%93%E6%96%87%E7%8C%AE%E8%B0%83%E7%A0%94/%E5%A4%96%E6%B3%8C%E4%BD%93%E7%BB%BC%E8%BF%B0-01.jpg"></p>
-<p><img src="/2021/11/09/%E5%A4%96%E6%B3%8C%E4%BD%93%E6%96%87%E7%8C%AE%E8%B0%83%E7%A0%94/%E5%A4%96%E6%B3%8C%E4%BD%93%E7%BB%BC%E8%BF%B0-02.jpg"></p>
-<p><img src="/2021/11/09/%E5%A4%96%E6%B3%8C%E4%BD%93%E6%96%87%E7%8C%AE%E8%B0%83%E7%A0%94/%E5%A4%96%E6%B3%8C%E4%BD%93%E7%BB%BC%E8%BF%B0-03.jpg"></p>
-<p><img src="/2021/11/09/%E5%A4%96%E6%B3%8C%E4%BD%93%E6%96%87%E7%8C%AE%E8%B0%83%E7%A0%94/%E5%A4%96%E6%B3%8C%E4%BD%93%E7%BB%BC%E8%BF%B0-04.jpg"></p>
-<p><img src="/2021/11/09/%E5%A4%96%E6%B3%8C%E4%BD%93%E6%96%87%E7%8C%AE%E8%B0%83%E7%A0%94/%E5%A4%96%E6%B3%8C%E4%BD%93%E7%BB%BC%E8%BF%B0-05.jpg"></p>
-<p><img src="/2021/11/09/%E5%A4%96%E6%B3%8C%E4%BD%93%E6%96%87%E7%8C%AE%E8%B0%83%E7%A0%94/%E5%A4%96%E6%B3%8C%E4%BD%93%E7%BB%BC%E8%BF%B0-06.jpg"></p>
-<p><img src="/2021/11/09/%E5%A4%96%E6%B3%8C%E4%BD%93%E6%96%87%E7%8C%AE%E8%B0%83%E7%A0%94/%E5%A4%96%E6%B3%8C%E4%BD%93%E7%BB%BC%E8%BF%B0-07.jpg"></p>
-<p><img src="/2021/11/09/%E5%A4%96%E6%B3%8C%E4%BD%93%E6%96%87%E7%8C%AE%E8%B0%83%E7%A0%94/%E5%A4%96%E6%B3%8C%E4%BD%93%E7%BB%BC%E8%BF%B0-08.jpg"></p>
-<p><img src="/2021/11/09/%E5%A4%96%E6%B3%8C%E4%BD%93%E6%96%87%E7%8C%AE%E8%B0%83%E7%A0%94/%E5%A4%96%E6%B3%8C%E4%BD%93%E7%BB%BC%E8%BF%B0-09.jpg"></p>
-<p><img src="/2021/11/09/%E5%A4%96%E6%B3%8C%E4%BD%93%E6%96%87%E7%8C%AE%E8%B0%83%E7%A0%94/%E5%A4%96%E6%B3%8C%E4%BD%93%E7%BB%BC%E8%BF%B0-10.jpg"></p>
-<p><img src="/2021/11/09/%E5%A4%96%E6%B3%8C%E4%BD%93%E6%96%87%E7%8C%AE%E8%B0%83%E7%A0%94/%E5%A4%96%E6%B3%8C%E4%BD%93%E7%BB%BC%E8%BF%B0-11.jpg"></p>
+<p><img src="/2021/11/09/%E5%A4%96%E6%B3%8C%E4%BD%93%E6%96%87%E7%8C%AE%E8%B0%83%E7%A0%94/外泌体综述-01.jpg" alt></p>
+<p><img src="/2021/11/09/%E5%A4%96%E6%B3%8C%E4%BD%93%E6%96%87%E7%8C%AE%E8%B0%83%E7%A0%94/外泌体综述-02.jpg" alt></p>
+<p><img src="/2021/11/09/%E5%A4%96%E6%B3%8C%E4%BD%93%E6%96%87%E7%8C%AE%E8%B0%83%E7%A0%94/外泌体综述-03.jpg" alt></p>
+<p><img src="/2021/11/09/%E5%A4%96%E6%B3%8C%E4%BD%93%E6%96%87%E7%8C%AE%E8%B0%83%E7%A0%94/外泌体综述-04.jpg" alt></p>
+<p><img src="/2021/11/09/%E5%A4%96%E6%B3%8C%E4%BD%93%E6%96%87%E7%8C%AE%E8%B0%83%E7%A0%94/外泌体综述-05.jpg" alt></p>
+<p><img src="/2021/11/09/%E5%A4%96%E6%B3%8C%E4%BD%93%E6%96%87%E7%8C%AE%E8%B0%83%E7%A0%94/外泌体综述-06.jpg" alt></p>
+<p><img src="/2021/11/09/%E5%A4%96%E6%B3%8C%E4%BD%93%E6%96%87%E7%8C%AE%E8%B0%83%E7%A0%94/外泌体综述-07.jpg" alt></p>
+<p><img src="/2021/11/09/%E5%A4%96%E6%B3%8C%E4%BD%93%E6%96%87%E7%8C%AE%E8%B0%83%E7%A0%94/外泌体综述-08.jpg" alt></p>
+<p><img src="/2021/11/09/%E5%A4%96%E6%B3%8C%E4%BD%93%E6%96%87%E7%8C%AE%E8%B0%83%E7%A0%94/外泌体综述-09.jpg" alt></p>
+<p><img src="/2021/11/09/%E5%A4%96%E6%B3%8C%E4%BD%93%E6%96%87%E7%8C%AE%E8%B0%83%E7%A0%94/外泌体综述-10.jpg" alt></p>
+<p><img src="/2021/11/09/%E5%A4%96%E6%B3%8C%E4%BD%93%E6%96%87%E7%8C%AE%E8%B0%83%E7%A0%94/外泌体综述-11.jpg" alt></p>
 ]]></content>
       <tags>
         <tag>exosomes</tag>
@@ -135,31 +145,44 @@
     <content><![CDATA[<p><strong>Scientific Commentary on a Paper about NMDAR/TRPM4 interaction</strong></p>
 <p>By <em>Mingzhen Tian</em></p>
 <span id="more"></span> 
-
 <p>原文链接： <a href="https://science.sciencemag.org/content/370/6513/eaay3302">Coupling of NMDA receptors and TRPM4 guides discovery of unconventional neuroprotectants</a> </p>
 <p>This article recommended by Professor is about a novel mechanism of toxic NMDAR signaling. In this paper, the authors found that excitotoxicity is caused by the physical coupling of NMDAR to TRPM4 extrasynaptically, and application of reciprocal interface inhibitors can disrupt the binding of both, thereby alleviating toxicity and maintaining normal physiological function of NMDAR. These findings offer the opportunity to alleviate the symptoms of currently incurable human neurodegenerative diseases. Below I will present the background and specific findings of the study and my reflections.</p>
 <p>Recent studies have found that NMRADs (N-methyl-D-aspartate receptors) underlie the physiology and pathology of the human central nervous system. On the one hand, NMDARs regulate synaptic plasticity and initiate essential transcriptional responses in the nervous system. However, on the other hand, NMDARs can shut down transcriptional channels, leading to mitochondrial dysfunction and even causing cell death, exhibiting a harmful side to neurons. How NMDARs exhibit both sides, especially the molecular mechanisms of cytotoxic signaling, remains unclear. The authors conjecture that the toxicity of NMDARs arises from physical interactions with other proteins and that these proteins are located extrasynaptically. Based on this, they have launched a related exploration.</p>
 <p>The authors first narrowed down the interacting proteins to TRP (transient receptor potential), especially TRPM (melastatin), associated with neurodegenerative diseases. Among them, TRPM4 has been suggested to be a key factor in the NMDAR death complex. The authors used shRNAs to knock down TRPM4 in hippocampal neurons and found that NMDA-mediated cytotoxicity was reduced. Then the authors did coimmunoprecipitation and found that TRPM4 cross-linked with NMDAR subunits GluN2A and GluN2B.</p>
-<p><img src="/2021/03/31/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB1/1.jpg"></p>
-<p>[^Fig1]: TwinF protects against NMDAR-mediated toxicity</p>
+<p><img src="/2021/03/31/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB1/1.jpg" alt></p>
+<blockquote id="fn_Fig1">
+<sup>Fig1</sup>. TwinF protects against NMDAR-mediated toxicity<a href="#reffn_Fig1" title="Jump back to footnote [Fig1] in the text."> &#8617;</a>
+</blockquote>
 <p>Based on the authors’ previous conjecture, they suggested that destroying the crosslink between NMDAR and TRPM4 could eliminate cytotoxicity. After in-depth screening, they found that TwinF, a component of TRPM4, can remove excitotoxic cell death. The authors also validated the neuroprotective effect of TwinF in two neurodegenerative diseases, OGD and MCAO, with remarkable effects. Then the authors found that TwinF did not affect the excitatory postsynaptic currents of NMDARs by studying potentiation, suggesting that the protective effect of TwinF was not achieved by cutting off NMDARs.</p>
-<p><img src="/2021/03/31/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB1/2.jpg"></p>
-<p>[^Fig2]: TwinF prevents NMDA-induced mitochondrial dysfunction and interacts with the I4 domain of GluN2A and GluN2B</p>
+<p><img src="/2021/03/31/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB1/2.jpg" alt></p>
+<blockquote id="fn_Fig2">
+<sup>Fig2</sup>. TwinF prevents NMDA-induced mitochondrial dysfunction and interacts with the I4 domain of GluN2A and GluN2B<a href="#reffn_Fig2" title="Jump back to footnote [Fig2] in the text."> &#8617;</a>
+</blockquote>
 <p>To investigate the inhibition mechanism of TwinF, the authors constructed two TwinF variants: TwinF-F2A2 and TwinF-F2Y2. The authors found that TwinF-F2Y2 variants can eliminate NMDA-induced mitochondrial damage and can co-localize with GluN2A and GluN2B, whereas the TwinF-F2A2 variant had none of these effects. The authors immediately followed by screening the elements of NMDA that combined with TwinF, I4. I4 is a domain of GluN2A and GluN2B that was experimentally shown to interact with TwinF.</p>
-<p><img src="/2021/03/31/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB1/3.jpg"></p>
-<p>[^Fig3]: Identification of novel compounds that disrupt the NMDAR/TRPM4 interaction</p>
+<p><img src="/2021/03/31/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB1/3.jpg" alt></p>
+<blockquote id="fn_Fig3">
+<sup>Fig3</sup>. Identification of novel compounds that disrupt the NMDAR/TRPM4 interaction<a href="#reffn_Fig3" title="Jump back to footnote [Fig3] in the text."> &#8617;</a>
+</blockquote>
 <p>The above findings reveal the great neuroprotective potential of TwinF in the clinic, but the feasibility of using TwinF in the clinic is low, so the authors expect to screen for small molecules that can bind to TwinF to disrupt the N/T interface. Through the computational method, the authors screened 192 candidate small molecules, of which compound 8 and compound 19 had significant effects. By immunoprecipitation, the authors demonstrated that these two small molecules could indeed break the N/T crosslink without affecting the expression levels of both. The EC50 and IC50 of the two small molecules were tested and both were found to be highly potent and safe.</p>
 <p>The authors then investigated the mechanism of action of these two drugs. Compared with conventional NMDAR antagonists, C8 and C19 did not affect calcium ion signaling. Also, detection of currents using the diaphragm clamp technique demonstrated that C8 and C19 are not blockers of NMDA-induced currents. By studying the effects of C8 and C19 on the TRPM4 pathway, they found that C8 and C19 could detoxify NMDAR signaling, block the CREB closure pathway, restore ERK1/2 activation and IEG-induced expression, and improve mitochondrial function.</p>
-<p><img src="/2021/03/31/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB1/4.jpg"></p>
-<p>[^Fig4]: Compound 8 and compound 19 prevent NMDA-induced cell death and mitochondrial dysfunction</p>
-<p><img src="/2021/03/31/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB1/5.jpg"></p>
-<p>[^Fig5]: Compound 8 and compound 19 boost downstream signaling responses to NMDA without affecting calcium signals</p>
+<p><img src="/2021/03/31/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB1/4.jpg" alt></p>
+<blockquote id="fn_Fig4">
+<sup>Fig4</sup>. Compound 8 and compound 19 prevent NMDA-induced cell death and mitochondrial dysfunction<a href="#reffn_Fig4" title="Jump back to footnote [Fig4] in the text."> &#8617;</a>
+</blockquote>
+<p><img src="/2021/03/31/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB1/5.jpg" alt></p>
+<blockquote id="fn_Fig5">
+<sup>Fig5</sup>. Compound 8 and compound 19 boost downstream signaling responses to NMDA without affecting calcium signals<a href="#reffn_Fig5" title="Jump back to footnote [Fig5] in the text."> &#8617;</a>
+</blockquote>
 <p>C8 was also shown by the authors to have neuroprotective effects in vivo. The authors used two mouse models of neurodegenerative diseases, namely ischemic stroke and retinal ganglion cell (RGC) degeneration. The experimental results showed that after dosing, the levels of TRPM4, GluN2A and GluN2B levels did not change, but the N/T binding rate decreased significantly with time. There was also a significant reduction in brain damage in both diseases after administration of the drug. This indicates that C8 has great potential for clinical treatment.</p>
-<p><img src="/2021/03/31/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB1/6.jpg"></p>
-<p>[^Fig6]: Compound 8 protects mice from MCAO-induced brain damage and NMDA-induced retinal ganglion cell loss</p>
+<p><img src="/2021/03/31/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB1/6.jpg" alt></p>
+<blockquote id="fn_Fig6">
+<sup>Fig6</sup>. Compound 8 protects mice from MCAO-induced brain damage and NMDA-induced retinal ganglion cell loss<a href="#reffn_Fig6" title="Jump back to footnote [Fig6] in the text."> &#8617;</a>
+</blockquote>
 <p>Overall, the authors found for the first time that the excitotoxicity of NMDARs arises due to physical coupling with TRPM4 and not due to calcium ion loading. And they screened for the active ingredient TwinF and the related small molecule drugs C8 and C19. This is a new means of neuroprotection. C8 and TwinF have great potential as therapeutic agents for neurodegenerative diseases. In addition, the development of additional inhibitors of the NMDAR/TRPM4 interaction interface may provide more effective and broadly applicable therapeutic tools. This study also suggests that the physical coupling between different proteins may have an important role in the nervous system.</p>
-<p><img src="/2021/03/31/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB1/7.jpg"></p>
-<p>[^Fig7]: Model for neuroprotection by NMDAR/TRPM4 interaction interface inhibitors</p>
+<p><img src="/2021/03/31/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB1/7.jpg" alt></p>
+<blockquote id="fn_Fig7">
+<sup>Fig7</sup>. Model for neuroprotection by NMDAR/TRPM4 interaction interface inhibitors<a href="#reffn_Fig7" title="Jump back to footnote [Fig7] in the text."> &#8617;</a>
+</blockquote>
 ]]></content>
       <tags>
         <tag>文献导读</tag>
@@ -172,24 +195,23 @@
     <content><![CDATA[<p><strong>Scientific Commentary on a Paper about PTEN</strong></p>
 <p>By <em>Mingzhen Tian</em></p>
 <span id="more"></span> 
-
 <p>原文链接：<a href="https://doi.org/10.1038/s41467-020-15578-1">FBXO22 degrades nuclear PTEN to promote tumorigenesis</a>  </p>
 <p>This article recommended by Professor Guoqiang Chen is about the discovery on FBXO22 degrading nuclear PTEN for tumorigenesis. For the first time, researchers identified different regulatory mechanisms between nuclear/plasma PTEN and identified that FBXO22 promotes the ubiquitination of nuclear PTEN, which in turn degrades PTEN. This study provides a new rationale for tumor treatment strategies that target activation of PTEN.</p>
 <p>PTEN is an important tumor suppressor gene that acts through the lipid phosphatase activity of its protein. Recent studies have shown that the phosphatase independent function of PTEN can also exert inhibitory effects on cancer, and this phosphatase non-dependent function is mediated by nuclear PTEN. Moreover, reduction of nuclear PTEN was more common than cytoplasmic PTEN in a variety of cancers. However, the regulatory mechanism of PTEN in the nucleus remains unclear. This article reports that FBXO22 can ubiquitously degrade nuclear PTEN and thus exert oncogenic effects.</p>
 <p>First, after knocking out endogenous PTEN, the researchers found PTEN-GFP expression in the nucleus, and the expression increased after inhibiting protein degradation by MG132. In contrast, cytoplasmic PTEN was unaffected by MG132. In addition, by immunoprecipitating Ub and PTEN, they found that nuclear PTEN was more enriched in Ub than cytoplasmic PTEN and that ubiquitinated PTEN was more abundant in the nucleus after MG132 treatment. These unique findings suggest that nuclear PTEN is more sensitive to ubiquitination degradation.</p>
-<p><img src="/2021/05/27/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB10/1.jpg"></p>
+<p><img src="/2021/05/27/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB10/1.jpg" alt></p>
 <p>Next, the authors wanted to find the ligase for nuclear PTEN ubiquitination. They first validated the known cytoplasmic PTEN ubiquitination ligases NEDD4-1 and WWP2 and found that they did not work on nuclear PTEN. Then, they found that FBXO22 could co-localize to the nuclear PTEN. So next they started to study the interaction of FBXO22 with PTEN. They demonstrated by a series of immunoprecipitation experiments that FBXO22 is a nuclear PTEN-specific ubiquitin ligase. Further, they identified aa 366~375 of PTEN as the docking site for its binding to FBXO22.</p>
-<p><img src="/2021/05/27/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB10/2.jpg"></p>
+<p><img src="/2021/05/27/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB10/2.jpg" alt></p>
 <p>After obtaining these results, the authors went on to explore whether FBXO22 regulates nuclear PTEN in cancer. Nuclear PTEN was found to be enriched after knockdown of FBXO22 by different methods in colorectal cancer cell lines, while nuclear PTEN was reduced after induced expression of FBXO22. They also looked for a mutant of FBXO22 that could only be expressed in the cytoplasm, thus confirming that FBXO22 does not destabilizes cytoplasmic PTEN. These results demonstrate that FBXO22 can modulate the stability of nuclear PTEN.</p>
-<p><img src="/2021/05/27/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB10/3.jpg"></p>
+<p><img src="/2021/05/27/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB10/3.jpg" alt></p>
 <p>They next explored the specific mechanism by which FBXO22 regulates nuclear PTEN. First, they found that knockdown of FBXO22 promoted the phosphatase-independent function of nuclear PTEN but had no effect on the phosphatase-dependent function of cytoplasmic PTEN. Specifically, they found that FBXO22 inhibited the Golgi extension and secretion-promoting, an effect of nuclear PTEN, by interfering the alternative splicing of GOLGA2. In addition, they found that FBXO22 could induce tumor growth in mice subcutaneous tissue.</p>
-<p><img src="/2021/05/27/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB10/4.jpg"></p>
+<p><img src="/2021/05/27/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB10/4.jpg" alt></p>
 <p>The authors then pondered whether the two roles of FBXO22, namely inhibition of nuclear PTEN downstream signaling and pro-oncogenic effects, were linked. They first searched for ubiquitination sites of PTEN by stepwise mutation strategy. After multiple rounds of screening, they identified lysine 221 (K221) as the ubiquitination site of PTEN. They then confirmed the role of its ubiquitination site by mutating this site and that FBXO22 can regulate the downstream signaling of PTEN by ubiquitinating this site.</p>
-<p><img src="/2021/05/27/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB10/5.jpg"></p>
+<p><img src="/2021/05/27/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB10/5.jpg" alt></p>
 <p>The researchers then continued to investigate the cancer-promoting effect of FBXO22 through the K221 locus. They constructed a PTEN K221 mutant mouse model and used PTEN WT as a control, and each was divided into two groups expressing and not expressing FBXO22. They found that induced expression of FBXO22 promoted cancer development, while supplementation of PTEN K221R and PTEN WT suppressed cancer. By detecting PTEN downstream signaling molecules, they found that in PTEN K221R, FBXO22 could not affect PTEN function. These results suggest that FBXO22 degrades PTEN by ubiquitinating the PTEN K221 site, which in turn promotes tumorigenesis.</p>
-<p><img src="/2021/05/27/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB10/6.jpg"></p>
+<p><img src="/2021/05/27/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB10/6.jpg" alt></p>
 <p>Finally, the researchers validated their findings in databases and clinical samples. First, they found FBXO22 upregulated in most cancers in the TCGA and GEO databases, especially colorectal cancer. Tissue mRNA levels in colorectal cancer patients and immunohistochemistry also supported this conclusion. In addition, nuclear PTEN expression was reduced in samples with increased FBXO22 expression, which confirms the authors’ findings.</p>
-<p><img src="/2021/05/27/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB10/7.jpg"></p>
+<p><img src="/2021/05/27/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB10/7.jpg" alt></p>
 <p>Overall, this article identified a specific relationship between the tumor suppressor PTEN nuclear oncogenic factor FBXO22, that FBXO22 promotes tumorigenesis by degrading nuclear PTEN but not plasma PTEN through ubiquitination. This study further refines the study of PTEN function by identifying different mechanisms of cytoplasmic and nuclear PTEN. The study also identified PTEN ubiquitination sites that could be used as targets for precision cancer therapy. We can look forward to using the findings of this study to explore new approaches to tumor treatment, namely tumor suppressor reactivation.</p>
 ]]></content>
       <tags>
@@ -202,62 +224,75 @@
     <url>/2021/05/27/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB11/</url>
     <content><![CDATA[<p><strong>DNA Polymerases as Potential Therapeutic Targets for Cancers Deficient in the DNA Mismatch Repair Proteins MSH2 or MLH1</strong> </p>
 <span id="more"></span> 
-
 <p>作者： Alan Ashworth （英国癌症研究所）  期刊：cancer cell   时间：2010.3.16</p>
 <h3 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h3><p>合成致死(SSL)可以被用来开发癌症的治疗策略。 肿瘤抑制蛋白<strong>MLH1和MSH2的缺失</strong>与癌症有关。 作者发现<strong>MSH2的缺陷</strong>加DNA聚合酶<strong>POLB被抑制</strong>形成SSL，而<strong>MLH1的缺陷</strong>加DNA聚合酶<strong>POLG被抑制</strong>形成SSL。 两种SSL都导致了8-oxoG氧化DNA损伤的积累。 MSH2/POLB SSL导致核8-oxoG积累，而MLH1/POLG SSL导致线粒体8-oxoG水平升高。 通过沉默腺嘌呤糖基化酶MUTYH，这两个SSLs都被挽救，这表明致命性可能是由8-oxoG积累时致命3的DNA断裂形成引起的。 这些数据表明了靶向的、基于机制的治疗方法。 </p>
 <h3 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h3><p>目前还不清楚如何对功能失调甚至完全缺失的肿瘤抑制蛋白进行药理靶向。为了解决这个问题，合成致死被开发出来。</p>
 <p>如果一个肿瘤抑制基因和第二个基因是合成致死或生病的，抑制第二个基因可以选择性地杀死或损害肿瘤细胞的适应性。</p>
-<p>DNA修复蛋白和通路之间的SSL有可能被临床利用。如在酵母中发现的错配修复**(MMR)蛋白和DNA聚合酶**之间的SSL相互作用的潜力。</p>
+<p>DNA修复蛋白和通路之间的SSL有可能被临床利用。如在酵母中发现的错配修复<strong>(MMR)蛋白和DNA聚合酶</strong>之间的SSL相互作用的潜力。</p>
 <p>鉴于在低等生物中存在涉及MLH1和MSH2同源物以及DNA聚合酶的SSL关系，作者研究了人类肿瘤细胞中是否存在类似的SSL关系，并探索了它们的治疗潜力。</p>
 <h3 id="Result"><a href="#Result" class="headerlink" title="Result"></a>Result</h3><h4 id="1-DNA-polymerases-与-MMR基因之间的合成致死关系"><a href="#1-DNA-polymerases-与-MMR基因之间的合成致死关系" class="headerlink" title="1. DNA polymerases 与 MMR基因之间的合成致死关系"></a>1. DNA polymerases 与 MMR基因之间的合成致死关系</h4><p>分别构建了细胞系： 人结肠癌细胞系HCT116（MLH1 deficient），和它的 MLH1-proficient derivative HCT116+Chr3 细胞系； 人子宫内膜细胞系HEC59 （MSH2 deficient），和它的 MSH2-proficient derivative HEC59+Chr2细胞系。</p>
-<p><img src="/2021/05/27/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB11/1.png"></p>
+<p><img src="/2021/05/27/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB11/1.png" alt></p>
 <p>用siRNA敲掉5种DNA polymerase，测细胞活力，发现靶向POLG会降低MLH1-deficient细胞的活力，靶向POLB会降低MSH2-deficient细胞的活力。</p>
-<p><img src="/2021/05/27/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB11/2.png"></p>
-<p><a href="%E7%94%A8qRT-PCR%E6%B5%8BmRNA%E6%B0%B4%E5%B9%B3%EF%BC%8C%E7%94%A8GAPDH%E4%BD%9C%E4%B8%BA%E5%8F%82%E8%80%83">^method</a>: 用siRNAs干扰，5天后用CellTiter-Glo reagent测细胞活力</p>
+<p><img src="/2021/05/27/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB11/2.png" alt></p>
+<blockquote id="fn_method">
+<sup>method</sup>. 用siRNAs干扰，5天后用CellTiter-Glo reagent测细胞活力<a href="#reffn_method" title="Jump back to footnote [method] in the text."> &#8617;</a>
+</blockquote>
 <p>接着使用  clonogenic assays  检测活力，也是同样的效果</p>
-<p><img src="/2021/05/27/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB11/3.png"></p>
+<p><img src="/2021/05/27/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB11/3.png" alt></p>
 <p>A2780cp70 cells  、  HeLa 和 MCF7 cells也观察到了同样的效果（Fig.S1A&amp;B）</p>
 <p>在非癌症细胞中也发现了这一现象，例如 人乳腺上皮细胞系MCF10A 、 小鼠胚胎成纤维细胞(MEFs) </p>
 <p>menadione 可以抑制POLG、   masticadienonic acid  可以抑制POLB</p>
 <h4 id="2-MLH1缺陷与升高的POLG表达水平相关，而MSH2缺陷与升高的POLB表达相关"><a href="#2-MLH1缺陷与升高的POLG表达水平相关，而MSH2缺陷与升高的POLB表达相关" class="headerlink" title="2. MLH1缺陷与升高的POLG表达水平相关，而MSH2缺陷与升高的POLB表达相关"></a>2. MLH1缺陷与升高的POLG表达水平相关，而MSH2缺陷与升高的POLB表达相关</h4><p>MSH2缺失的HEC59细胞的POLB mRNA水平显著高于MSH2正常的HEC59+Chr2细胞  (p = 0.025)   ， 同样，在MLH1缺陷的HCT116细胞中，POLG mRNA水平显著高于HCT116+Chr3细胞(p = 0.0127) </p>
-<p><img src="/2021/05/27/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB11/4.png"></p>
+<p><img src="/2021/05/27/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB11/4.png" alt></p>
+<blockquote id="fn_method">
+<sup>method</sup>. 用qRT-PCR测mRNA水平，用GAPDH作为参考<a href="#reffn_method" title="Jump back to footnote [method] in the text."> &#8617;</a>
+</blockquote>
 <p>蛋白的变化也是如此</p>
-<p><img src="/2021/05/27/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB11/5.png"></p>
+<p><img src="/2021/05/27/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB11/5.png" alt></p>
 <p>在人类肿瘤中也发现， 与患者匹配的MSH2阳性正常组织相比，MSH2阴性肿瘤的POLB mRNA水平持续升高 ， 同样，MLH1阴性的肿瘤表现出高水平的POLG表达(p = 0.027) </p>
-<p><img src="/2021/05/27/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB11/6.png"></p>
+<p><img src="/2021/05/27/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB11/6.png" alt></p>
 <p>在SSL交互作用中，一个基因可以缓冲（buffering）另一个基因变化的影响，但当两个基因的功能都缺失时，这种缓冲作用就消失了。 因此，在MSH2-或MLH1-缺陷的细胞和肿瘤中，POLB或POLG表达的增加可能反映了这种缓冲过程。</p>
 <h4 id="3-在MLH1-和MSH2-缺陷细胞中，8-OxoG积累增加与SSL相关"><a href="#3-在MLH1-和MSH2-缺陷细胞中，8-OxoG积累增加与SSL相关" class="headerlink" title="3. 在MLH1-和MSH2-缺陷细胞中，8-OxoG积累增加与SSL相关"></a>3. 在MLH1-和MSH2-缺陷细胞中，8-OxoG积累增加与SSL相关</h4><p>考虑到POLB或POLG对MSH2或MLH1缺陷的选择性抑制以及MSH2-和MLH1缺陷细胞中POLB或POLG表达的变化，我们认为这些观察结果是否可以解释为未能修复特定的DNA损伤。 </p>
 <p>使用ELISA方法，作者评估了从总细胞裂解液中提取的DNA中的8-oxoG水平。  siRNA转染72小时后，与  MSH2-proficient的细胞相比，POLB沉默导致MSH2缺乏的HEC59细胞中8-oxoG水平显著升高； 在MLH1缺陷的HCT116细胞中，POLG沉默也导致了8-oxoG病变的增加 </p>
-<p><img src="/2021/05/27/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB11/7.png"></p>
+<p><img src="/2021/05/27/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB11/7.png" alt></p>
 <p>沉默POLB导致MHS2缺乏和正常细胞中8-oxoG水平的初始升高 ， 然而，在转染POLB siRNA 48小时后，8-oxoG水平在MSH2正常的细胞中开始下降，而在MSH2缺乏的细胞中继续上升 。 在MLH1缺陷细胞中，POLG抑制引起了非常相似的效果 。 这些观察结果表明，抑制特异性DNA聚合酶最初导致8-oxoG病变的形成，最终在MLH1或MSH2正常的细胞中修复，而这些病变在MLH1或MSH2缺陷的细胞中积累。 </p>
-<p><img src="/2021/05/27/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB11/8.png"></p>
+<p><img src="/2021/05/27/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB11/8.png" alt></p>
 <p>POLB被认为是一种重要的核DNA聚合酶，而POLG被认为是唯一活跃于线粒体的DNA聚合酶 。 将细胞分成线粒体和核室，然后提取DNA，用ELISA法测定8-oxoG水平。 在经POLG siRNA转染的MLH1缺陷细胞的线粒体DNA片段中，观察到8-oxoG积累增加，而在核DNA片段中未观察到这种病变的显著积累。然而，在MLH1缺陷细胞中沉默POLB并不会增加核或线粒体8-oxoG水平。 相比之下，从转染POLG siRNA的MSH2缺陷细胞中分离出的线粒体和核DNA没有显示8-oxoG积累增加(图3F)。然而，从MSH2缺陷细胞中转染POLB siRNA的核DNA显示8-oxoG显著增加，而从线粒体中分离的DNA没有观察到增加。 </p>
-<p><img src="/2021/05/27/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB11/9.png"></p>
-<p><img src="/2021/05/27/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB11/10.png"></p>
-<p><img src="/2021/05/27/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB11/11.png"></p>
+<p><img src="/2021/05/27/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB11/9.png" alt></p>
+<p><img src="/2021/05/27/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB11/10.png" alt></p>
+<p><img src="/2021/05/27/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB11/11.png" alt></p>
 <p>BER对8-oxoG损伤的修复是通过DNA糖基化酶OGG1去除氧化碱基而启动的 。 沉默OGG1可导致MSH2或MLH1缺陷细胞中8-oxoG病变的升高 。通过检测三种MEFs细胞，发现沉默MLH1导致OGG1缺失细胞的活力丧失，而线粒体中OGG1的表达挽救了OGG1缺失细胞，而细胞核中OGG1的表达却不能 ； 相反，沉默MSH2导致OGG1缺失细胞的活力丧失，这些细胞在表达OGG1核亚型的细胞中被拯救，而不是仅表达OGG1线粒体亚型的细胞 。</p>
-<p><img src="/2021/05/27/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB11/12.png"></p>
-<p>[^注]: (1) only a nuclear isoform of human OGG1 (Nu-hOGG1), (2) a mitochondrial isoform of hOGG1 (Mt-OGG1), or (3) no OGG1 at all (OGG1 null)</p>
+<p><img src="/2021/05/27/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB11/12.png" alt></p>
+<blockquote id="fn_注">
+<sup>注</sup>. (1) only a nuclear isoform of human OGG1 (Nu-hOGG1), (2) a mitochondrial isoform of hOGG1 (Mt-OGG1), or (3) no OGG1 at all (OGG1 null)<a href="#reffn_注" title="Jump back to footnote [注] in the text."> &#8617;</a>
+</blockquote>
 <h4 id="4-MLH1-POLG和MSH2-POLB-SSL通过MUTYH沉默得以挽救"><a href="#4-MLH1-POLG和MSH2-POLB-SSL通过MUTYH沉默得以挽救" class="headerlink" title="4. MLH1/POLG和MSH2/POLB SSL通过MUTYH沉默得以挽救"></a>4. MLH1/POLG和MSH2/POLB SSL通过MUTYH沉默得以挽救</h4><p>由于8-oxoG病变积累引起的细胞死亡需要腺嘌呤糖基化酶MUTYH活性，作者研究了MLH1/POLG和MSH2/POLB ssl是否也具有活性MUTYH依赖。 对MUTYH的依赖和DSBs形成的可能性可以解释MSH2/POLB 和  MLH1/POLG  的致死性。</p>
-<p><img src="/2021/05/27/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB11/13.png"></p>
-<p><a href="%E7%94%A8qRT-PCR%E6%B5%8BmRNA%E6%B0%B4%E5%B9%B3%EF%BC%8C%E7%94%A8GAPDH%E4%BD%9C%E4%B8%BA%E5%8F%82%E8%80%83">^method</a>: clonogenic assays</p>
+<p><img src="/2021/05/27/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB11/13.png" alt></p>
+<blockquote id="fn_method">
+<sup>method</sup>. clonogenic assays<a href="#reffn_method" title="Jump back to footnote [method] in the text."> &#8617;</a>
+</blockquote>
 <p>核γ-H2AX loci的检测可以有效地监测核DSBs的形成。 沉默POLB可引起MSH2缺陷细胞中γ-H2AX灶的升高，提示DSB形成增加。</p>
-<p><img src="/2021/05/27/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB11/14.png"></p>
+<p><img src="/2021/05/27/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB11/14.png" alt></p>
+<blockquote id="fn_method">
+<sup>method</sup>. immunofluorescence<a href="#reffn_method" title="Jump back to footnote [method] in the text."> &#8617;</a>
+</blockquote>
 <p>为了评估线粒体DNA的完整性，作者使用定量PCR检测位于线粒体DNA COX1基因的相对水平(又名MT-CO1)， 与MLH1-正常细胞相比，POLG沉默导致了MLH1缺陷细胞中COX1 DNA的显著缺失，说明 MLH1/POLG缺陷细胞线粒体DNA完整性受损，可能与MLH1/POLG SSL有关 。</p>
-<p><img src="/2021/05/27/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB11/15.png"></p>
+<p><img src="/2021/05/27/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB11/15.png" alt></p>
 <h4 id="5-没有POLB表达，OGG1表达降低"><a href="#5-没有POLB表达，OGG1表达降低" class="headerlink" title="5. 没有POLB表达，OGG1表达降低"></a>5. 没有POLB表达，OGG1表达降低</h4><p>POLB在修复8-oxoG病变中的作用已经得到很好的证实，并且被认为作用于OGG1的下游 。 因此，最初还不清楚为什么POLB沉默会导致8-oxoG病变的增加。 作者推断POLB表达的减少可以调节OGG1的表达，并通过这一机制导致MSH2缺陷细胞中核8-oxoG水平的增加 。作者发现 POLB沉默确实导致OGG1蛋白水平下降， 其他BER蛋白的水平表面上没有改变 。</p>
-<p><img src="/2021/05/27/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB11/16.png"></p>
+<p><img src="/2021/05/27/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB11/16.png" alt></p>
 <p>接下来研究了由POLB沉默引起的OGG1蛋白水平的降低是否会导致8-oxoG去除的减少，这与在MSH2/POLB SSL中观察到的影响相当。 作者使用了一种  in vitro OGG1 activity assay  的方法。</p>
-<p><img src="/2021/05/27/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB11/17.png"></p>
+<p><img src="/2021/05/27/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB11/17.png" alt></p>
 <p>转染对照siRNA的HeLa细胞提取物导致8-oxoG放射性标记链的切割，导致标记的10碱基切割产物提示正常的OGG1活性。然而，转染POLB siRNA的细胞显示出OGG1介导的8-oxoG的剪切显著减少，类似于沉默OGG1本身时所观察到的。这表明OGG1介导的8-oxoG的切割很可能依赖于POLB的表达。</p>
-<p><img src="/2021/05/27/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB11/18.png"></p>
+<p><img src="/2021/05/27/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB11/18.png" alt></p>
 <p>最近的研究表明，BER蛋白如POLB、ligase III和XRCC1，当不参与修复复合物时，会被hsc70相互作用蛋白(CHIP)的羧基端泛素化，然后被蛋白酶体降解。 因此，似乎POLB沉默导致的OGG1水平的降低也可能是由类似的过程介导的。  为了评估这一点，将HeLa细胞单独转染POLB siRNA或POLB和CHIP siRNA一起转染 。 与之前一样，POLB沉默介导了OGG1水平的降低。然而，在polb沉默的细胞中，OGG1水平可以通过沉默CHIP来恢复 。</p>
-<p><img src="/2021/05/27/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB11/19.png"></p>
+<p><img src="/2021/05/27/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB11/19.png" alt></p>
 <p>此外，用蛋白酶体抑制剂MG132处理polb沉默的细胞可以恢复OGG1的表达 </p>
-<p><img src="/2021/05/27/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB11/20.png"></p>
+<p><img src="/2021/05/27/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB11/20.png" alt></p>
 <p>综上所述，这些结果表明，POLB表达减少导致的OGG1水平降低是通过CHIP泛素化和OGG1蛋白酶体降解介导的</p>
-<h3 id="DISCUSSION"><a href="#DISCUSSION" class="headerlink" title="DISCUSSION"></a>DISCUSSION</h3><p><img src="/2021/05/27/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB11/21.png"></p>
-<p>[^注]: A Model for the Selective Effects of DNA Polymerase Inhibition in MLH1- or MSH2-Deficient Cells</p>
+<h3 id="DISCUSSION"><a href="#DISCUSSION" class="headerlink" title="DISCUSSION"></a>DISCUSSION</h3><p><img src="/2021/05/27/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB11/21.png" alt></p>
+<blockquote id="fn_注">
+<sup>注</sup>. A Model for the Selective Effects of DNA Polymerase Inhibition in MLH1- or MSH2-Deficient Cells<a href="#reffn_注" title="Jump back to footnote [注] in the text."> &#8617;</a>
+</blockquote>
 ]]></content>
       <tags>
         <tag>文献导读</tag>
@@ -268,22 +303,21 @@
     <title>【Nature Cell Biology】消除碱基编辑诱导的全基因组和转录组脱靶突变</title>
     <url>/2021/06/30/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB12/</url>
     <content><![CDATA[<h1 id="Eliminating-base-editor-induced-genome-wide-and-transcriptome-wide-off-target-mutations"><a href="#Eliminating-base-editor-induced-genome-wide-and-transcriptome-wide-off-target-mutations" class="headerlink" title="Eliminating base-editor-induced genome-wide and transcriptome-wide off-target mutations"></a>Eliminating base-editor-induced genome-wide and transcriptome-wide off-target mutations</h1><span id="more"></span> 
-
 <p>作者： 杨力  期刊：Nature Cell Biology  时间：2021.5</p>
 <p><a href="https://www.nature.com/articles/s41556-021-00671-4#Abs1">原文链接</a></p>
 <h2 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h2><p>CRISPR-Cas9与胞苷脱氨酶（  cytidine  deaminases ）的融合导致了能够进行可编程C-to-T编辑的碱基编辑器( base  editors，BEs)，该编辑器具有临床应用潜力，但存在脱靶(off-target ，OT)突变。这里，作者使用一个可剪切的脱氧胞苷脱氨酶抑制剂(dCDI)结构域构建了一个 变形式BE (tBE)系统，该系统仅在全基因组和转录组范围的OT突变的背景水平上就能诱导高效的编辑。 产生后，tBE在OT位点与可裂解dCDI融合保持不活跃状态，因此消除了意外突变。 当结合在目标位点时，tBE被转化以切断dCDI结构域，并催化靶向脱氨基以进行精确的碱基编辑 。 通过双腺相关病毒(AAV)系统导入小鼠后，tBE系统在Pcsk9中创建了一个提前终止密码子，显著降低了血清中Pcsk9，导致总胆固醇下降~ 30-40%。  tBE的开发建立了一种高度特异性的碱基编辑系统，其体内疗效具有治疗应用的潜力。 </p>
-<h2 id="Fig-1-identification-of-dCDi-domains"><a href="#Fig-1-identification-of-dCDi-domains" class="headerlink" title="Fig. 1 | identification of dCDi domains."></a>Fig. 1 | identification of dCDi domains.</h2><p><img src="/2021/06/30/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB12/1.png"></p>
+<h2 id="Fig-1-identification-of-dCDi-domains"><a href="#Fig-1-identification-of-dCDi-domains" class="headerlink" title="Fig. 1 | identification of dCDi domains."></a>Fig. 1 | identification of dCDi domains.</h2><p><img src="/2021/06/30/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB12/1.png" alt></p>
 <p>a.APOBEC  家族有两类，一类只有一个CDA 位点，另一类有两个CDA位点，其中一个位点具有催化活性，另一个位点没有催化活性但有调节功能。作者构建了10个BEs，分别包含和不包含inactive  but  regulatory  domain。</p>
 <p>b c.包含inactive的CDA位点的APOBEC编辑效率显著降低。</p>
 <p>def.为了验证一般性，作者将mA3,  hA3F  和 hA3B的inactive CDA位点连接到了mA3CDA1–BE3上，发现都有编辑效率降低。CDA2  of  mA3的抑制效果最强。</p>
 <p>综上所述，这些调控域作为dCDIs对脱氧胞苷脱氨酶活性具有普遍的抑制作用。 </p>
-<h2 id="Fig-2-Comparison-of-tBE-with-other-BEs"><a href="#Fig-2-Comparison-of-tBE-with-other-BEs" class="headerlink" title="Fig. 2 | Comparison of tBE with other BEs."></a>Fig. 2 | Comparison of tBE with other BEs.</h2><p><img src="/2021/06/30/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB12/2.png"></p>
+<h2 id="Fig-2-Comparison-of-tBE-with-other-BEs"><a href="#Fig-2-Comparison-of-tBE-with-other-BEs" class="headerlink" title="Fig. 2 | Comparison of tBE with other BEs."></a>Fig. 2 | Comparison of tBE with other BEs.</h2><p><img src="/2021/06/30/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB12/2.png" alt></p>
 <p>作者试图利用dCDI域开发一个BE系统来避免sgRNA不依赖的突变。理想情况下，由于dCDI的连接，这种BE不会引起可观察到的OT突变，但当与靶点结合时，可以通过切断dCDI而转化为活性;因此被称为tBE。 </p>
 <p>作者构建了   tBE-V5–mA3 这一BE，并将其与其他的BE进行对比，发现 tBE-V5–mA3 上靶效果很好，包括 DNA甲基化水平高的位点和含GpC二核苷酸 的位点。并且在OTss sites 和 OT sites，只有背景水平的突变。</p>
-<h2 id="Fig-3-optimization-of-hsgRNA-in-the-tBE-system"><a href="#Fig-3-optimization-of-hsgRNA-in-the-tBE-system" class="headerlink" title="Fig. 3 | optimization of hsgRNA in the tBE system."></a>Fig. 3 | optimization of hsgRNA in the tBE system.</h2><p><img src="/2021/06/30/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB12/3.png"></p>
+<h2 id="Fig-3-optimization-of-hsgRNA-in-the-tBE-system"><a href="#Fig-3-optimization-of-hsgRNA-in-the-tBE-system" class="headerlink" title="Fig. 3 | optimization of hsgRNA in the tBE system."></a>Fig. 3 | optimization of hsgRNA in the tBE system.</h2><p><img src="/2021/06/30/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB12/3.png" alt></p>
 <p>在比较编辑效率时，作者注意到sgRNA和hsgRNA之间的距离影响了tBE对目标的编辑效率。因此，作者测定了sgRNA与hsgRNA之间距离的影响(图3a、b)，发现当hsgRNA位于sgRNA的−91 bp至−34 bp(上游)区域时，tBE的编辑效率达到最佳（图3c）</p>
 <p>由于hsgRNA在其结合位点也形成R-loop区域(图3d)，一些hsgRNA的靶位点偶尔会发生意外的C-to-T编辑 (图3e left)。 之前的研究表明使用带有截断间隔的guide RNA并不影响Cas9的结合 。 因此，作者研究了hsgRNA靶位点的非预期编辑是否也可以通过截断的hsgRNAs来抑制。 使用截断的hsgRNA时，hsgRNA靶区的非预期编辑减少  (Fig.  3e,f).  有10bp间隔的hsgRNA消除了意外的编辑 ，而目标编辑不受影响 。</p>
-<h2 id="Fig-4-the-effect-of-split-TEV-protease-concentration-on-editing-efficiency-and-sgRNA-independent-OT-mutation"><a href="#Fig-4-the-effect-of-split-TEV-protease-concentration-on-editing-efficiency-and-sgRNA-independent-OT-mutation" class="headerlink" title="Fig. 4 | the effect of split-TEV protease concentration on editing efficiency and sgRNA-independent OT mutation."></a>Fig. 4 | the effect of split-TEV protease concentration on editing efficiency and sgRNA-independent OT mutation.</h2><p><img src="/2021/06/30/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB12/4.png"></p>
+<h2 id="Fig-4-the-effect-of-split-TEV-protease-concentration-on-editing-efficiency-and-sgRNA-independent-OT-mutation"><a href="#Fig-4-the-effect-of-split-TEV-protease-concentration-on-editing-efficiency-and-sgRNA-independent-OT-mutation" class="headerlink" title="Fig. 4 | the effect of split-TEV protease concentration on editing efficiency and sgRNA-independent OT mutation."></a>Fig. 4 | the effect of split-TEV protease concentration on editing efficiency and sgRNA-independent OT mutation.</h2><p><img src="/2021/06/30/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB12/4.png" alt></p>
 <p>作者还用不同数量的表达载体表达了分裂- tev系统(图4a)，发现在分裂- tev组分检测的蛋白水平上，目标编辑效率(图4b)和sgrna独立OTss位点的突变频率(图4c)均未受影响(图4d)。 </p>
 ]]></content>
       <tags>
@@ -295,7 +329,6 @@
     <title>【Advanced Materials】等离子体合金揭示早期胃癌独特的代谢表型</title>
     <url>/2021/10/14/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB13/</url>
     <content><![CDATA[<h1 id="Plasmonic-Alloys-Reveal-a-Distinct-Metabolic-Phenotype-of-Early-Gastric-Cancer"><a href="#Plasmonic-Alloys-Reveal-a-Distinct-Metabolic-Phenotype-of-Early-Gastric-Cancer" class="headerlink" title="Plasmonic Alloys Reveal a Distinct Metabolic Phenotype of Early Gastric Cancer"></a>Plasmonic Alloys Reveal a Distinct Metabolic Phenotype of Early Gastric Cancer</h1><span id="more"></span> 
-
 <p>通讯作者：钱昆  期刊：Advanced Materials  时间：20 March 2021 </p>
 <p><a href="https://www.nature.com/articles/s41556-021-00671-4#Abs1">原文链接</a></p>
 <h2 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h2><p>胃癌(Gastric cancer, GC)是一个多因素的过程，伴随着代谢途径的改变。无创代谢谱有助于早期GC诊断，从而改善预后结果。在这里，介孔PdPtAu合金(mesoporous PdPtAu alloys)被设计来表征人类血液中的代谢谱。采用非均匀表面等离子体共振优化元素组成，为光诱导解吸/电离提供首选电荷转移，为热驱动解吸提供增强光热转换。 PdPtAu的表面结构通过受控的介孔进一步调整，只容纳代谢物，而不是大的干扰化合物。因此，优化后的PdPtAu合金通过激光解吸/电离质谱在数秒内产生直接代谢指纹，消耗500 nL天然血浆。早期GC通过稀疏学习显示出独特的代谢表型，从而精确诊断GC，AUC为0.942。可以预见，等离子体合金将开辟一个微创血液分析的新时代，以改善临床环境中癌症患者的监测。 </p>
@@ -314,20 +347,19 @@
     <content><![CDATA[<p><strong>Scientific Commentary on a Paper about Empathy</strong></p>
 <p>By <em>Mingzhen Tian</em></p>
 <span id="more"></span> 
-
 <p>原文链接：<a href="https://doi.org/10.1126/science.abe3040">Anterior cingulate inputs to nucleus accumbens control the social transfer of pain and analgesia</a></p>
 <p>This article recommended by Professor Nanjie Xu is about the neural circuits in the anterior cingulate cortex (ACC) during empathy in mice. Researchers have observed for the first time that the ACC transmits signals to the nucleus accumbens (NAc) when mice observe their companions experiencing pain and analgesia. However, ACC signals to basolateral amygdala when mice observe their companions experiencing fear. Below I will present the background knowledge of empathy and the specific findings of this article.</p>
 <p>Empathy is an important part of human cognition and plays a very large role in human society, making interpersonal communication efficient. Research in recent years has revealed that predecessor behaviors similar to human empathic behavior exist in many animals, especially rodents. The ACC is thought to be an important component of the neural circuitry of empathy and has connections to many brain regions associated with emotion regulation. However, the specific mechanisms underlying these empathy-related associations remain unclear. In this study, they discovered ACC-related neural circuits using optogenetic methods.</p>
 <p>The authors first investigated whether pain could be rapidly transferred to bystander (BY) mice. They placed mice experiencing pain in a cage with bystander mice and tested for relevant indicators after one hour of social contact. Pain sensation was obtained from the administration of CFA to mice. The authors found that both BY mice and CFA mice showed mechanical hypersensitivity, whereas controls did not. Moreover, CFA mice show hyperalgesia in only one hind paw, whereas BY mice show it in both hind paws, suggesting that there may be higher brain regions involved in this process. The tail immersion experiment, thermal place test also demonstrated this phenomenon. These results illustrate the rapid transfer of pain empathy.</p>
-<p><img src="/2021/04/06/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB2/1.jpg"></p>
+<p><img src="/2021/04/06/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB2/1.jpg" alt></p>
 <p>Researchers then explored the specific mechanisms of pain empathy. To determine which brain regions play a role in pain empathy, they used the TRAP technique to detect which neurons were activated. They found that in both ACC and NAc, BY mice activated more neurons than CFA mice, so they conjectured that there was a neural circuit between ACC and NAc. Then they used AAV technology and optogenetics to discover that ACC has projections on NAc. They then used the monosynaptic rabies virus tracing method to detect ACC signaling through the synapse to NAc. These results demonstrate that the ACC-NAc pathway is activated during pain empathy.</p>
-<p><img src="/2021/04/06/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB2/2.jpg"></p>
+<p><img src="/2021/04/06/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB2/2.jpg" alt></p>
 <p>The researchers then looked more closely at the role of the ACC-NAc circuit in pain empathy. They inhibited ACC function by injecting NpHR into ACC and activated NpHR expression during empathy, and found that empathy was diminished when ACC was inhibited. Using the same approach to inhibit ACC-NAc projections, it was also found that empathy was attenuated. They then activated ACC-NAc projections by injecting ChR2 and found that empathy time was prolonged in BY mice. These results surface that ACC-NAc projections are essential for pain empathy.</p>
-<p><img src="/2021/04/06/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB2/3.jpg"></p>
+<p><img src="/2021/04/06/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB2/3.jpg" alt></p>
 <p>The researchers then explored the role of ACC-NAc projections for other emotional empathy such as fear. They first let BY mice experience the shock to generate memories, and then watched other mice shock to generate empathy. The degree of fear empathy in mice is detected by freezing behavior. Experimental results showed that BY mice developed fear empathy. They then inhibited ACC-NAc projections and found that fear empathy was not attenuated, but inhibition of ACC-BLA (basolateral amygdala) projections attenuated the fear empathy effect. These results suggest that ACC modulates empathy for different emotions by projecting to different brain regions.</p>
-<p><img src="/2021/04/06/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB2/4.jpg"></p>
+<p><img src="/2021/04/06/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB2/4.jpg" alt></p>
 <p>Since strong emotions such as pain and fear have been shown to produce empathy in mice, can good emotions such as analgesia produce empathy? The authors then explored the empathic behavior of analgesia in mice. The authors injected all mice with CFA, followed by morphine, and mice that were not injected with morphine were used as BY mice (CFA-Analg-BY). The authors found that CFA-Analg-BY mice did have the production of analgesia empathy compared to controls by the Von Frey assay and thermal place test. The authors go on to explore the need for ACC-NAc in analgesic empathy. The authors found that analgesic empathy was diminished in mice when ACC or ACC-NAc projections were inhibited, suggesting that ACC-NAc projections were functional.</p>
-<p><img src="/2021/04/06/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB2/5.jpg"></p>
+<p><img src="/2021/04/06/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB2/5.jpg" alt></p>
 <p>Overall, the study identified empathic behaviors in mice, either good or bad emotions, including pain, fear, and analgesia. The present study also found that ACC projections to different brain regions can control empathic responses. Specifically, ACC-NAc regulates pain and analgesic empathy, and ACC-BLA regulates fear empathy. Their work could contribute to our deeper understanding of the more complex mechanisms of empathy in the human brain, and could be of great help in the treatment of neurological disorders with empathy deficits.</p>
 <p>The study of this article has introduced me to new areas of research in neuroscience. I learned a lot of novel experimental techniques and ideas, such as TRAP, monosynaptic neuronal tracing, which benefited me a lot.</p>
 ]]></content>
@@ -337,38 +369,10 @@
       </tags>
   </entry>
   <entry>
-    <title>【Nature】浆细胞样树突状细胞感知自身DNA偶联抗菌肽</title>
-    <url>/2021/04/14/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB4/</url>
-    <content><![CDATA[<p><strong>Scientific Commentary on a Paper about Psoriasis</strong></p>
-<p>By <em>Mingzhen Tian</em></p>
-<span id="more"></span> 
-
-<p>原文链接：<a href="https://www.nature.com/articles/nature06116">Plasmacytoid dendritic cells sense self-DNA coupled with antimicrobial peptide</a> </p>
-<p>This article recommended by Professor Honglin Wang is about the discovery that pDCs can sense self-DNA. The role of plasmacytoid dendritic cells is usually to sense viral and microbial DNA and release interferons. This article, however, found that in the autoimmune disease psoriasis, pDCs can sense self-DNA. They found that LL37 could bind to self-DNA and thus activate pDCs and thus TLR9. This discovery explains the important role of endogenous antimicrobial peptides and identifies a possible autoantigen for psoriasis. I will then describe the relevant background, scientific issues, and specific results.</p>
-<p>Plasmacytoid dendritic cells (pDCs) play an important role in the immune system by expressing TLR7 and TLR9 to sense viral and microbial DNA and thus release type 1 IFN to defend against infection. Studies have shown that pDCs often fail to recognize self-DNA, except in autoimmune diseases. pDCs recognize self-DNA in autoimmune diseases thus causing abnormal expression of IFNs, which is the main causative factor. Psoriasis is an autoimmune disease in which the activation of autoimmune T cells leading to abnormal proliferation of epidermal keratinocytes is the main cause. Previously, pDCs have been reported to infiltrate psoriatic skin. However, the questions of how pDCs are activated in psoriasis and whether there is an association with self-DNA remain unanswered. This article attempts to answer these qusetions.</p>
-<p>The authors first wanted to determine the factors that activate pDCs to generate IFNs. They used HPLC methods to separate peripheral blood from psoriasis patients into fraction and found that fraction26 was the main component. They then used ESI-MS to identify this component as psoriasin and the antimicrobial peptide LL37. The synthetic peptides method demonstrated that only LL37 could activate pDCs, while neither psoriasin nor the LL37 variant GL37 could. They then used LL37 antibody to neutralize LL37 and found that no IFN-α was produced, indicating that only LL37 worked. RT-PCR results showed that LL37 mRNA levels were elevated in psoriatic skin, and immunohistochemistry showed that LL37 was distributed in psoriatic keratinocytes, which is where pDCs are abundant. These results all suggest that LL37 is a key factor in the activation of pDCs.</p>
-<p><img src="/2021/04/14/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB4/1.jpg"></p>
-<p>The authors then looked at the specific mechanism by which LL37 activates pDCs. Since pDCs can sense nucleic acids and the structure of LL37 has the potential to bind DNA, the authors speculate that LL37 activation of pDCs is associated with self-DNA. The authors removed DNA from the culture medium and found a decrease in IFN-α secretion, suggesting that LL37 may be associated with DNA in dead cells. In addition, elevated IFN-α expression was found by mixing human DNA with LL37, indicating that LL37 converts self-DNA into a factor that activates pDCs.</p>
-<p>The mixture of LL37 and DNA was analyzed by HPLC method and it was found that LL37 could bind to DNA to form a condensed complex. In addition, atomic force microscopy also revealed the presence of prominent nodes in the mixture of LL37 and DNA, which is not present in single DNA.</p>
-<p><img src="/2021/04/14/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB4/2.jpg"></p>
-<p>They then investigated whether the LL37-DNA complex could induce TLR9. They found that IFN-α levels decreased after treatment with chloroquine, which can inhibit TLR signaling. In addition, treatment of pDCs with the TLR9 inhibitor ODN-TTAGGG reduced IFN-α levels. Furthermore, the LL37-DNA complex could increase the expression of TLR9 compared to DNA alone. All these results suggest that the LL37-DNA complex can activate pDCs through TLR9.</p>
-<p>TLR9 is located intracellularly in pDCs, thus preventing pDCs from recognizing self-DNA. The authors found that the mixing of LL37 with human DNA increased the fluorescence intensity of DNA in pDCs by staining localization. In addition, confocal microscopy revealed that the LL37-DNA mixture appeared on the inner side of the membrane of pDCs. These results suggest that LL37 allows self-DNA to enter the interior of pDCs.</p>
-<p><img src="/2021/04/14/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB4/3.jpg"></p>
-<p>Previous studies found that IFN-α synthesis occurs in early endosomes and IL-6 and TNF-α secretion occurs in late endosomes. The authors found that the LL37-DNA complex induced IFN-α secretion but not IL-6 and TNF-α, speculating that LL37-DNA plays a role in early nuclear endosomes. The authors then used confocal microscopy to find that LL37 could retain self-DNA in early endosomes but not in late endosomes. This suggests that LL37 can keep TLR9 activated by retaining DNA in early nuclear endosomes, leading to continued secretion of IFN and ultimately to persistent lesions in psoriasis.</p>
-<p><img src="/2021/04/14/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB4/4.jpg"></p>
-<p>In summary, this article identifies a specific mechanism for self-DNA recognition by pDCs in psoriasis. LL37 forms a complex by binding self-DNA, translocates to pDCs intracellularly to activate TLR9, and retains DNA in early endosomes for sustained IFN secretion leading to psoriasis development. This specific mechanistic study identified LL37, a target of psoriasis, which offers the possibility of developing LL37 inhibitors for the treatment of psoriasis and also provides a reference for other autoimmune disease mechanism studies.</p>
-]]></content>
-      <tags>
-        <tag>文献导读</tag>
-        <tag>Immunology</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>【Nature Reviews】合成致命作为癌症药物发现的引擎</title>
     <url>/2021/04/07/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB3/</url>
     <content><![CDATA[<p>By <em>Mingzhen Tian</em></p>
 <span id="more"></span> 
-
 <p>作者：Barbara Weber </p>
 <p>期刊：Nature Reviews Drug Discovery </p>
 <p>发表时间：2020.01</p>
@@ -382,20 +386,20 @@
 <p>在这篇综述中，我们讨论了如何将合成致死率的遗传概念与基于CRISPR的功能性基因组筛选相结合，用于识别下一代有效的癌症药物和药物组合。</p>
 <h3 id="Synthetic-lethality-合成致死"><a href="#Synthetic-lethality-合成致死" class="headerlink" title="Synthetic lethality 合成致死"></a>Synthetic lethality 合成致死</h3><p>合成致死的遗传概念最早于1922年在果蝇身上提出。Hartwell和随后的Kaelin提出，<strong>利用合成致死的概念可以发现癌症治疗的新靶点，合成致死对中的一个对象是带有癌症特异性突变的基因产物，第二个基因产物是药物靶点。</strong></p>
 <p>最近PARP抑制剂在BRCA突变型卵巢癌中的成功，是第一个使用合成致死率来靶向肿瘤抑制基因丢失的临床例子。 这一发现的基础是PARP和BRCA1和BRCA2都是有效DNA修复的成分。这种相互作用使具有BRCA1或BRCA2突变的肿瘤细胞对PARP抑制敏感。正常细胞，至少有一个BRCA1或BRCA2的拷贝，大部分都能幸免，这限制了毒性。值得注意的是，PARP抑制剂在brca1突变型和brca2突变型卵巢癌中似乎比在具有这些突变的乳腺癌中更有效，这引起了对额外“遗传背景 genetic contex ”的考虑，这是设计功能性基因组靶标发现筛选的关键因素，稍后将讨论。</p>
-<p><img src="/2021/04/07/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB3/1.png"></p>
+<p><img src="/2021/04/07/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB3/1.png" alt></p>
 <h3 id="Many-cancer-targets-to-be-discovered"><a href="#Many-cancer-targets-to-be-discovered" class="headerlink" title="Many cancer targets to be discovered"></a>Many cancer targets to be discovered</h3><p>跨多种基因背景的大规模基因敲除研究现在被用于绘制人类癌细胞中合成的致命相互作用，首先使用了基于短发夹RNA (shRNA)的方法，最近使用了CRISPR技术，消除了基于RNAi的功能基因组筛选的许多技术障碍。</p>
 <p>介绍了几个大规模筛选的项目，不细看了。</p>
-<p><img src="/2021/04/07/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB3/2.png"></p>
+<p><img src="/2021/04/07/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB3/2.png" alt></p>
 <h3 id="The-importance-of-genetic-context"><a href="#The-importance-of-genetic-context" class="headerlink" title="The importance of genetic context"></a>The importance of genetic context</h3><p>在临床试验设计和实验设计中，考虑基因背景对于避免由于异质性而导致的信号稀释是很重要的。 许多合成致死对可能依赖于环境，在特定环境中其他基因的改变改变了合成致死对的功能相互作用。我们<strong>将“遗传背景”定义为驱动突变、起源组织(组织学)和其他构成癌症亚群的功能性遗传病变</strong>。</p>
 <p><strong>卵巢透明细胞癌和黑色素瘤细胞系对氧传感器EGLN1的选择性依赖</strong>的发现证明了遗传环境的重要性。EGLN1是脯氨酸羟化酶EgIN家族成员，通过羟化和VHL降解调节缺氧诱导因子1α (HIF1α)的水平。 EGLN1的药理抑制可以稳定HIF1α，降低细胞适应度，导致减少增殖和细胞死亡 。之后的研究发现ARID1A作为另外的癌症依赖。在他们的分析中，无法区分HIF1α上调和ARID1A突变的影响，因为所有依赖ENGL1的细胞系都具有HIF1α上调的特征，而且大多数都有arid1突变。ARID1A在60%的卵巢透明细胞癌中突变失活，并在其他组织学中频繁突变，但值得注意的是，阿喀琉斯项目数据集中的整体分析没有发现任何可药物化的ARID1A合成致命相互作用。Briggs等人的研究表明，EGLN1的药理抑制可以选择性地杀死ARID1A-突变的卵巢癌细胞，因此这两种异常现象的结合是导致这种依赖性的原因。有报道目前临床上用于治疗贫血的EGLN抑制剂可能对治疗卵巢透明细胞癌的女性有效。治疗效果可能在ARID1A -突变亚群中最有效，但这一假设尚未在临床试验中得到验证。  </p>
 <p>最近的另一个通过分析具有特定遗传背景的细胞系发现合成致死药物靶点的例子是， <strong>DNA聚合酶θ (POLQ)在brca1 -突变型和brca2 -突变型癌症中的作用</strong>。  POLQ是一种低保真度DNA聚合酶，它参与 alternative  NHEJ，这是修复具有缺陷同源重组的肿瘤DNA双链断裂的关键途径。 在brca1突变体和brca2突变体环境中， 单独敲除 POLQ基因或与PARP抑制剂结合降低细胞存活率，但在野生型环境中则不会。</p>
 <p>KRAS突变提供了背景复杂性的另一个例子:<strong>KRAS中G12C或G12A突变的细胞系和肿瘤模型对酪氨酸蛋白磷酸酶非受体11型(PTPN11)抑制剂非常敏感</strong>，这是因为致癌的G12变异体依赖于ptpn11介导的GTP负载来促进下游信号传导。 鉴于G12C和G12A突变在NSCLC中富集，但在结直肠癌和胰腺癌中罕见，可能在组织学上对PTPN11抑制的敏感性存在差异。  这些数据再次强调了在目标发现中考虑其他遗传背景的重要性，并进一步表明在某些情况下，突变亚型可能需要用于患者选择。</p>
 <h3 id="Large-scale-target-discovery-approaches"><a href="#Large-scale-target-discovery-approaches" class="headerlink" title="Large-scale target discovery approaches"></a>Large-scale target discovery approaches</h3><p>如前所述，功能性基因组筛选，特别是识别合成致死基因对的成对效应的高通量loss-of-function筛选，多年来一直被设想为识别新靶标和组合的途径。然而，pre-CRISPR技术对于这些应用来说还不够强大。在发现CRISPR之前，RNAi是在哺乳动物细胞中筛查功能缺失基因的标准工具。但很快就发现RNAi缺乏高通量应用的特异性。这个问题是该技术固有的，因为shRNA和siRNA序列的延伸可以结合并下调与相关基因无关的mrna，导致在基因筛选中出现多次，很大程度上是不可避免的假阳性。相比之下，CRISPR是一种高度特异性、高效和可扩展的基因组编辑技术，显著优于基于RNAi，并可用于高通量筛选，通过多种相关方法发现新的药物靶点。近年来许多新兴的基因组工程方法在癌症靶点发现中发挥着作用。随着更多的基因工具和修饰的出现，靶点发现方法将继续得到加强。</p>
-<p><img src="/2021/04/07/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB3/3.png"></p>
+<p><img src="/2021/04/07/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB3/3.png" alt></p>
 <h3 id="Targeting-tumour-suppressor-gene-loss"><a href="#Targeting-tumour-suppressor-gene-loss" class="headerlink" title="Targeting tumour suppressor gene loss"></a>Targeting tumour suppressor gene loss</h3><p>肿瘤抑制基因丢失是正常细胞发生恶性转化的中心机制，通常是通过引起或允许基因组不稳定。许多肿瘤抑制基因已经被很好地鉴定，如TP53, RB1和BRCA1，但是肿瘤抑制基因的丢失是不可用药的，因为其功能和基因本身往往丢失。识别可药物合成的合成致死对是目前针对癌症中肿瘤抑制基因功能缺失的唯一方法。著名的合成致死对是PARP inhibitor在BARC1突变中起作用。但这是假设驱动的发现，而不是筛选出来的。然而，假设驱动的合成致命DNA修复路径方法的发现，受到了7种描述良好的独特DNA修复路径和每个路径内的多个基因测试假设数量的限制。 </p>
 <p>考虑到人类基因组中潜在的大量合成致命相互作用，很明显，发现额外的合成致命对符合药物发现需要功能性基因组方法。 为此，一个CRISPR库可以用来识别在细胞系panel中的合成致死“hits”，这些细胞系panel共享一个特定的肿瘤抑制基因的丢失，而这个基因与保留相关基因的野生型功能的细胞系最接近。 </p>
 <h4 id="MTAP-deletion-and-PRMT5-inhibition-synthetic-lethality-beyond-PARP-inhibitors"><a href="#MTAP-deletion-and-PRMT5-inhibition-synthetic-lethality-beyond-PARP-inhibitors" class="headerlink" title="MTAP deletion and PRMT5 inhibition: synthetic lethality beyond PARP inhibitors"></a><em>MTAP deletion and PRMT5 inhibition: synthetic lethality beyond PARP inhibitors</em></h4><p>Achilles项目和 DRIVE项目发现的一个最强和最普遍的合成致命相互作用是<strong>MTAP缺失细胞中的PRMT5依赖</strong>。这种依赖性代表了合成致死的一个子类： collateral lethality 旁系致死。当与肿瘤抑制基因相邻的“passenger”基因和“driver”基因丢失时，就会发生这种情况。MTAP是passenger基因，经常与驱动细胞周期蛋白依赖性激酶抑制剂 CDKN2A 共同删除。几个研究小组发现，MTAP缺失的癌细胞明显依赖于PRMT5(一种必需的甲基转移酶)，使这些细胞比没有MTAP缺失的细胞更容易受到PRMT5敲除的影响。这种依赖性的产生是因为MTAP缺失的细胞积累了高水平的PRMT5抑制辅因子MTA。因此，在MTAP缺失的细胞中，PRMT5在基线时被部分抑制，并且它们对进一步降低PRMT5活性非常敏感。这种依赖性为MTAP缺失的肿瘤患者提供了一个大的PRMT5抑制剂治疗窗口，考虑到正常细胞(没有MTAP缺失)很大程度上可以幸免，所以毒性还可以受到限制。</p>
-<p><img src="/2021/04/07/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB3/4.png"></p>
+<p><img src="/2021/04/07/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB3/4.png" alt></p>
 <p>大约15%的人类癌症中MTAP被删除，包括50%以上的胶质母细胞瘤和25%的胰腺癌;因此，开发一种有效的治疗MTAP缺失肿瘤的方法可能对患者有很高的影响。然而，现有的PRMT5抑制剂并没有重现PRMT5敲除的作用。这说明功能基因组学可能不是一个很好的药物靶标发现工具，当它实际上是由于现有抑制剂的作用机制。<strong>PRMT5有两个辅因子:激活辅因子S -腺苷蛋氨酸(SAM)和抑制辅因子MTA。</strong>所有已知的PRMT5抑制剂要么是SAM -合作抑制剂，要么是MTA -竞争抑制剂。 由于MTA在MTAP缺失的癌细胞中积累的水平远高于正常细胞，因此需要一种MTA协同和SAM竞争的PRMT5抑制剂来重现PRMT5敲低的效果。 这种抑制剂会增加与MTA结合的非活性PRMT5相对于与SAM结合的活性PRMT5的数量，这将导致MTAP缺陷细胞的死亡，但不会导致野生型细胞的死亡。 现有的PRMT5抑制剂并不通过这种机制发挥作用，因此，在类似的暴露条件下，可以杀死MTAP缺失的细胞和野生型细胞，导致毒性和活性有限。 相反，利用这种合成致命对的第一个努力是利用<strong>MAT2A抑制剂</strong>，这是代谢途径的另一种成分，通过降低SAM水平发挥作用。 第一个MAT2A抑制剂目前正处于临床试验阶段，但已经公布了有限的疗效数据。</p>
 ]]></content>
       <tags>
@@ -404,11 +408,36 @@
       </tags>
   </entry>
   <entry>
+    <title>【Nature】浆细胞样树突状细胞感知自身DNA偶联抗菌肽</title>
+    <url>/2021/04/14/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB4/</url>
+    <content><![CDATA[<p><strong>Scientific Commentary on a Paper about Psoriasis</strong></p>
+<p>By <em>Mingzhen Tian</em></p>
+<span id="more"></span> 
+<p>原文链接：<a href="https://www.nature.com/articles/nature06116">Plasmacytoid dendritic cells sense self-DNA coupled with antimicrobial peptide</a> </p>
+<p>This article recommended by Professor Honglin Wang is about the discovery that pDCs can sense self-DNA. The role of plasmacytoid dendritic cells is usually to sense viral and microbial DNA and release interferons. This article, however, found that in the autoimmune disease psoriasis, pDCs can sense self-DNA. They found that LL37 could bind to self-DNA and thus activate pDCs and thus TLR9. This discovery explains the important role of endogenous antimicrobial peptides and identifies a possible autoantigen for psoriasis. I will then describe the relevant background, scientific issues, and specific results.</p>
+<p>Plasmacytoid dendritic cells (pDCs) play an important role in the immune system by expressing TLR7 and TLR9 to sense viral and microbial DNA and thus release type 1 IFN to defend against infection. Studies have shown that pDCs often fail to recognize self-DNA, except in autoimmune diseases. pDCs recognize self-DNA in autoimmune diseases thus causing abnormal expression of IFNs, which is the main causative factor. Psoriasis is an autoimmune disease in which the activation of autoimmune T cells leading to abnormal proliferation of epidermal keratinocytes is the main cause. Previously, pDCs have been reported to infiltrate psoriatic skin. However, the questions of how pDCs are activated in psoriasis and whether there is an association with self-DNA remain unanswered. This article attempts to answer these qusetions.</p>
+<p>The authors first wanted to determine the factors that activate pDCs to generate IFNs. They used HPLC methods to separate peripheral blood from psoriasis patients into fraction and found that fraction26 was the main component. They then used ESI-MS to identify this component as psoriasin and the antimicrobial peptide LL37. The synthetic peptides method demonstrated that only LL37 could activate pDCs, while neither psoriasin nor the LL37 variant GL37 could. They then used LL37 antibody to neutralize LL37 and found that no IFN-α was produced, indicating that only LL37 worked. RT-PCR results showed that LL37 mRNA levels were elevated in psoriatic skin, and immunohistochemistry showed that LL37 was distributed in psoriatic keratinocytes, which is where pDCs are abundant. These results all suggest that LL37 is a key factor in the activation of pDCs.</p>
+<p><img src="/2021/04/14/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB4/1.jpg" alt></p>
+<p>The authors then looked at the specific mechanism by which LL37 activates pDCs. Since pDCs can sense nucleic acids and the structure of LL37 has the potential to bind DNA, the authors speculate that LL37 activation of pDCs is associated with self-DNA. The authors removed DNA from the culture medium and found a decrease in IFN-α secretion, suggesting that LL37 may be associated with DNA in dead cells. In addition, elevated IFN-α expression was found by mixing human DNA with LL37, indicating that LL37 converts self-DNA into a factor that activates pDCs.</p>
+<p>The mixture of LL37 and DNA was analyzed by HPLC method and it was found that LL37 could bind to DNA to form a condensed complex. In addition, atomic force microscopy also revealed the presence of prominent nodes in the mixture of LL37 and DNA, which is not present in single DNA.</p>
+<p><img src="/2021/04/14/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB4/2.jpg" alt></p>
+<p>They then investigated whether the LL37-DNA complex could induce TLR9. They found that IFN-α levels decreased after treatment with chloroquine, which can inhibit TLR signaling. In addition, treatment of pDCs with the TLR9 inhibitor ODN-TTAGGG reduced IFN-α levels. Furthermore, the LL37-DNA complex could increase the expression of TLR9 compared to DNA alone. All these results suggest that the LL37-DNA complex can activate pDCs through TLR9.</p>
+<p>TLR9 is located intracellularly in pDCs, thus preventing pDCs from recognizing self-DNA. The authors found that the mixing of LL37 with human DNA increased the fluorescence intensity of DNA in pDCs by staining localization. In addition, confocal microscopy revealed that the LL37-DNA mixture appeared on the inner side of the membrane of pDCs. These results suggest that LL37 allows self-DNA to enter the interior of pDCs.</p>
+<p><img src="/2021/04/14/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB4/3.jpg" alt></p>
+<p>Previous studies found that IFN-α synthesis occurs in early endosomes and IL-6 and TNF-α secretion occurs in late endosomes. The authors found that the LL37-DNA complex induced IFN-α secretion but not IL-6 and TNF-α, speculating that LL37-DNA plays a role in early nuclear endosomes. The authors then used confocal microscopy to find that LL37 could retain self-DNA in early endosomes but not in late endosomes. This suggests that LL37 can keep TLR9 activated by retaining DNA in early nuclear endosomes, leading to continued secretion of IFN and ultimately to persistent lesions in psoriasis.</p>
+<p><img src="/2021/04/14/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB4/4.jpg" alt></p>
+<p>In summary, this article identifies a specific mechanism for self-DNA recognition by pDCs in psoriasis. LL37 forms a complex by binding self-DNA, translocates to pDCs intracellularly to activate TLR9, and retains DNA in early endosomes for sustained IFN secretion leading to psoriasis development. This specific mechanistic study identified LL37, a target of psoriasis, which offers the possibility of developing LL37 inhibitors for the treatment of psoriasis and also provides a reference for other autoimmune disease mechanism studies.</p>
+]]></content>
+      <tags>
+        <tag>文献导读</tag>
+        <tag>Immunology</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>【Nature】迄今为止最为全面的肿瘤转录组变异图谱</title>
     <url>/2021/04/15/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB5/</url>
     <content><![CDATA[<p>By <em>Mingzhen Tian</em></p>
 <span id="more"></span> 
-
 <p>作者：张泽民</p>
 <p>期刊：Nature</p>
 <p>发表时间：2020.02</p>
@@ -419,8 +448,8 @@
 <p>在基因组背景下的RNA改变纲要提供了一个丰富的资源，以识别在功能上涉及癌症的基因和机制。</p>
 <h3 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h3><p>为了对癌症基因组改变进行更广泛的研究，特别是在非编码区域，<strong>PCAWG项目</strong>的成立是为了分析对ICGC和TCGA项目有贡献的大量全基因组样本。PCAWG项目有好多小组，分工不同。 在这里，我们报告了PCAWG转录组工作组对来自27种肿瘤类型的1188个样本的可用匹配转录组和基因组图谱的联合分析。据我们所知，这是迄今为止最大的癌症RNA表型及其潜在基因变化的资源。我们论证了转录组学数据在理解特定DNA改变的不同维度如何促进癌变方面的重要性，并绘制出癌症相关RNA改变的图景。</p>
 <h3 id="Cancer-specific-germline-cis-eQTLs"><a href="#Cancer-specific-germline-cis-eQTLs" class="headerlink" title="Cancer-specific germline cis-eQTLs"></a>Cancer-specific germline cis-eQTLs</h3><p>为了研究不同类型RNA改变的潜在机制，我们首先关注了基因表达水平的变化。 我们首先考虑了常见的接近单个基因的种系变异(小等位基因频率≥1%)(±100 kb)，并在cohort中绘制了表达定量性状位点(eQTL)。该泛癌分析鉴定出3532个具有eQTL的基因，富集于转录起始位点(TSSs)的近端区域。</p>
-<p>为了识别癌症特异性调控变异，我们将我们的eQTLs与基因型组织表达(GTEx)项目中的eQTLs进行了比较。我们鉴定出422个不对应GTEx组织的eQTLs，这表明肿瘤特异性调控。 相应的eQTL导联变体在异染色质区域富集**(Fig.1a)**。 总的来说，这一分析揭示了基因表达调控的生殖系框架在癌症组织中很大程度上是保守的。</p>
-<h3 id="Somatic-cis-eQTLs-in-non-coding-regions"><a href="#Somatic-cis-eQTLs-in-non-coding-regions" class="headerlink" title="Somatic cis-eQTLs in non-coding regions"></a>Somatic cis-eQTLs in non-coding regions</h3><p>先前的研究已经描述了癌症中的非编码突变图景，特别是启动子区域的突变，以及它们对基因表达的调控作用。 在这里，我们观察了整个基因组中可能的体细胞DNA变化，这些变化是基因表达改变的基础。我们通过在邻近基因、外显子和内含子的2 kb间隔内聚合单核苷酸变异(SNVs)来估计局部突变负担。 接下来，我们分解了单个基因的表达变化，考虑了cis中常见的突变负担，以及cis种系变异体和体细胞拷贝数的改变 (SCNAs) 。 该研究发现，SCNAs是基因表达变异的主要驱动因素(17%)，其次是基因侧翼区的体细胞SNVs(1.8%)和种系变异(1.3%)。**(Fig.1b)** </p>
+<p>为了识别癌症特异性调控变异，我们将我们的eQTLs与基因型组织表达(GTEx)项目中的eQTLs进行了比较。我们鉴定出422个不对应GTEx组织的eQTLs，这表明肿瘤特异性调控。 相应的eQTL导联变体在异染色质区域富集<strong>(Fig.1a)</strong>。 总的来说，这一分析揭示了基因表达调控的生殖系框架在癌症组织中很大程度上是保守的。</p>
+<h3 id="Somatic-cis-eQTLs-in-non-coding-regions"><a href="#Somatic-cis-eQTLs-in-non-coding-regions" class="headerlink" title="Somatic cis-eQTLs in non-coding regions"></a>Somatic cis-eQTLs in non-coding regions</h3><p>先前的研究已经描述了癌症中的非编码突变图景，特别是启动子区域的突变，以及它们对基因表达的调控作用。 在这里，我们观察了整个基因组中可能的体细胞DNA变化，这些变化是基因表达改变的基础。我们通过在邻近基因、外显子和内含子的2 kb间隔内聚合单核苷酸变异(SNVs)来估计局部突变负担。 接下来，我们分解了单个基因的表达变化，考虑了cis中常见的突变负担，以及cis种系变异体和体细胞拷贝数的改变 (SCNAs) 。 该研究发现，SCNAs是基因表达变异的主要驱动因素(17%)，其次是基因侧翼区的体细胞SNVs(1.8%)和种系变异(1.3%)。<strong>(Fig.1b)</strong> </p>
 <p>我们还研究了体细胞e基因（有eQTLs的泛癌基因）的功能特征，并观察到在癌症睾丸基因的二价启动子(P = 0.04, Fisher精确检验)，如TEKT5中，体细胞eQTLs的富集。总的来说，体细胞eQTL分析发现，大部分非编码区域与局部基因表达变化相关，并且与癌症特异性种系eQTL类似，显示了富集的转录活性区域，如异染色质。</p>
 <h3 id="Expression-and-mutational-signatures"><a href="#Expression-and-mutational-signatures" class="headerlink" title="Expression and mutational signatures"></a>Expression and mutational signatures</h3><p>突变模式的全局变化可以用突变特征来量化，突变特征标记了特定于起源组织和环境暴露的突变过程。然而，提取突变特征是一个本质统计过程，需要后验功能注释。我们进行了全基因组突变特征和基因表达水平之间的泛癌症关联分析，以破译伴随突变特征存在的分子过程。</p>
 <p>我们考虑了28个突变特征，利用上下文特定的突变频率的非负矩阵分解得到。 我们测试了供体中特征流行率和总基因表达之间的关系，包括总突变负担、癌症类型和其他技术和生物学混杂因素。  这项研究发现了1176个与至少一种特征相关的基因。</p>
@@ -439,7 +468,6 @@
     <content><![CDATA[<p><strong>Scientific Commentary on Papers about Pathogen</strong></p>
 <p>By <em>Mingzhen Tian</em></p>
 <span id="more"></span> 
-
 <p>原文链接：[1] <a href="https://www.nature.com/articles/nature12436">Pathogen blocks host death receptor signalling by arginine GlcNAcylation of death domains</a></p>
 <p>[2] <a href="https://doi.org/10.1016/j.cell.2019.06.007">A Bacterial Effector Reveals the V-ATPase-ATG16L1 Axis that Initiates Xenophagy</a>  </p>
 <p>Professor Yao Yufeng recommended several articles on pathogenic bacteria pathogenesis and the natural immune response of the host, two of which by Professor Shao Feng are of great interest to me as intensive reading. The first was published in 2013 in the journal <em>Nature</em>, identifying for the first time a new mechanism by which bacteria resist host immunity. The second article, published in 2019 in <em>Cell</em>, identifies a new mechanism by which cells recognize bacteria and trigger xenophagy. These two articles demonstrate the struggle between pathogenic bacteria and the host’s natural immune response from two perspectives. In the following I will present these two innovative studies separately.</p>
@@ -468,60 +496,27 @@
     <content><![CDATA[<p><strong>Scientific Commentary on a Paper about SUMOylation</strong></p>
 <p>By <em>Mingzhen Tian</em></p>
 <span id="more"></span> 
-
 <p>原文链接： <a href="https://doi.org/10.1016/j.cell.2007.08.045">SUMO-Specific Protease 1 Is Essential for Stabilization of HIF1α during Hypoxia</a>  </p>
 <p>This article recommended by Professor Jinke Cheng is about protein modification and signal transduction. They discovered the molecular mechanism by which SENP1 (SUMO-specific protease 1) regulates the stability and activity of HIF1α (hypoxia-inducible factor 1α) under hypoxic conditions. This discovery reveals a new way to block tumor blood vessel growth, providing a new target for cancer treatment. I will then describe in detail the background and results of the relevant studies.</p>
 <p>SUMOylation is an important class of epigenetic modifications in cells, and by modifying intranuclear proteins, SUMO (small ubiquitin-related modifier protein) can regulate many cellular processes in vivo. In contrast, SENPs (Sentrin/SUMO-specific proteases) can reverse SUMOylation. SENP1, a subclass of SENPs, is thought to affect vascular development. However, the specific mechanisms by which SENP1 affects development are not known, and this article explores them in detail.</p>
 <p>To investigate the specific function of SENP1, the investigators first constructed SENP1 knockout mice. They then observed the embryonic development of these mice. They found that SENP1^-/-^ mouse embryos were not viable and were smaller than heterozygous and wild-type embryos, and had severe embryonic anemia. Notably, the number of erythrocytes was significantly lower in SENP^-/-^ mice compared to wild type. Further, the number of nucleated cells in SENP1^-/-^ embryos was also significantly reduced. This suggests decreased erythropoiesis in SENP1-deficient embryos. This was demonstrated by tissue biopsy of SENP1^-/-^ embryonic liver.</p>
-<p><img src="/2021/04/28/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB7/1.png"></p>
+<p><img src="/2021/04/28/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB7/1.png" alt></p>
 <p>The authors then explored the role of SENP1 in the process of erythroid differentiation. They examined CFU-e and BFU-e in SENP1^-/-^ embryos and found that CFU-e levels were significantly lower while BFU-e did not differ. This indicates that the defective embryo has a CFU-e developmental defect. Approximately one-third of SENP1^-/-^ cells in Ter-119-positive cells were stained with TUNEL, suggesting that erythrocytes from SENP1-deficient embryos are more likely to be apoptotic. Since the Epo pathway is essential for the development and maturation of erythrocytes, the authors then examined the expression levels of Epo and related factors and found that Epo levels were significantly reduced in SENP1-deficient embryos. Next, the authors investigated the effect of Epo on erythrocyte apoptosis in vitro and found that fetal hepatocytes cultured in Epo-deficient medium had an increased rate of apoptosis, whereas the Epo-supplemented medium was normal. This suggests that Epo deficiency increases apoptosis in SENP1-deficient fetal livers.</p>
-<p><img src="/2021/04/28/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB7/2.png"></p>
+<p><img src="/2021/04/28/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB7/2.png" alt></p>
 <p>The authors then investigated how SENP1 regulates Epo production. They found that the siRNA of SENP1 could reduce the level of Epo under hypoxia, suggesting that SENP1 is involved in regulating Epo production under hypoxia. Next, by transferring a fluorescent reporter gene, the authors found that SENP1 can regulate Epo transcription, which requires deSUMOylation activity of SENP1. Because HIF1α is a transcription factor for Epo, the authors then explored the relationship between SENP1 and HIF1α. The authors found that SENP1 could regulate the activity of HIF1α, which in turn regulated the expression of Epo.</p>
-<p><img src="/2021/04/28/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB7/3.png"></p>
+<p><img src="/2021/04/28/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB7/3.png" alt></p>
 <p>The authors then looked at HIF1α in SENP1-deficient embryos. They found a significant reduction in the amount of HIF1α protein in SENP^-/-^ mice. In addition, the elevated expression of HIF1α due to hypoxia was attenuated in SENP^-/-^ MEF cells. SENP1 co-expression enhances the activity of the ODD site on HIF1α, whereas interference with SENP1 decreases this activity. Consistent with this, HIF1α activity was diminished in SENP1-deficient MEF cells. All these results suggest that SENP1 plays a crucial role in regulating the function of HIF1α.</p>
-<p><img src="/2021/04/28/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB7/4.png"></p>
+<p><img src="/2021/04/28/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB7/4.png" alt></p>
 <p>By mutating the SUMOylation site of HIF1α, the expression level of HIF1α was significantly increased. SUMOylated HIF1α is increased in SENP1^-/-^ MEF cells, indicating that SENP1 can deSUMOylate HIF1α. Then the authors found that SUMOylation of HIF1α could lead to its degradation. By using the proteasome inhibitor MG132, the authors found that SUMOylated HIF1α degradation was inhibited, suggesting that SUMOylated HIF1α degradation occurs in a proteasome-dependent manner and this degradation occurs under SENP1 defection and hypoxic.</p>
-<p><img src="/2021/04/28/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB7/5.png"></p>
+<p><img src="/2021/04/28/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB7/5.png" alt></p>
 <p>They then further investigated the way SUMOylated HIF1α was degraded. They found that SUMOylated HIF1a was not degraded in RCC4 cells (lack VHL), suggesting that VHL plays a role in the degradation. The authors then conjectured that SUMOylation is the signal for HIF1α binding to VHL under hypoxia. In vivo experiments first demonstrated that SUMOylated HIF1a and VHL can be immunoprecipitated. In vitro experiments also demonstrated that SUMOylated HIF1α could bind to VHL, while unmodified HIF1α could not. In addition, silencing SENP1 significantly reduced HIF1α expression in RCC4/VHL cells. The above results illustrate that SENP1 inactivation causes degradation of HIF1α by VHL.</p>
-<p><img src="/2021/04/28/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB7/6.png"></p>
+<p><img src="/2021/04/28/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB7/6.png" alt></p>
 <p>In summary, this study identified a specific mechanism by which SENP1 regulates the stability of HIF1α in the presence of hypoxia. Specifically, hypoxia leads to SUMOylation of HIF1a, which can cause VHL- and ubiquitin-dependent degradation. However, SENP1 can prevent the degradation of HIF1α by VHL through deSUMOylation. The discovery of this specific mechanism of hypoxia has the potential to identify a new target of action for the inhibition of solid tumor generation and growth and to provide a new indicator for the early detection of tumors.</p>
-<p><img src="/2021/04/28/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB7/7.png"></p>
+<p><img src="/2021/04/28/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB7/7.png" alt></p>
 ]]></content>
       <tags>
         <tag>文献导读</tag>
         <tag>Cell biology</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【Cell】Ms4a3表达命运图谱追踪单核-巨噬细胞发育进程</title>
-    <url>/2021/05/12/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB9/</url>
-    <content><![CDATA[<p><strong>Scientific Commentary on a Paper about Monocyte-macrophage origin and renewal</strong></p>
-<p>By <em>Mingzhen Tian</em></p>
-<span id="more"></span> 
-
-<p>原文链接：<a href="https://doi.org/10.1016/j.cell.2019.08.009">Fate Mapping via Ms4a3-Expression History Traces<br>Monocyte-Derived Cells</a></p>
-<p>This article recommended by Professor Bing Su is about development of monocytes in the bone marrow and renewal of tissue-resident macrophage. The authors of this article identified specific expression of Ms4a3 in GMPs and used this to construct several lineage tracer models. With these models, they precisely determine the contribution of different monocytes to the RTM pool. They resolved a long-standing controversy in the international immunology community regarding the origin and renewal of monocyte-macrophages. I will present the study background and results in depth below.</p>
-<p>Tissue-resident macrophages (RTMs) are a class of cells that are important in homeostasis and inflammation. RTMs have long been thought to develop from circulating monocytes in the blood after entering the tissues. However, new studies suggest that most RTMs are produced by the embryonic hematopoietic system and are then localized to the tissues where they renew and maintain themselves. Therefore, there has been controversy about monocyte-macrophage origin and renewal, and the extent of monocyte contribution to different tissue macrophages has not been elucidated. This article then accurately identifies the origin of RTMs in different situations.</p>
-<p>To study the origin of RTMs, we must first know the origin of monocytes. So, the researchers first wanted to construct a mouse model that could track monocyte progenitors. This process requires the identification of a gene that is expressed only in cMoPs and monocytes but not in DC progenitors. They performed single cell transcriptome analysis of immune cells after flow sorting. By analyzing transcriptomic signatures, they found that MDPs are monocytic lineage. Next, by analyzing DEGs from DC progenitors and monocyte progenitors, they selected a candidate gene Ms4a3. The tSNE map also confirmed that Ms4a3 was specifically expressed in cMoPs. In addition, Ms4a3 is also expressed in GMPs and GPs, indicating that it is a very good tracer of monocyte lineage. The investigators also confirmed that Ms4a3 is not expressed in mature RTMs and DCs.</p>
-<p><img src="/2021/05/12/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB9/1.png"></p>
-<p>Next, to track the expression of Ms4a3, the investigators constructed the <em>Ms4a3TdT</em> mice. By assay, they found that tdTomato signaling first appeared in GMPs and could be detected in cMoPs and monocytes. In addition, tdTomato was expressed in peripheral blood basophils and neutrophils, but not in DCs. Next, they found that GFP overlaps with tdTomato only for monocytes and cells in peripheral blood by comparison with monocyte reporter mice <em>Cx3cr1gfp</em>. These results suggest that Ms4a3 is a good model for tracing monocytes and their progenitors.</p>
-<p><img src="/2021/05/12/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB9/2.png"></p>
-<p>Next, to track the expression of Ms4a3, the investigators constructed the <em>Ms4a3Cre-RosaTdT</em> mice model. This model allows the progeny of cells expressing Ms4a3 to produce red fluorescent markers, thus showing their lineage. By detecting fluorescence after tamoxifen induction, they found fluorescence in granulocytes and monocytes, but not in lymphocytes and DCs. This shows that <em>Ms4a3Cre-RosaTdT</em> model is a good tracer model.</p>
-<p><img src="/2021/05/12/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB9/3.png"></p>
-<p>Some discoveries in recent years are gradually challenging the classical developmental pathway of monocytes. Recent studies show that MDPs develop directly from CMPs, not GMPs. By detecting tdTomato levels in monocyte precursors, they found that GMPs were the first to be detected, followed by GMPs progenies, while it is not detected in MDPs. These results indicate that MDPs are not generated by GMPs, but directly by CMPs.</p>
-<p><img src="/2021/05/12/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB9/4.png"></p>
-<p>Then they further investigated the origin of MDPs. They first found that MDPs cannot originate from tdTomato- GMPs in vitro. They then verified that MDP-derived monocytes could also be labeled with Ms4a3. They also verified these results in in vivo experiments. Notably, they found that MDPs can develop directly into monocytes without undergoing the cMoP stage.</p>
-<p><img src="/2021/05/12/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB9/5.png"></p>
-<p>Their study next moved to the second part, the contribution of monocytes to RTMs. They analyzed the levels of tdTomato in different organs and at different ages in <em>Ms4a3Cre-RosaTdT</em> mice. They found that the contribution of different monocytes to RTMs was organ-specific. Organs contributing significantly are kidney, peritoneal cavity, spleen and lung. The contribution in colon and dermal macrophages is also significant and fast. Gender bias was also found in peritoneal and renal macrophages.</p>
-<p><img src="/2021/05/12/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB9/6.png"></p>
-<p>The investigators then investigated the contribution of monocytes to RTMs during inflammation. They constructed five different inflammation scenarios and tested each for tdTomoto. They found that Monocytes can develop into peritoneal macrophages in thioglycolic acid-induced peritonitis scenarios. In contrast, in the IL-4c scenario, the macrophages produced do not exhibit tdTomoto, indicating the absence of blood-derived monocytes. These different results suggest that blood monocytes can complement macrophages in the inflammatory response, but this ability is determined by the type of inflammation.</p>
-<p><img src="/2021/05/12/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB9/7.png"></p>
-<p>Overall, this article constructs a reporter model and fate tracing models for monocytes. With these models, the authors precisely identified the development of monocytes and the origin of RTMs during hematopoiesis and inflammation. This is an important guide for therapy regimens targeting monocyte-macrophages. These novel tracer models are also leading the way in the field.</p>
-<p>After reading this article, I admire the author’s clever and skillful use of flow cytometry. Single-cell sequencing complemented by biomimetic analysis is also appealing to me. Most importantly, I was impressed by the author’s innovative thinking and diligent efforts.</p>
-]]></content>
-      <tags>
-        <tag>文献导读</tag>
-        <tag>Immunology</tag>
       </tags>
   </entry>
   <entry>
@@ -530,20 +525,19 @@
     <content><![CDATA[<p><strong>Scientific Commentary on a Paper about a Mechanosensitive Peri-arteriolar Niche</strong></p>
 <p>By <em>Mingzhen Tian</em></p>
 <span id="more"></span> 
-
 <p>原文链接：<a href="https://doi.org/10.1038/s41586-021-03298-5">A mechanosensitive peri-arteriolar niche for osteogenesis and lymphopoiesis</a>  </p>
 <p>This article recommended by Professor Dengli Hong is about the discovery of a new class of osteoblast progenitor cell. Researchers from UT Southwestern have identified for the first time adult bone marrow peri-arteriolar cells as osteogenic progenitors and have discovered mechanisms by which osteogenic progenitors are regulated by mechanical forces, partially explaining the mechanism by which exercise improves immune function and bone mineral density. Below I will briefly describe the background and specific results.</p>
 <p>Two stem cell lineages are included in the bone marrow, hematopoietic stem cells and skeletal stem cells. They are maintained in specific niches in the hematopoietic tissue and stromal cells produce growth factors in these microenvironments. In bone marrow, leptin receptor-positive cells (LEPR+ cells) are a type of pericyte, which contains skeletal stem cells, osteogenic progenitor cells, lipogenic progenitor cells, and a variety of other cell types. LEPR+ cells are also an important source of growth factors. However, how to identify these heterogeneous LEPR+ cells remains unclear. The authors of this article have identified a class of peri-arteriolar LEPR+ cells that express osteolectin (<em>Oln</em>).</p>
 <p>They first identified osteolectin expression in peri-arteriolar LEPR+ cells. They chimerized <em>Oln</em> with <em>mTomato</em> and constructed <em>OlnmT</em> mice to localize osteolectin. By flow cytometry they found that about 0.025% of the bone marrow cells were <em>Oln</em>-mTomato+ and that these cells largely expressed LEPR, accounting for 16% of all LEPR+ cells. Then by deep confocal imaging they found that <em>Oln</em>-mTomato+ cells were localized in agreement with peri-arteriolar LEPR+ cells. These results demonstrate that peri-arteriolar LEPR+ cells expressed osteolectin.</p>
-<p><img src="/2021/05/05/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB8/1.png"></p>
+<p><img src="/2021/05/05/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB8/1.png" alt></p>
 <p>They then investigated the function of osteolectin+ cells. They found that fibroblast CFU-Fs produced by Oln+ LEPR+ cells were few. Also, when stimulated to differentiate, <em>Oln</em>-mTomato+ LEPR+ produced CFU-Fs developed into osteoblasts rather than adipocytes. This suggests that <em>Oln</em>-mTomato+ LEPR+ peri-arteriolar cells are osteogenic progenitors. Then, by examining the rate of division and survival time, the authors found that osteolectin+ cells are fast dividing cells with short survival time. The authors also found that osteolectin+ cells can continuously turnover in vivo and continue to form most of the adult neonatal skeleton.</p>
-<p><img src="/2021/05/05/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB8/2.png"></p>
+<p><img src="/2021/05/05/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB8/2.png" alt></p>
 <p>The authors then explored the effect of LEPR+ osteolectin+ cells on lymphopoiesis. They used the Cre-Loxp system to selectively knock out the Scf gene in peri-arteriolar Oln+ cells. They found that knockdown of Scf significantly reduced CLPs, while other types of progenitor cells did not change, suggesting that osteolectin+ peri-arteriolar cells may provide a niche for CLPs. They then treated the constructed mouse model with tamoxifen and after two months found that deletion of Scf reduced multiple lymphoid progenitors. By infecting <em>Listeria monocytogenes</em>, they also examined the effect of this niche on acute infection. They found that deletion of Scf resulted in a reduced response to acute infection. These results suggest that osteolectin+ peri-arteriolar cells provide a niche for the maintenance of lymphoid progenitors through the expression of SCF</p>
-<p><img src="/2021/05/05/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB8/3.png"></p>
+<p><img src="/2021/05/05/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB8/3.png" alt></p>
 <p>We all know that exercise improves bone quality and immunity, but the mechanism behind it is not well known. After the previous studies, we know that peri-arteriolar niches can promote osteogenesis and lymphocyte production. So, what does this novel niche have to do with exercise? The authors next explore this.</p>
 <p>They placed a treadmill for mice to run autonomously and found that running mice had thicker bone, more <em>Oln</em>-mTomato+ cells and CLPs. This suggests that running promotes the function of peri-arteriolar niches. They then explored the effect of mechanical stress on osteolectin+ cells. They suspended the hind limbs of the mice to reduce the movement of the hind limbs. They found that the thickness of bone, <em>Oln</em>-mTomato+ cells and CLPs were significantly reduced in the lifted hind limbs. This indicates that mechanical stress is essential for the maintenance of the niche.</p>
 <p>Then by gene expression enrichment, they found that osteolectin+ cells expressing PIEZO1. They identified piezo-like channel properties in osteolectin+ cells by a membrane clamp technique. They then knocked down Piezo1 in Oln+ cells and found that bone thickness, <em>Oln</em>-mTomato+ cells and CLPs were reduced. These results indicate that PIEZO1 plays an important role in maintaining the peri-arteriolar niche.</p>
-<p><img src="/2021/05/05/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB8/4.png"></p>
+<p><img src="/2021/05/05/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB8/4.png" alt></p>
 <p>Overall, this article revealed that the mechanical forces generated by exercise can be transmitted to osteolectin+ cells in the bone marrow via the arterial vasculature. While osteolectin+ cells provide a peri-arteriolar niche expressing SCF for the maintenance of osteogenesis and lymphocyte formation.</p>
 <p>Through the study of this article, I deeply appreciate the author’s sudden and whimsical thoughts, meticulous observations and bold attempts. The authors started from an insignificant phenotype and carried out a series of bold attempts and finally came up with excellent results. This is something I really admire. I also learned from the author’s skillful use of the Cre-Loxp system and his extensive knowledge of experimental animal models.</p>
 <p>The weakness of this article, in my humble opinion, is that it does not explore the integration with clinical diseases. Due to the importance of this novel niche for osteogenesis and immunity, it may serve as a therapeutic target for related diseases.</p>
@@ -551,6 +545,37 @@
       <tags>
         <tag>文献导读</tag>
         <tag>Developmental biology</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【Cell】Ms4a3表达命运图谱追踪单核-巨噬细胞发育进程</title>
+    <url>/2021/05/12/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB9/</url>
+    <content><![CDATA[<p><strong>Scientific Commentary on a Paper about Monocyte-macrophage origin and renewal</strong></p>
+<p>By <em>Mingzhen Tian</em></p>
+<span id="more"></span> 
+<p>原文链接：<a href="https://doi.org/10.1016/j.cell.2019.08.009">Fate Mapping via Ms4a3-Expression History Traces<br>Monocyte-Derived Cells</a></p>
+<p>This article recommended by Professor Bing Su is about development of monocytes in the bone marrow and renewal of tissue-resident macrophage. The authors of this article identified specific expression of Ms4a3 in GMPs and used this to construct several lineage tracer models. With these models, they precisely determine the contribution of different monocytes to the RTM pool. They resolved a long-standing controversy in the international immunology community regarding the origin and renewal of monocyte-macrophages. I will present the study background and results in depth below.</p>
+<p>Tissue-resident macrophages (RTMs) are a class of cells that are important in homeostasis and inflammation. RTMs have long been thought to develop from circulating monocytes in the blood after entering the tissues. However, new studies suggest that most RTMs are produced by the embryonic hematopoietic system and are then localized to the tissues where they renew and maintain themselves. Therefore, there has been controversy about monocyte-macrophage origin and renewal, and the extent of monocyte contribution to different tissue macrophages has not been elucidated. This article then accurately identifies the origin of RTMs in different situations.</p>
+<p>To study the origin of RTMs, we must first know the origin of monocytes. So, the researchers first wanted to construct a mouse model that could track monocyte progenitors. This process requires the identification of a gene that is expressed only in cMoPs and monocytes but not in DC progenitors. They performed single cell transcriptome analysis of immune cells after flow sorting. By analyzing transcriptomic signatures, they found that MDPs are monocytic lineage. Next, by analyzing DEGs from DC progenitors and monocyte progenitors, they selected a candidate gene Ms4a3. The tSNE map also confirmed that Ms4a3 was specifically expressed in cMoPs. In addition, Ms4a3 is also expressed in GMPs and GPs, indicating that it is a very good tracer of monocyte lineage. The investigators also confirmed that Ms4a3 is not expressed in mature RTMs and DCs.</p>
+<p><img src="/2021/05/12/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB9/1.png" alt></p>
+<p>Next, to track the expression of Ms4a3, the investigators constructed the <em>Ms4a3TdT</em> mice. By assay, they found that tdTomato signaling first appeared in GMPs and could be detected in cMoPs and monocytes. In addition, tdTomato was expressed in peripheral blood basophils and neutrophils, but not in DCs. Next, they found that GFP overlaps with tdTomato only for monocytes and cells in peripheral blood by comparison with monocyte reporter mice <em>Cx3cr1gfp</em>. These results suggest that Ms4a3 is a good model for tracing monocytes and their progenitors.</p>
+<p><img src="/2021/05/12/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB9/2.png" alt></p>
+<p>Next, to track the expression of Ms4a3, the investigators constructed the <em>Ms4a3Cre-RosaTdT</em> mice model. This model allows the progeny of cells expressing Ms4a3 to produce red fluorescent markers, thus showing their lineage. By detecting fluorescence after tamoxifen induction, they found fluorescence in granulocytes and monocytes, but not in lymphocytes and DCs. This shows that <em>Ms4a3Cre-RosaTdT</em> model is a good tracer model.</p>
+<p><img src="/2021/05/12/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB9/3.png" alt></p>
+<p>Some discoveries in recent years are gradually challenging the classical developmental pathway of monocytes. Recent studies show that MDPs develop directly from CMPs, not GMPs. By detecting tdTomato levels in monocyte precursors, they found that GMPs were the first to be detected, followed by GMPs progenies, while it is not detected in MDPs. These results indicate that MDPs are not generated by GMPs, but directly by CMPs.</p>
+<p><img src="/2021/05/12/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB9/4.png" alt></p>
+<p>Then they further investigated the origin of MDPs. They first found that MDPs cannot originate from tdTomato- GMPs in vitro. They then verified that MDP-derived monocytes could also be labeled with Ms4a3. They also verified these results in in vivo experiments. Notably, they found that MDPs can develop directly into monocytes without undergoing the cMoP stage.</p>
+<p><img src="/2021/05/12/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB9/5.png" alt></p>
+<p>Their study next moved to the second part, the contribution of monocytes to RTMs. They analyzed the levels of tdTomato in different organs and at different ages in <em>Ms4a3Cre-RosaTdT</em> mice. They found that the contribution of different monocytes to RTMs was organ-specific. Organs contributing significantly are kidney, peritoneal cavity, spleen and lung. The contribution in colon and dermal macrophages is also significant and fast. Gender bias was also found in peritoneal and renal macrophages.</p>
+<p><img src="/2021/05/12/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB9/6.png" alt></p>
+<p>The investigators then investigated the contribution of monocytes to RTMs during inflammation. They constructed five different inflammation scenarios and tested each for tdTomoto. They found that Monocytes can develop into peritoneal macrophages in thioglycolic acid-induced peritonitis scenarios. In contrast, in the IL-4c scenario, the macrophages produced do not exhibit tdTomoto, indicating the absence of blood-derived monocytes. These different results suggest that blood monocytes can complement macrophages in the inflammatory response, but this ability is determined by the type of inflammation.</p>
+<p><img src="/2021/05/12/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB9/7.png" alt></p>
+<p>Overall, this article constructs a reporter model and fate tracing models for monocytes. With these models, the authors precisely identified the development of monocytes and the origin of RTMs during hematopoiesis and inflammation. This is an important guide for therapy regimens targeting monocyte-macrophages. These novel tracer models are also leading the way in the field.</p>
+<p>After reading this article, I admire the author’s clever and skillful use of flow cytometry. Single-cell sequencing complemented by biomimetic analysis is also appealing to me. Most importantly, I was impressed by the author’s innovative thinking and diligent efforts.</p>
+]]></content>
+      <tags>
+        <tag>文献导读</tag>
+        <tag>Immunology</tag>
       </tags>
   </entry>
 </search>
