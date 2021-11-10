@@ -13,6 +13,111 @@
 </object>]]></content>
   </entry>
   <entry>
+    <title>Machine Learning-Based Lung Adenocarcinoma Aided Diagnosis and Mortality Prediction</title>
+    <url>/2021/06/24/13/</url>
+    <content><![CDATA[<p>课程论文</p>
+<span id="more"></span> 
+
+<object data="13.pdf" type="application/pdf" width="100%" height="877px">
+
+
+</object>]]></content>
+  </entry>
+  <entry>
+    <title>【cs231n】Lecture 1 - Overview 笔记</title>
+    <url>/2021/08/29/cs231-1/</url>
+    <content><![CDATA[<h1 id="斯坦福李飞飞cs231n计算机视觉课程笔记"><a href="#斯坦福李飞飞cs231n计算机视觉课程笔记" class="headerlink" title="斯坦福李飞飞cs231n计算机视觉课程笔记"></a>斯坦福李飞飞cs231n计算机视觉课程笔记</h1><span id="more"></span> 
+
+<p>笔记 by <em>田明振</em></p>
+<p>注：</p>
+<ol>
+<li>此笔记整合了<strong>2017年的视频</strong>和<strong>2021年的最新课件</strong></li>
+<li>视频链接： <a href="https://www.bilibili.com/video/BV1nJ411z7fe?p=2">https://www.bilibili.com/video/BV1nJ411z7fe?p=2</a>  or  <a href="https://youtu.be/vT1JzLTH4G4">https://youtu.be/vT1JzLTH4G4</a></li>
+<li>课程官网： <a href="http://cs231n.stanford.edu/index.html">http://cs231n.stanford.edu/index.html</a> </li>
+<li>课件下载链接： <a href="http://cs231n.stanford.edu/slides/">http://cs231n.stanford.edu/slides/</a> </li>
+</ol>
+<h2 id="Lecture-1-Overview"><a href="#Lecture-1-Overview" class="headerlink" title="Lecture 1 - Overview"></a>Lecture 1 - Overview</h2><p>Today’s agenda</p>
+<ol>
+<li>A brief history of computer vision  </li>
+<li>CS231n overview  </li>
+</ol>
+<h3 id="Part-1-A-brief-history-of-computer-vision-计算机视觉的历史-by-李飞飞"><a href="#Part-1-A-brief-history-of-computer-vision-计算机视觉的历史-by-李飞飞" class="headerlink" title="Part 1: A brief history of computer vision 计算机视觉的历史 by 李飞飞"></a>Part 1: A brief history of computer vision 计算机视觉的历史 by <em>李飞飞</em></h3><p>计算机视觉可用于各个学科，如物理、生物、心理学、计算机科学、工程学、数学等。</p>
+<p><img src="/2021/08/29/cs231-1/1.png"></p>
+<p>具体可用于  </p>
+<p>• Object detection 目标检测<br>• Object classification 目标分类<br>• Scene understanding 场景理解<br>• Semantic scene segmentation 语义分割<br>• 3D reconstruction 3D重建<br>• Object tracking 目标追踪<br>• Human pose estimation 人体姿态分析<br>• Activity recognition 行为识别<br>• VQA 视觉问答  等场景</p>
+<p>公元前5.3-5.4亿年，  Cambrian Explosion  寒武纪生命大爆发，生物第一次产生了视觉。</p>
+<p><img src="/2021/08/29/cs231-1/2.png"></p>
+<p>人类最早让机器出现视觉，即照相机的诞生。人类最早出现的相机可追溯到文艺复兴时期的camera obscura（暗箱）</p>
+<p><img src="/2021/08/29/cs231-1/3.png"></p>
+<h4 id="计算机视觉的发展之-The-known-story-–-Neuroscience-inspired-AI"><a href="#计算机视觉的发展之-The-known-story-–-Neuroscience-inspired-AI" class="headerlink" title="计算机视觉的发展之  The known story – Neuroscience inspired AI"></a>计算机视觉的发展之  The known story – Neuroscience inspired AI</h4><p>60年代，Hubel and Wiesel  关于电生理学的研究最先揭示了哺乳动物的视觉处理机制，发现视觉处理是始于视觉世界的简单结构。</p>
+<p><img src="/2021/08/29/cs231-1/4.png"></p>
+<p>通过不同层级的细胞，将low-level的视觉信息组合成high-level的patterns，即  Cortical Column  皮质柱，神经网络也是这一思想。</p>
+<p><img src="/2021/08/29/cs231-1/5.png"></p>
+<blockquote>
+<p>问题的形成往往比解决问题更重要，解决问题需要创造性的想象力，这标志着科学的真正进步。 ——爱因斯坦</p>
+</blockquote>
+<h4 id="计算机视觉的发展之-The-not-so-known-story-–-the-search-for-computer-vision’s-“North-Star”"><a href="#计算机视觉的发展之-The-not-so-known-story-–-the-search-for-computer-vision’s-“North-Star”" class="headerlink" title="计算机视觉的发展之  The not-so-known story – the search for computer vision’s “North Star”"></a>计算机视觉的发展之  The not-so-known story – the search for computer vision’s “North Star”</h4><p>计算机视觉的发展也从60年代初开始，  Larry Roerts  的博士论文被认为是第一篇关于计算机视觉的论文，提出了block world的概念，将视觉世界简化为几何形状。</p>
+<p><img src="/2021/08/29/cs231-1/6.png"></p>
+<p>70年代，  David Marr  撰写了《vision》，提出了如何使计算机识别视觉世界的算法。呈现物体的三维结构，需经历以下几个步骤：</p>
+<p><img src="/2021/08/29/cs231-1/7.png"></p>
+<p>70年代另一项开创性的工作，解决了如何从识别块状世界转向现实世界对象的问题。两组科学家分别提出了generalized cylinder（广义圆柱体）和pictorial structure（图形结构）的概念。</p>
+<p><img src="/2021/08/29/cs231-1/8.png"></p>
+<p>1997年  Shi &amp; Malik  利用normalized cut实现了图像分割。该算法将图像中的像素点归为有意义的类别，实现分割。</p>
+<p><img src="/2021/08/29/cs231-1/9.png"></p>
+<p>2001年，  Viola &amp; Jones  利用AdaBoost机器学习算法，实现了人脸识别。</p>
+<p><img src="/2021/08/29/cs231-1/10.png"></p>
+<p>2006年，提出了空间金字塔匹配算法，提取出图片的整体特征，进行匹配识别。</p>
+<p><img src="/2021/08/29/cs231-1/11.png"></p>
+<blockquote>
+<p>计算机视觉的圣杯——  Object Recognition  目标识别</p>
+</blockquote>
+<p>直到21世纪才出现了图片标注数据集，最出名的是PASCAL</p>
+<p>另一个数据集是ImageNet，由本节课主讲李飞飞创立。</p>
+<p><img src="/2021/08/29/cs231-1/12.png"></p>
+<p>ImageNet团队还创立了全球性的比赛，该比赛的成绩在2012年突飞猛进。</p>
+<p><img src="/2021/08/29/cs231-1/13.png"></p>
+<p>这一年，第一次将卷积神经网络应用于计算机视觉，实现了显著的效果。这也是这门课将重点介绍的内容。</p>
+<p><img src="/2021/08/29/cs231-1/14.png"></p>
+<p>但神经网络早在1998年就被提出，但由于计算能力的限制，一直没有用于计算机视觉领域。</p>
+<h3 id="Part-2-Convolutional-Neural-Networks"><a href="#Part-2-Convolutional-Neural-Networks" class="headerlink" title="Part 2: Convolutional Neural Networks"></a>Part 2: Convolutional Neural Networks</h3><p>for Visual Recognition   卷积神经网络用于视觉识别 by   <em>Justin Johnson</em></p>
+]]></content>
+      <tags>
+        <tag>cs231n</tag>
+        <tag>编程学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Curriculum Vitae</title>
+    <url>/2021/06/30/cv/</url>
+    <content><![CDATA[<span id="more"></span> 
+
+<object data="cv.pdf" type="application/pdf" width="100%" height="877px">
+
+</object>]]></content>
+  </entry>
+  <entry>
+    <title>外泌体文献调研</title>
+    <url>/2021/11/09/%E5%A4%96%E6%B3%8C%E4%BD%93%E6%96%87%E7%8C%AE%E8%B0%83%E7%A0%94/</url>
+    <content><![CDATA[<p>外泌体文献调研</p>
+<span id="more"></span> 
+
+<p><img src="/2021/11/09/%E5%A4%96%E6%B3%8C%E4%BD%93%E6%96%87%E7%8C%AE%E8%B0%83%E7%A0%94/%E5%A4%96%E6%B3%8C%E4%BD%93%E7%BB%BC%E8%BF%B0-01.jpg"></p>
+<p><img src="/2021/11/09/%E5%A4%96%E6%B3%8C%E4%BD%93%E6%96%87%E7%8C%AE%E8%B0%83%E7%A0%94/%E5%A4%96%E6%B3%8C%E4%BD%93%E7%BB%BC%E8%BF%B0-02.jpg"></p>
+<p><img src="/2021/11/09/%E5%A4%96%E6%B3%8C%E4%BD%93%E6%96%87%E7%8C%AE%E8%B0%83%E7%A0%94/%E5%A4%96%E6%B3%8C%E4%BD%93%E7%BB%BC%E8%BF%B0-03.jpg"></p>
+<p><img src="/2021/11/09/%E5%A4%96%E6%B3%8C%E4%BD%93%E6%96%87%E7%8C%AE%E8%B0%83%E7%A0%94/%E5%A4%96%E6%B3%8C%E4%BD%93%E7%BB%BC%E8%BF%B0-04.jpg"></p>
+<p><img src="/2021/11/09/%E5%A4%96%E6%B3%8C%E4%BD%93%E6%96%87%E7%8C%AE%E8%B0%83%E7%A0%94/%E5%A4%96%E6%B3%8C%E4%BD%93%E7%BB%BC%E8%BF%B0-05.jpg"></p>
+<p><img src="/2021/11/09/%E5%A4%96%E6%B3%8C%E4%BD%93%E6%96%87%E7%8C%AE%E8%B0%83%E7%A0%94/%E5%A4%96%E6%B3%8C%E4%BD%93%E7%BB%BC%E8%BF%B0-06.jpg"></p>
+<p><img src="/2021/11/09/%E5%A4%96%E6%B3%8C%E4%BD%93%E6%96%87%E7%8C%AE%E8%B0%83%E7%A0%94/%E5%A4%96%E6%B3%8C%E4%BD%93%E7%BB%BC%E8%BF%B0-07.jpg"></p>
+<p><img src="/2021/11/09/%E5%A4%96%E6%B3%8C%E4%BD%93%E6%96%87%E7%8C%AE%E8%B0%83%E7%A0%94/%E5%A4%96%E6%B3%8C%E4%BD%93%E7%BB%BC%E8%BF%B0-08.jpg"></p>
+<p><img src="/2021/11/09/%E5%A4%96%E6%B3%8C%E4%BD%93%E6%96%87%E7%8C%AE%E8%B0%83%E7%A0%94/%E5%A4%96%E6%B3%8C%E4%BD%93%E7%BB%BC%E8%BF%B0-09.jpg"></p>
+<p><img src="/2021/11/09/%E5%A4%96%E6%B3%8C%E4%BD%93%E6%96%87%E7%8C%AE%E8%B0%83%E7%A0%94/%E5%A4%96%E6%B3%8C%E4%BD%93%E7%BB%BC%E8%BF%B0-10.jpg"></p>
+<p><img src="/2021/11/09/%E5%A4%96%E6%B3%8C%E4%BD%93%E6%96%87%E7%8C%AE%E8%B0%83%E7%A0%94/%E5%A4%96%E6%B3%8C%E4%BD%93%E7%BB%BC%E8%BF%B0-11.jpg"></p>
+]]></content>
+      <tags>
+        <tag>exosomes</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>【Science】新神经保护剂！NMDAR/TRPM4相互作用机制及抑制剂</title>
     <url>/2021/03/31/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB1/</url>
     <content><![CDATA[<p><strong>Scientific Commentary on a Paper about NMDAR/TRPM4 interaction</strong></p>
@@ -148,6 +253,50 @@
       </tags>
   </entry>
   <entry>
+    <title>【Nature Cell Biology】消除碱基编辑诱导的全基因组和转录组脱靶突变</title>
+    <url>/2021/06/30/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB12/</url>
+    <content><![CDATA[<h1 id="Eliminating-base-editor-induced-genome-wide-and-transcriptome-wide-off-target-mutations"><a href="#Eliminating-base-editor-induced-genome-wide-and-transcriptome-wide-off-target-mutations" class="headerlink" title="Eliminating base-editor-induced genome-wide and transcriptome-wide off-target mutations"></a>Eliminating base-editor-induced genome-wide and transcriptome-wide off-target mutations</h1><span id="more"></span> 
+
+<p>作者： 杨力  期刊：Nature Cell Biology  时间：2021.5</p>
+<p><a href="https://www.nature.com/articles/s41556-021-00671-4#Abs1">原文链接</a></p>
+<h2 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h2><p>CRISPR-Cas9与胞苷脱氨酶（  cytidine  deaminases ）的融合导致了能够进行可编程C-to-T编辑的碱基编辑器( base  editors，BEs)，该编辑器具有临床应用潜力，但存在脱靶(off-target ，OT)突变。这里，作者使用一个可剪切的脱氧胞苷脱氨酶抑制剂(dCDI)结构域构建了一个 变形式BE (tBE)系统，该系统仅在全基因组和转录组范围的OT突变的背景水平上就能诱导高效的编辑。 产生后，tBE在OT位点与可裂解dCDI融合保持不活跃状态，因此消除了意外突变。 当结合在目标位点时，tBE被转化以切断dCDI结构域，并催化靶向脱氨基以进行精确的碱基编辑 。 通过双腺相关病毒(AAV)系统导入小鼠后，tBE系统在Pcsk9中创建了一个提前终止密码子，显著降低了血清中Pcsk9，导致总胆固醇下降~ 30-40%。  tBE的开发建立了一种高度特异性的碱基编辑系统，其体内疗效具有治疗应用的潜力。 </p>
+<h2 id="Fig-1-identification-of-dCDi-domains"><a href="#Fig-1-identification-of-dCDi-domains" class="headerlink" title="Fig. 1 | identification of dCDi domains."></a>Fig. 1 | identification of dCDi domains.</h2><p><img src="/2021/06/30/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB12/1.png"></p>
+<p>a.APOBEC  家族有两类，一类只有一个CDA 位点，另一类有两个CDA位点，其中一个位点具有催化活性，另一个位点没有催化活性但有调节功能。作者构建了10个BEs，分别包含和不包含inactive  but  regulatory  domain。</p>
+<p>b c.包含inactive的CDA位点的APOBEC编辑效率显著降低。</p>
+<p>def.为了验证一般性，作者将mA3,  hA3F  和 hA3B的inactive CDA位点连接到了mA3CDA1–BE3上，发现都有编辑效率降低。CDA2  of  mA3的抑制效果最强。</p>
+<p>综上所述，这些调控域作为dCDIs对脱氧胞苷脱氨酶活性具有普遍的抑制作用。 </p>
+<h2 id="Fig-2-Comparison-of-tBE-with-other-BEs"><a href="#Fig-2-Comparison-of-tBE-with-other-BEs" class="headerlink" title="Fig. 2 | Comparison of tBE with other BEs."></a>Fig. 2 | Comparison of tBE with other BEs.</h2><p><img src="/2021/06/30/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB12/2.png"></p>
+<p>作者试图利用dCDI域开发一个BE系统来避免sgRNA不依赖的突变。理想情况下，由于dCDI的连接，这种BE不会引起可观察到的OT突变，但当与靶点结合时，可以通过切断dCDI而转化为活性;因此被称为tBE。 </p>
+<p>作者构建了   tBE-V5–mA3 这一BE，并将其与其他的BE进行对比，发现 tBE-V5–mA3 上靶效果很好，包括 DNA甲基化水平高的位点和含GpC二核苷酸 的位点。并且在OTss sites 和 OT sites，只有背景水平的突变。</p>
+<h2 id="Fig-3-optimization-of-hsgRNA-in-the-tBE-system"><a href="#Fig-3-optimization-of-hsgRNA-in-the-tBE-system" class="headerlink" title="Fig. 3 | optimization of hsgRNA in the tBE system."></a>Fig. 3 | optimization of hsgRNA in the tBE system.</h2><p><img src="/2021/06/30/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB12/3.png"></p>
+<p>在比较编辑效率时，作者注意到sgRNA和hsgRNA之间的距离影响了tBE对目标的编辑效率。因此，作者测定了sgRNA与hsgRNA之间距离的影响(图3a、b)，发现当hsgRNA位于sgRNA的−91 bp至−34 bp(上游)区域时，tBE的编辑效率达到最佳（图3c）</p>
+<p>由于hsgRNA在其结合位点也形成R-loop区域(图3d)，一些hsgRNA的靶位点偶尔会发生意外的C-to-T编辑 (图3e left)。 之前的研究表明使用带有截断间隔的guide RNA并不影响Cas9的结合 。 因此，作者研究了hsgRNA靶位点的非预期编辑是否也可以通过截断的hsgRNAs来抑制。 使用截断的hsgRNA时，hsgRNA靶区的非预期编辑减少  (Fig.  3e,f).  有10bp间隔的hsgRNA消除了意外的编辑 ，而目标编辑不受影响 。</p>
+<h2 id="Fig-4-the-effect-of-split-TEV-protease-concentration-on-editing-efficiency-and-sgRNA-independent-OT-mutation"><a href="#Fig-4-the-effect-of-split-TEV-protease-concentration-on-editing-efficiency-and-sgRNA-independent-OT-mutation" class="headerlink" title="Fig. 4 | the effect of split-TEV protease concentration on editing efficiency and sgRNA-independent OT mutation."></a>Fig. 4 | the effect of split-TEV protease concentration on editing efficiency and sgRNA-independent OT mutation.</h2><p><img src="/2021/06/30/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB12/4.png"></p>
+<p>作者还用不同数量的表达载体表达了分裂- tev系统(图4a)，发现在分裂- tev组分检测的蛋白水平上，目标编辑效率(图4b)和sgrna独立OTss位点的突变频率(图4c)均未受影响(图4d)。 </p>
+]]></content>
+      <tags>
+        <tag>文献导读</tag>
+        <tag>Bioinformatics</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【Advanced Materials】等离子体合金揭示早期胃癌独特的代谢表型</title>
+    <url>/2021/10/14/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB13/</url>
+    <content><![CDATA[<h1 id="Plasmonic-Alloys-Reveal-a-Distinct-Metabolic-Phenotype-of-Early-Gastric-Cancer"><a href="#Plasmonic-Alloys-Reveal-a-Distinct-Metabolic-Phenotype-of-Early-Gastric-Cancer" class="headerlink" title="Plasmonic Alloys Reveal a Distinct Metabolic Phenotype of Early Gastric Cancer"></a>Plasmonic Alloys Reveal a Distinct Metabolic Phenotype of Early Gastric Cancer</h1><span id="more"></span> 
+
+<p>通讯作者：钱昆  期刊：Advanced Materials  时间：20 March 2021 </p>
+<p><a href="https://www.nature.com/articles/s41556-021-00671-4#Abs1">原文链接</a></p>
+<h2 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h2><p>胃癌(Gastric cancer, GC)是一个多因素的过程，伴随着代谢途径的改变。无创代谢谱有助于早期GC诊断，从而改善预后结果。在这里，介孔PdPtAu合金(mesoporous PdPtAu alloys)被设计来表征人类血液中的代谢谱。采用非均匀表面等离子体共振优化元素组成，为光诱导解吸/电离提供首选电荷转移，为热驱动解吸提供增强光热转换。 PdPtAu的表面结构通过受控的介孔进一步调整，只容纳代谢物，而不是大的干扰化合物。因此，优化后的PdPtAu合金通过激光解吸/电离质谱在数秒内产生直接代谢指纹，消耗500 nL天然血浆。早期GC通过稀疏学习显示出独特的代谢表型，从而精确诊断GC，AUC为0.942。可以预见，等离子体合金将开辟一个微创血液分析的新时代，以改善临床环境中癌症患者的监测。 </p>
+<h2 id="Fig-1-Characterization-of-PdPt-and-PdPtAu-alloys"><a href="#Fig-1-Characterization-of-PdPt-and-PdPtAu-alloys" class="headerlink" title="Fig. 1. Characterization of PdPt and PdPtAu alloys"></a>Fig. 1. Characterization of PdPt and PdPtAu alloys</h2><p>使用一种改良的  surfactant-directing strategy 合成  mesoporous PdPtAu 。 简单地说，通过化学计量学方法在PdPt胶束上种子生长Au，然后去除Pluronic F127表面活性剂，获得了三金属合金。 <strong>图1a</strong>为 去除表面活性剂后，形成均匀的介孔PdPt微球。 金  precursor 还原后，PdPtAu微球的粒径增大到≈150 nm，孔径减小到≈15 nm(<strong>图1b</strong>)。 通过元素映射分析(<strong>图1c</strong>)和线扫描剖面(<strong>图1d</strong>)，得到的三金属合金显示出Pd、Pt和Au的分布。区域电子衍射图(<strong>图1e</strong>)和高分辨率TEM(<strong>图1e</strong>的插图)显示了明显的三金属合金多晶环。通过广角x射线粉末衍射分析(<strong>图1f</strong>)对晶体结构和周期间距进行了验证，得出了两组不同的衍射峰，它们都指向了PdPt 和Au的fcc晶体结构。 </p>
+<h2 id="Figure-2-Optimization-of-PdPtAu-alloys-for-metabolites-detection"><a href="#Figure-2-Optimization-of-PdPtAu-alloys-for-metabolites-detection" class="headerlink" title="Figure 2. Optimization of PdPtAu alloys for metabolites detection"></a>Figure 2. Optimization of PdPtAu alloys for metabolites detection</h2><p>纳米材料的LDI增强依赖于其元素组成和表面结构。  随后，我们通过改变金precursor的浓度，合成了性能可控的PdPtAu纳米球(20/30/40 × 10-3 m of HAuCl4 aqueous solution, denoted as PdPtAu-2/3/4, <strong>Figure 2a–c</strong>) 。</p>
+<p>为了证明LDI质谱对小分子的高灵敏度和选择性可以通过当前的策略实现，以葡萄糖、苯丙氨酸和赖氨酸为指示分子对合成合金进行了全面的质谱评价。在灵敏度方面，PdPtAu-3在标准样品(<strong>图2d</strong>)的点状图中对小代谢物的信号强度最高，优于PdPtAu-1/2/4合金。</p>
+]]></content>
+      <tags>
+        <tag>文献导读</tag>
+        <tag>Bionanotechnology</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>【Science】前扣带回皮层到隔核的投射调控疼痛和镇痛的共情</title>
     <url>/2021/04/06/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB2/</url>
     <content><![CDATA[<p><strong>Scientific Commentary on a Paper about Empathy</strong></p>
@@ -173,6 +322,33 @@
       <tags>
         <tag>文献导读</tag>
         <tag>Neurobiology</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【Nature】浆细胞样树突状细胞感知自身DNA偶联抗菌肽</title>
+    <url>/2021/04/14/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB4/</url>
+    <content><![CDATA[<p><strong>Scientific Commentary on a Paper about Psoriasis</strong></p>
+<p>By <em>Mingzhen Tian</em></p>
+<span id="more"></span> 
+
+<p>原文链接：<a href="https://www.nature.com/articles/nature06116">Plasmacytoid dendritic cells sense self-DNA coupled with antimicrobial peptide</a> </p>
+<p>This article recommended by Professor Honglin Wang is about the discovery that pDCs can sense self-DNA. The role of plasmacytoid dendritic cells is usually to sense viral and microbial DNA and release interferons. This article, however, found that in the autoimmune disease psoriasis, pDCs can sense self-DNA. They found that LL37 could bind to self-DNA and thus activate pDCs and thus TLR9. This discovery explains the important role of endogenous antimicrobial peptides and identifies a possible autoantigen for psoriasis. I will then describe the relevant background, scientific issues, and specific results.</p>
+<p>Plasmacytoid dendritic cells (pDCs) play an important role in the immune system by expressing TLR7 and TLR9 to sense viral and microbial DNA and thus release type 1 IFN to defend against infection. Studies have shown that pDCs often fail to recognize self-DNA, except in autoimmune diseases. pDCs recognize self-DNA in autoimmune diseases thus causing abnormal expression of IFNs, which is the main causative factor. Psoriasis is an autoimmune disease in which the activation of autoimmune T cells leading to abnormal proliferation of epidermal keratinocytes is the main cause. Previously, pDCs have been reported to infiltrate psoriatic skin. However, the questions of how pDCs are activated in psoriasis and whether there is an association with self-DNA remain unanswered. This article attempts to answer these qusetions.</p>
+<p>The authors first wanted to determine the factors that activate pDCs to generate IFNs. They used HPLC methods to separate peripheral blood from psoriasis patients into fraction and found that fraction26 was the main component. They then used ESI-MS to identify this component as psoriasin and the antimicrobial peptide LL37. The synthetic peptides method demonstrated that only LL37 could activate pDCs, while neither psoriasin nor the LL37 variant GL37 could. They then used LL37 antibody to neutralize LL37 and found that no IFN-α was produced, indicating that only LL37 worked. RT-PCR results showed that LL37 mRNA levels were elevated in psoriatic skin, and immunohistochemistry showed that LL37 was distributed in psoriatic keratinocytes, which is where pDCs are abundant. These results all suggest that LL37 is a key factor in the activation of pDCs.</p>
+<p><img src="/2021/04/14/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB4/1.jpg"></p>
+<p>The authors then looked at the specific mechanism by which LL37 activates pDCs. Since pDCs can sense nucleic acids and the structure of LL37 has the potential to bind DNA, the authors speculate that LL37 activation of pDCs is associated with self-DNA. The authors removed DNA from the culture medium and found a decrease in IFN-α secretion, suggesting that LL37 may be associated with DNA in dead cells. In addition, elevated IFN-α expression was found by mixing human DNA with LL37, indicating that LL37 converts self-DNA into a factor that activates pDCs.</p>
+<p>The mixture of LL37 and DNA was analyzed by HPLC method and it was found that LL37 could bind to DNA to form a condensed complex. In addition, atomic force microscopy also revealed the presence of prominent nodes in the mixture of LL37 and DNA, which is not present in single DNA.</p>
+<p><img src="/2021/04/14/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB4/2.jpg"></p>
+<p>They then investigated whether the LL37-DNA complex could induce TLR9. They found that IFN-α levels decreased after treatment with chloroquine, which can inhibit TLR signaling. In addition, treatment of pDCs with the TLR9 inhibitor ODN-TTAGGG reduced IFN-α levels. Furthermore, the LL37-DNA complex could increase the expression of TLR9 compared to DNA alone. All these results suggest that the LL37-DNA complex can activate pDCs through TLR9.</p>
+<p>TLR9 is located intracellularly in pDCs, thus preventing pDCs from recognizing self-DNA. The authors found that the mixing of LL37 with human DNA increased the fluorescence intensity of DNA in pDCs by staining localization. In addition, confocal microscopy revealed that the LL37-DNA mixture appeared on the inner side of the membrane of pDCs. These results suggest that LL37 allows self-DNA to enter the interior of pDCs.</p>
+<p><img src="/2021/04/14/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB4/3.jpg"></p>
+<p>Previous studies found that IFN-α synthesis occurs in early endosomes and IL-6 and TNF-α secretion occurs in late endosomes. The authors found that the LL37-DNA complex induced IFN-α secretion but not IL-6 and TNF-α, speculating that LL37-DNA plays a role in early nuclear endosomes. The authors then used confocal microscopy to find that LL37 could retain self-DNA in early endosomes but not in late endosomes. This suggests that LL37 can keep TLR9 activated by retaining DNA in early nuclear endosomes, leading to continued secretion of IFN and ultimately to persistent lesions in psoriasis.</p>
+<p><img src="/2021/04/14/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB4/4.jpg"></p>
+<p>In summary, this article identifies a specific mechanism for self-DNA recognition by pDCs in psoriasis. LL37 forms a complex by binding self-DNA, translocates to pDCs intracellularly to activate TLR9, and retains DNA in early endosomes for sustained IFN secretion leading to psoriasis development. This specific mechanistic study identified LL37, a target of psoriasis, which offers the possibility of developing LL37 inhibitors for the treatment of psoriasis and also provides a reference for other autoimmune disease mechanism studies.</p>
+]]></content>
+      <tags>
+        <tag>文献导读</tag>
+        <tag>Immunology</tag>
       </tags>
   </entry>
   <entry>
@@ -213,33 +389,6 @@
       <tags>
         <tag>文献导读</tag>
         <tag>Oncology</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【Nature】浆细胞样树突状细胞感知自身DNA偶联抗菌肽</title>
-    <url>/2021/04/14/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB4/</url>
-    <content><![CDATA[<p><strong>Scientific Commentary on a Paper about Psoriasis</strong></p>
-<p>By <em>Mingzhen Tian</em></p>
-<span id="more"></span> 
-
-<p>原文链接：<a href="https://www.nature.com/articles/nature06116">Plasmacytoid dendritic cells sense self-DNA coupled with antimicrobial peptide</a> </p>
-<p>This article recommended by Professor Honglin Wang is about the discovery that pDCs can sense self-DNA. The role of plasmacytoid dendritic cells is usually to sense viral and microbial DNA and release interferons. This article, however, found that in the autoimmune disease psoriasis, pDCs can sense self-DNA. They found that LL37 could bind to self-DNA and thus activate pDCs and thus TLR9. This discovery explains the important role of endogenous antimicrobial peptides and identifies a possible autoantigen for psoriasis. I will then describe the relevant background, scientific issues, and specific results.</p>
-<p>Plasmacytoid dendritic cells (pDCs) play an important role in the immune system by expressing TLR7 and TLR9 to sense viral and microbial DNA and thus release type 1 IFN to defend against infection. Studies have shown that pDCs often fail to recognize self-DNA, except in autoimmune diseases. pDCs recognize self-DNA in autoimmune diseases thus causing abnormal expression of IFNs, which is the main causative factor. Psoriasis is an autoimmune disease in which the activation of autoimmune T cells leading to abnormal proliferation of epidermal keratinocytes is the main cause. Previously, pDCs have been reported to infiltrate psoriatic skin. However, the questions of how pDCs are activated in psoriasis and whether there is an association with self-DNA remain unanswered. This article attempts to answer these qusetions.</p>
-<p>The authors first wanted to determine the factors that activate pDCs to generate IFNs. They used HPLC methods to separate peripheral blood from psoriasis patients into fraction and found that fraction26 was the main component. They then used ESI-MS to identify this component as psoriasin and the antimicrobial peptide LL37. The synthetic peptides method demonstrated that only LL37 could activate pDCs, while neither psoriasin nor the LL37 variant GL37 could. They then used LL37 antibody to neutralize LL37 and found that no IFN-α was produced, indicating that only LL37 worked. RT-PCR results showed that LL37 mRNA levels were elevated in psoriatic skin, and immunohistochemistry showed that LL37 was distributed in psoriatic keratinocytes, which is where pDCs are abundant. These results all suggest that LL37 is a key factor in the activation of pDCs.</p>
-<p><img src="/2021/04/14/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB4/1.jpg"></p>
-<p>The authors then looked at the specific mechanism by which LL37 activates pDCs. Since pDCs can sense nucleic acids and the structure of LL37 has the potential to bind DNA, the authors speculate that LL37 activation of pDCs is associated with self-DNA. The authors removed DNA from the culture medium and found a decrease in IFN-α secretion, suggesting that LL37 may be associated with DNA in dead cells. In addition, elevated IFN-α expression was found by mixing human DNA with LL37, indicating that LL37 converts self-DNA into a factor that activates pDCs.</p>
-<p>The mixture of LL37 and DNA was analyzed by HPLC method and it was found that LL37 could bind to DNA to form a condensed complex. In addition, atomic force microscopy also revealed the presence of prominent nodes in the mixture of LL37 and DNA, which is not present in single DNA.</p>
-<p><img src="/2021/04/14/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB4/2.jpg"></p>
-<p>They then investigated whether the LL37-DNA complex could induce TLR9. They found that IFN-α levels decreased after treatment with chloroquine, which can inhibit TLR signaling. In addition, treatment of pDCs with the TLR9 inhibitor ODN-TTAGGG reduced IFN-α levels. Furthermore, the LL37-DNA complex could increase the expression of TLR9 compared to DNA alone. All these results suggest that the LL37-DNA complex can activate pDCs through TLR9.</p>
-<p>TLR9 is located intracellularly in pDCs, thus preventing pDCs from recognizing self-DNA. The authors found that the mixing of LL37 with human DNA increased the fluorescence intensity of DNA in pDCs by staining localization. In addition, confocal microscopy revealed that the LL37-DNA mixture appeared on the inner side of the membrane of pDCs. These results suggest that LL37 allows self-DNA to enter the interior of pDCs.</p>
-<p><img src="/2021/04/14/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB4/3.jpg"></p>
-<p>Previous studies found that IFN-α synthesis occurs in early endosomes and IL-6 and TNF-α secretion occurs in late endosomes. The authors found that the LL37-DNA complex induced IFN-α secretion but not IL-6 and TNF-α, speculating that LL37-DNA plays a role in early nuclear endosomes. The authors then used confocal microscopy to find that LL37 could retain self-DNA in early endosomes but not in late endosomes. This suggests that LL37 can keep TLR9 activated by retaining DNA in early nuclear endosomes, leading to continued secretion of IFN and ultimately to persistent lesions in psoriasis.</p>
-<p><img src="/2021/04/14/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB4/4.jpg"></p>
-<p>In summary, this article identifies a specific mechanism for self-DNA recognition by pDCs in psoriasis. LL37 forms a complex by binding self-DNA, translocates to pDCs intracellularly to activate TLR9, and retains DNA in early endosomes for sustained IFN secretion leading to psoriasis development. This specific mechanistic study identified LL37, a target of psoriasis, which offers the possibility of developing LL37 inhibitors for the treatment of psoriasis and also provides a reference for other autoimmune disease mechanism studies.</p>
-]]></content>
-      <tags>
-        <tag>文献导读</tag>
-        <tag>Immunology</tag>
       </tags>
   </entry>
   <entry>
@@ -390,155 +539,6 @@
       <tags>
         <tag>文献导读</tag>
         <tag>Developmental biology</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Machine Learning-Based Lung Adenocarcinoma Aided Diagnosis and Mortality Prediction</title>
-    <url>/2021/06/24/13/</url>
-    <content><![CDATA[<p>课程论文</p>
-<span id="more"></span> 
-
-<object data="13.pdf" type="application/pdf" width="100%" height="877px">
-
-
-</object>]]></content>
-  </entry>
-  <entry>
-    <title>Curriculum Vitae</title>
-    <url>/2021/06/30/cv/</url>
-    <content><![CDATA[<span id="more"></span> 
-
-<object data="cv.pdf" type="application/pdf" width="100%" height="877px">
-
-</object>]]></content>
-  </entry>
-  <entry>
-    <title>【cs231n】Lecture 1 - Overview 笔记</title>
-    <url>/2021/08/29/cs231-1/</url>
-    <content><![CDATA[<h1 id="斯坦福李飞飞cs231n计算机视觉课程笔记"><a href="#斯坦福李飞飞cs231n计算机视觉课程笔记" class="headerlink" title="斯坦福李飞飞cs231n计算机视觉课程笔记"></a>斯坦福李飞飞cs231n计算机视觉课程笔记</h1><span id="more"></span> 
-
-<p>笔记 by <em>田明振</em></p>
-<p>注：</p>
-<ol>
-<li>此笔记整合了<strong>2017年的视频</strong>和<strong>2021年的最新课件</strong></li>
-<li>视频链接： <a href="https://www.bilibili.com/video/BV1nJ411z7fe?p=2">https://www.bilibili.com/video/BV1nJ411z7fe?p=2</a>  or  <a href="https://youtu.be/vT1JzLTH4G4">https://youtu.be/vT1JzLTH4G4</a></li>
-<li>课程官网： <a href="http://cs231n.stanford.edu/index.html">http://cs231n.stanford.edu/index.html</a> </li>
-<li>课件下载链接： <a href="http://cs231n.stanford.edu/slides/">http://cs231n.stanford.edu/slides/</a> </li>
-</ol>
-<h2 id="Lecture-1-Overview"><a href="#Lecture-1-Overview" class="headerlink" title="Lecture 1 - Overview"></a>Lecture 1 - Overview</h2><p>Today’s agenda</p>
-<ol>
-<li>A brief history of computer vision  </li>
-<li>CS231n overview  </li>
-</ol>
-<h3 id="Part-1-A-brief-history-of-computer-vision-计算机视觉的历史-by-李飞飞"><a href="#Part-1-A-brief-history-of-computer-vision-计算机视觉的历史-by-李飞飞" class="headerlink" title="Part 1: A brief history of computer vision 计算机视觉的历史 by 李飞飞"></a>Part 1: A brief history of computer vision 计算机视觉的历史 by <em>李飞飞</em></h3><p>计算机视觉可用于各个学科，如物理、生物、心理学、计算机科学、工程学、数学等。</p>
-<p><img src="/2021/08/29/cs231-1/1.png"></p>
-<p>具体可用于  </p>
-<p>• Object detection 目标检测<br>• Object classification 目标分类<br>• Scene understanding 场景理解<br>• Semantic scene segmentation 语义分割<br>• 3D reconstruction 3D重建<br>• Object tracking 目标追踪<br>• Human pose estimation 人体姿态分析<br>• Activity recognition 行为识别<br>• VQA 视觉问答  等场景</p>
-<p>公元前5.3-5.4亿年，  Cambrian Explosion  寒武纪生命大爆发，生物第一次产生了视觉。</p>
-<p><img src="/2021/08/29/cs231-1/2.png"></p>
-<p>人类最早让机器出现视觉，即照相机的诞生。人类最早出现的相机可追溯到文艺复兴时期的camera obscura（暗箱）</p>
-<p><img src="/2021/08/29/cs231-1/3.png"></p>
-<h4 id="计算机视觉的发展之-The-known-story-–-Neuroscience-inspired-AI"><a href="#计算机视觉的发展之-The-known-story-–-Neuroscience-inspired-AI" class="headerlink" title="计算机视觉的发展之  The known story – Neuroscience inspired AI"></a>计算机视觉的发展之  The known story – Neuroscience inspired AI</h4><p>60年代，Hubel and Wiesel  关于电生理学的研究最先揭示了哺乳动物的视觉处理机制，发现视觉处理是始于视觉世界的简单结构。</p>
-<p><img src="/2021/08/29/cs231-1/4.png"></p>
-<p>通过不同层级的细胞，将low-level的视觉信息组合成high-level的patterns，即  Cortical Column  皮质柱，神经网络也是这一思想。</p>
-<p><img src="/2021/08/29/cs231-1/5.png"></p>
-<blockquote>
-<p>问题的形成往往比解决问题更重要，解决问题需要创造性的想象力，这标志着科学的真正进步。 ——爱因斯坦</p>
-</blockquote>
-<h4 id="计算机视觉的发展之-The-not-so-known-story-–-the-search-for-computer-vision’s-“North-Star”"><a href="#计算机视觉的发展之-The-not-so-known-story-–-the-search-for-computer-vision’s-“North-Star”" class="headerlink" title="计算机视觉的发展之  The not-so-known story – the search for computer vision’s “North Star”"></a>计算机视觉的发展之  The not-so-known story – the search for computer vision’s “North Star”</h4><p>计算机视觉的发展也从60年代初开始，  Larry Roerts  的博士论文被认为是第一篇关于计算机视觉的论文，提出了block world的概念，将视觉世界简化为几何形状。</p>
-<p><img src="/2021/08/29/cs231-1/6.png"></p>
-<p>70年代，  David Marr  撰写了《vision》，提出了如何使计算机识别视觉世界的算法。呈现物体的三维结构，需经历以下几个步骤：</p>
-<p><img src="/2021/08/29/cs231-1/7.png"></p>
-<p>70年代另一项开创性的工作，解决了如何从识别块状世界转向现实世界对象的问题。两组科学家分别提出了generalized cylinder（广义圆柱体）和pictorial structure（图形结构）的概念。</p>
-<p><img src="/2021/08/29/cs231-1/8.png"></p>
-<p>1997年  Shi &amp; Malik  利用normalized cut实现了图像分割。该算法将图像中的像素点归为有意义的类别，实现分割。</p>
-<p><img src="/2021/08/29/cs231-1/9.png"></p>
-<p>2001年，  Viola &amp; Jones  利用AdaBoost机器学习算法，实现了人脸识别。</p>
-<p><img src="/2021/08/29/cs231-1/10.png"></p>
-<p>2006年，提出了空间金字塔匹配算法，提取出图片的整体特征，进行匹配识别。</p>
-<p><img src="/2021/08/29/cs231-1/11.png"></p>
-<blockquote>
-<p>计算机视觉的圣杯——  Object Recognition  目标识别</p>
-</blockquote>
-<p>直到21世纪才出现了图片标注数据集，最出名的是PASCAL</p>
-<p>另一个数据集是ImageNet，由本节课主讲李飞飞创立。</p>
-<p><img src="/2021/08/29/cs231-1/12.png"></p>
-<p>ImageNet团队还创立了全球性的比赛，该比赛的成绩在2012年突飞猛进。</p>
-<p><img src="/2021/08/29/cs231-1/13.png"></p>
-<p>这一年，第一次将卷积神经网络应用于计算机视觉，实现了显著的效果。这也是这门课将重点介绍的内容。</p>
-<p><img src="/2021/08/29/cs231-1/14.png"></p>
-<p>但神经网络早在1998年就被提出，但由于计算能力的限制，一直没有用于计算机视觉领域。</p>
-<h3 id="Part-2-Convolutional-Neural-Networks"><a href="#Part-2-Convolutional-Neural-Networks" class="headerlink" title="Part 2: Convolutional Neural Networks"></a>Part 2: Convolutional Neural Networks</h3><p>for Visual Recognition   卷积神经网络用于视觉识别 by   <em>Justin Johnson</em></p>
-]]></content>
-      <tags>
-        <tag>cs231n</tag>
-        <tag>编程学习</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【Nature Cell Biology】消除碱基编辑诱导的全基因组和转录组脱靶突变</title>
-    <url>/2021/06/30/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB12/</url>
-    <content><![CDATA[<h1 id="Eliminating-base-editor-induced-genome-wide-and-transcriptome-wide-off-target-mutations"><a href="#Eliminating-base-editor-induced-genome-wide-and-transcriptome-wide-off-target-mutations" class="headerlink" title="Eliminating base-editor-induced genome-wide and transcriptome-wide off-target mutations"></a>Eliminating base-editor-induced genome-wide and transcriptome-wide off-target mutations</h1><span id="more"></span> 
-
-<p>作者： 杨力  期刊：Nature Cell Biology  时间：2021.5</p>
-<p><a href="https://www.nature.com/articles/s41556-021-00671-4#Abs1">原文链接</a></p>
-<h2 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h2><p>CRISPR-Cas9与胞苷脱氨酶（  cytidine  deaminases ）的融合导致了能够进行可编程C-to-T编辑的碱基编辑器( base  editors，BEs)，该编辑器具有临床应用潜力，但存在脱靶(off-target ，OT)突变。这里，作者使用一个可剪切的脱氧胞苷脱氨酶抑制剂(dCDI)结构域构建了一个 变形式BE (tBE)系统，该系统仅在全基因组和转录组范围的OT突变的背景水平上就能诱导高效的编辑。 产生后，tBE在OT位点与可裂解dCDI融合保持不活跃状态，因此消除了意外突变。 当结合在目标位点时，tBE被转化以切断dCDI结构域，并催化靶向脱氨基以进行精确的碱基编辑 。 通过双腺相关病毒(AAV)系统导入小鼠后，tBE系统在Pcsk9中创建了一个提前终止密码子，显著降低了血清中Pcsk9，导致总胆固醇下降~ 30-40%。  tBE的开发建立了一种高度特异性的碱基编辑系统，其体内疗效具有治疗应用的潜力。 </p>
-<h2 id="Fig-1-identification-of-dCDi-domains"><a href="#Fig-1-identification-of-dCDi-domains" class="headerlink" title="Fig. 1 | identification of dCDi domains."></a>Fig. 1 | identification of dCDi domains.</h2><p><img src="/2021/06/30/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB12/1.png"></p>
-<p>a.APOBEC  家族有两类，一类只有一个CDA 位点，另一类有两个CDA位点，其中一个位点具有催化活性，另一个位点没有催化活性但有调节功能。作者构建了10个BEs，分别包含和不包含inactive  but  regulatory  domain。</p>
-<p>b c.包含inactive的CDA位点的APOBEC编辑效率显著降低。</p>
-<p>def.为了验证一般性，作者将mA3,  hA3F  和 hA3B的inactive CDA位点连接到了mA3CDA1–BE3上，发现都有编辑效率降低。CDA2  of  mA3的抑制效果最强。</p>
-<p>综上所述，这些调控域作为dCDIs对脱氧胞苷脱氨酶活性具有普遍的抑制作用。 </p>
-<h2 id="Fig-2-Comparison-of-tBE-with-other-BEs"><a href="#Fig-2-Comparison-of-tBE-with-other-BEs" class="headerlink" title="Fig. 2 | Comparison of tBE with other BEs."></a>Fig. 2 | Comparison of tBE with other BEs.</h2><p><img src="/2021/06/30/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB12/2.png"></p>
-<p>作者试图利用dCDI域开发一个BE系统来避免sgRNA不依赖的突变。理想情况下，由于dCDI的连接，这种BE不会引起可观察到的OT突变，但当与靶点结合时，可以通过切断dCDI而转化为活性;因此被称为tBE。 </p>
-<p>作者构建了   tBE-V5–mA3 这一BE，并将其与其他的BE进行对比，发现 tBE-V5–mA3 上靶效果很好，包括 DNA甲基化水平高的位点和含GpC二核苷酸 的位点。并且在OTss sites 和 OT sites，只有背景水平的突变。</p>
-<h2 id="Fig-3-optimization-of-hsgRNA-in-the-tBE-system"><a href="#Fig-3-optimization-of-hsgRNA-in-the-tBE-system" class="headerlink" title="Fig. 3 | optimization of hsgRNA in the tBE system."></a>Fig. 3 | optimization of hsgRNA in the tBE system.</h2><p><img src="/2021/06/30/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB12/3.png"></p>
-<p>在比较编辑效率时，作者注意到sgRNA和hsgRNA之间的距离影响了tBE对目标的编辑效率。因此，作者测定了sgRNA与hsgRNA之间距离的影响(图3a、b)，发现当hsgRNA位于sgRNA的−91 bp至−34 bp(上游)区域时，tBE的编辑效率达到最佳（图3c）</p>
-<p>由于hsgRNA在其结合位点也形成R-loop区域(图3d)，一些hsgRNA的靶位点偶尔会发生意外的C-to-T编辑 (图3e left)。 之前的研究表明使用带有截断间隔的guide RNA并不影响Cas9的结合 。 因此，作者研究了hsgRNA靶位点的非预期编辑是否也可以通过截断的hsgRNAs来抑制。 使用截断的hsgRNA时，hsgRNA靶区的非预期编辑减少  (Fig.  3e,f).  有10bp间隔的hsgRNA消除了意外的编辑 ，而目标编辑不受影响 。</p>
-<h2 id="Fig-4-the-effect-of-split-TEV-protease-concentration-on-editing-efficiency-and-sgRNA-independent-OT-mutation"><a href="#Fig-4-the-effect-of-split-TEV-protease-concentration-on-editing-efficiency-and-sgRNA-independent-OT-mutation" class="headerlink" title="Fig. 4 | the effect of split-TEV protease concentration on editing efficiency and sgRNA-independent OT mutation."></a>Fig. 4 | the effect of split-TEV protease concentration on editing efficiency and sgRNA-independent OT mutation.</h2><p><img src="/2021/06/30/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB12/4.png"></p>
-<p>作者还用不同数量的表达载体表达了分裂- tev系统(图4a)，发现在分裂- tev组分检测的蛋白水平上，目标编辑效率(图4b)和sgrna独立OTss位点的突变频率(图4c)均未受影响(图4d)。 </p>
-]]></content>
-      <tags>
-        <tag>文献导读</tag>
-        <tag>Bioinformatics</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【Advanced Materials】等离子体合金揭示早期胃癌独特的代谢表型</title>
-    <url>/2021/10/14/%E6%96%87%E7%8C%AE%E5%AF%BC%E8%AF%BB13/</url>
-    <content><![CDATA[<h1 id="Plasmonic-Alloys-Reveal-a-Distinct-Metabolic-Phenotype-of-Early-Gastric-Cancer"><a href="#Plasmonic-Alloys-Reveal-a-Distinct-Metabolic-Phenotype-of-Early-Gastric-Cancer" class="headerlink" title="Plasmonic Alloys Reveal a Distinct Metabolic Phenotype of Early Gastric Cancer"></a>Plasmonic Alloys Reveal a Distinct Metabolic Phenotype of Early Gastric Cancer</h1><span id="more"></span> 
-
-<p>通讯作者：钱昆  期刊：Advanced Materials  时间：20 March 2021 </p>
-<p><a href="https://www.nature.com/articles/s41556-021-00671-4#Abs1">原文链接</a></p>
-<h2 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h2><p>胃癌(Gastric cancer, GC)是一个多因素的过程，伴随着代谢途径的改变。无创代谢谱有助于早期GC诊断，从而改善预后结果。在这里，介孔PdPtAu合金(mesoporous PdPtAu alloys)被设计来表征人类血液中的代谢谱。采用非均匀表面等离子体共振优化元素组成，为光诱导解吸/电离提供首选电荷转移，为热驱动解吸提供增强光热转换。 PdPtAu的表面结构通过受控的介孔进一步调整，只容纳代谢物，而不是大的干扰化合物。因此，优化后的PdPtAu合金通过激光解吸/电离质谱在数秒内产生直接代谢指纹，消耗500 nL天然血浆。早期GC通过稀疏学习显示出独特的代谢表型，从而精确诊断GC，AUC为0.942。可以预见，等离子体合金将开辟一个微创血液分析的新时代，以改善临床环境中癌症患者的监测。 </p>
-<h2 id="Fig-1-Characterization-of-PdPt-and-PdPtAu-alloys"><a href="#Fig-1-Characterization-of-PdPt-and-PdPtAu-alloys" class="headerlink" title="Fig. 1. Characterization of PdPt and PdPtAu alloys"></a>Fig. 1. Characterization of PdPt and PdPtAu alloys</h2><p>使用一种改良的  surfactant-directing strategy 合成  mesoporous PdPtAu 。 简单地说，通过化学计量学方法在PdPt胶束上种子生长Au，然后去除Pluronic F127表面活性剂，获得了三金属合金。 <strong>图1a</strong>为 去除表面活性剂后，形成均匀的介孔PdPt微球。 金  precursor 还原后，PdPtAu微球的粒径增大到≈150 nm，孔径减小到≈15 nm(<strong>图1b</strong>)。 通过元素映射分析(<strong>图1c</strong>)和线扫描剖面(<strong>图1d</strong>)，得到的三金属合金显示出Pd、Pt和Au的分布。区域电子衍射图(<strong>图1e</strong>)和高分辨率TEM(<strong>图1e</strong>的插图)显示了明显的三金属合金多晶环。通过广角x射线粉末衍射分析(<strong>图1f</strong>)对晶体结构和周期间距进行了验证，得出了两组不同的衍射峰，它们都指向了PdPt 和Au的fcc晶体结构。 </p>
-<h2 id="Figure-2-Optimization-of-PdPtAu-alloys-for-metabolites-detection"><a href="#Figure-2-Optimization-of-PdPtAu-alloys-for-metabolites-detection" class="headerlink" title="Figure 2. Optimization of PdPtAu alloys for metabolites detection"></a>Figure 2. Optimization of PdPtAu alloys for metabolites detection</h2><p>纳米材料的LDI增强依赖于其元素组成和表面结构。  随后，我们通过改变金precursor的浓度，合成了性能可控的PdPtAu纳米球(20/30/40 × 10-3 m of HAuCl4 aqueous solution, denoted as PdPtAu-2/3/4, <strong>Figure 2a–c</strong>) 。</p>
-<p>为了证明LDI质谱对小分子的高灵敏度和选择性可以通过当前的策略实现，以葡萄糖、苯丙氨酸和赖氨酸为指示分子对合成合金进行了全面的质谱评价。在灵敏度方面，PdPtAu-3在标准样品(<strong>图2d</strong>)的点状图中对小代谢物的信号强度最高，优于PdPtAu-1/2/4合金。</p>
-]]></content>
-      <tags>
-        <tag>文献导读</tag>
-        <tag>Bionanotechnology</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>外泌体文献调研</title>
-    <url>/2021/11/09/%E5%A4%96%E6%B3%8C%E4%BD%93%E6%96%87%E7%8C%AE%E8%B0%83%E7%A0%94/</url>
-    <content><![CDATA[<p>外泌体文献调研</p>
-<span id="more"></span> 
-
-<p><img src="/2021/11/09/%E5%A4%96%E6%B3%8C%E4%BD%93%E6%96%87%E7%8C%AE%E8%B0%83%E7%A0%94/%E5%A4%96%E6%B3%8C%E4%BD%93%E7%BB%BC%E8%BF%B0-01.jpg"></p>
-<p><img src="/2021/11/09/%E5%A4%96%E6%B3%8C%E4%BD%93%E6%96%87%E7%8C%AE%E8%B0%83%E7%A0%94/%E5%A4%96%E6%B3%8C%E4%BD%93%E7%BB%BC%E8%BF%B0-02.jpg"></p>
-<p><img src="/2021/11/09/%E5%A4%96%E6%B3%8C%E4%BD%93%E6%96%87%E7%8C%AE%E8%B0%83%E7%A0%94/%E5%A4%96%E6%B3%8C%E4%BD%93%E7%BB%BC%E8%BF%B0-03.jpg"></p>
-<p><img src="/2021/11/09/%E5%A4%96%E6%B3%8C%E4%BD%93%E6%96%87%E7%8C%AE%E8%B0%83%E7%A0%94/%E5%A4%96%E6%B3%8C%E4%BD%93%E7%BB%BC%E8%BF%B0-04.jpg"></p>
-<p><img src="/2021/11/09/%E5%A4%96%E6%B3%8C%E4%BD%93%E6%96%87%E7%8C%AE%E8%B0%83%E7%A0%94/%E5%A4%96%E6%B3%8C%E4%BD%93%E7%BB%BC%E8%BF%B0-05.jpg"></p>
-<p><img src="/2021/11/09/%E5%A4%96%E6%B3%8C%E4%BD%93%E6%96%87%E7%8C%AE%E8%B0%83%E7%A0%94/%E5%A4%96%E6%B3%8C%E4%BD%93%E7%BB%BC%E8%BF%B0-06.jpg"></p>
-<p><img src="/2021/11/09/%E5%A4%96%E6%B3%8C%E4%BD%93%E6%96%87%E7%8C%AE%E8%B0%83%E7%A0%94/%E5%A4%96%E6%B3%8C%E4%BD%93%E7%BB%BC%E8%BF%B0-07.jpg"></p>
-<p><img src="/2021/11/09/%E5%A4%96%E6%B3%8C%E4%BD%93%E6%96%87%E7%8C%AE%E8%B0%83%E7%A0%94/%E5%A4%96%E6%B3%8C%E4%BD%93%E7%BB%BC%E8%BF%B0-08.jpg"></p>
-<p><img src="/2021/11/09/%E5%A4%96%E6%B3%8C%E4%BD%93%E6%96%87%E7%8C%AE%E8%B0%83%E7%A0%94/%E5%A4%96%E6%B3%8C%E4%BD%93%E7%BB%BC%E8%BF%B0-09.jpg"></p>
-<p><img src="/2021/11/09/%E5%A4%96%E6%B3%8C%E4%BD%93%E6%96%87%E7%8C%AE%E8%B0%83%E7%A0%94/%E5%A4%96%E6%B3%8C%E4%BD%93%E7%BB%BC%E8%BF%B0-10.jpg"></p>
-<p><img src="/2021/11/09/%E5%A4%96%E6%B3%8C%E4%BD%93%E6%96%87%E7%8C%AE%E8%B0%83%E7%A0%94/%E5%A4%96%E6%B3%8C%E4%BD%93%E7%BB%BC%E8%BF%B0-11.jpg"></p>
-]]></content>
-      <tags>
-        <tag>exosomes</tag>
       </tags>
   </entry>
 </search>
