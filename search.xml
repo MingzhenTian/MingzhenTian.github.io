@@ -41,7 +41,7 @@
 <li>A brief history of computer vision  </li>
 <li>CS231n overview  </li>
 </ol>
-<h3 id="Part-1-A-brief-history-of-computer-vision-计算机视觉的历史-by-李飞飞"><a href="#Part-1-A-brief-history-of-computer-vision-计算机视觉的历史-by-李飞飞" class="headerlink" title="Part 1: A brief history of computer vision 计算机视觉的历史 by 李飞飞"></a>Part 1: A brief history of computer vision 计算机视觉的历史 by <em>李飞飞</em></h3><p>计算机视觉可用于各个学科，如物理、生物、心理学、计算机科学、工程学、数学等。</p>
+<h3 id="Part-1-A-brief-history-of-computer-vision-by-李飞飞"><a href="#Part-1-A-brief-history-of-computer-vision-by-李飞飞" class="headerlink" title="Part 1: A brief history of computer vision by 李飞飞"></a>Part 1: A brief history of computer vision by <em>李飞飞</em></h3><p>计算机视觉可用于各个学科，如物理、生物、心理学、计算机科学、工程学、数学等。</p>
 <p><img src="/2021/08/29/cs231-1/1.png"></p>
 <p>具体可用于  </p>
 <p>• Object detection 目标检测<br>• Object classification 目标分类<br>• Scene understanding 场景理解<br>• Semantic scene segmentation 语义分割<br>• 3D reconstruction 3D重建<br>• Object tracking 目标追踪<br>• Human pose estimation 人体姿态分析<br>• Activity recognition 行为识别<br>• VQA 视觉问答  等场景</p>
@@ -79,7 +79,19 @@
 <p>这一年，第一次将卷积神经网络应用于计算机视觉，实现了显著的效果。这也是这门课将重点介绍的内容。</p>
 <p><img src="/2021/08/29/cs231-1/14.png"></p>
 <p>但神经网络早在1998年就被提出，但由于计算能力的限制，一直没有用于计算机视觉领域。</p>
-<h3 id="Part-2-Convolutional-Neural-Networks"><a href="#Part-2-Convolutional-Neural-Networks" class="headerlink" title="Part 2: Convolutional Neural Networks"></a>Part 2: Convolutional Neural Networks</h3><p>for Visual Recognition   卷积神经网络用于视觉识别 by   <em>Justin Johnson</em></p>
+<h3 id="Part-2-Convolutional-Neural-Networks-for-Visual-Recognition-by-Justin-Johnson"><a href="#Part-2-Convolutional-Neural-Networks-for-Visual-Recognition-by-Justin-Johnson" class="headerlink" title="Part 2: Convolutional Neural Networks for Visual Recognition by   Justin Johnson"></a>Part 2: Convolutional Neural Networks for Visual Recognition by   <em>Justin Johnson</em></h3><p><strong>Image Classification: A core task in Computer Vision</strong> </p>
+<p>There are many visual recognition problems that are related to image classification, such as <strong>object detection目标检测</strong>, <strong>image captioning自动图像描述</strong>, semantic segmentation, visual question answering, visual instruction navigation, <strong>scene graph generation场景图预测</strong>. 举个例子：</p>
+<p><img src="/2021/08/29/cs231-1/15.png"></p>
+<p><strong>Convolutional Neural Networks (CNN) have become an important tool for object recognition</strong>  </p>
+<p>2012年首先在imagenet比赛上使用了CNN，从此之后变得越来越深。2015年，微软亚洲研究院发布了残差网络，有152层。</p>
+<p><img src="/2021/08/29/cs231-1/16.png"></p>
+<p><strong>Convolutional Neural Networks (CNN)  were not invented overnight</strong>  </p>
+<p>CNN最早在1998年由贝尔实验室提出，用于支票的识别。由于计算能力的大幅度提升，尤其是GPU的出现，CNN在最近几年变得流行。大量带有标签的数据的出现也是CNN流行起来的原因之一。</p>
+<p><img src="/2021/08/29/cs231-1/17.png"></p>
+<p><strong>The quest for visual intelligence  goes far beyond object recognition</strong>  </p>
+<p>例如动作的识别、图像的具体描述。</p>
+<p>比如如何让计算机深刻的理解下图，是一个挑战。</p>
+<p><img src="/2021/08/29/cs231-1/18.png"></p>
 ]]></content>
       <tags>
         <tag>cs231n</tag>
